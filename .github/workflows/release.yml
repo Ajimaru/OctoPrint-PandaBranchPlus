@@ -1,0 +1,138 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*", "[0-9]*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Build & publish release
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install build tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install build
+
+      - name: Build wheel and sdist
+        run: python -m build
+
+      - name: Validate paths (prevent directory traversal)
+        run: |
+          for f in dist/*; do
+            rel="$(realpath --relative-to="$(pwd)" "$f")"
+            case "$rel" in
+              .*) echo "Suspicious path: $f ($rel)"; exit 1 ;;
+            esac
+          done
+
+      - name: Determine prerelease
+        id: prerelease
+        run: |
+          TAG="${{ github.ref_name }}"
+          TAG_LOWER="$(printf '%s' "$TAG" | tr '[:upper:]' '[:lower:]')"
+          # Prerelease = a/b/rc/dev segment in the VERSION part of the tag
+          # (PEP 440 style, digit or separator before it, e.g. 0.2.2rc1 or
+          # 0.2.2.dev6). The match must end at the tag end or at the local
+          # part ("+hash"), so a commit hash that happens to end in e.g.
+          # "b1" can never flip the detection (it did: "+ea8ceb1" matched
+          # the old pattern while "0.2.2rc1+" itself did not).
+          if echo "$TAG_LOWER" | grep -qE '(^|[-.0-9])(a|b|rc|dev)([.-]?[0-9]+)?($|\+)'; then
+            echo "is_prerelease=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "is_prerelease=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Stage release artifacts
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p release_zips
+
+          # Keep the wheel's original, PEP 427-compliant filename
+          # ({name}-{version}-{pytag}-{abitag}-{platformtag}.whl). pip rejects
+          # any renamed wheel ("wrong number of parts"), so it must not be
+          # aliased — both the OctoPrint plugin manager and pip parse the name.
+          cp dist/*.whl dist/*.tar.gz release_zips/
+
+          # Also publish a source .zip (versioned + a stable -latest.zip). A zip
+          # has no strict filename parser, so the OctoPrint plugin manager can
+          # install it directly from a fixed "…-latest.zip" URL. Build it from
+          # the sdist tarball rather than the working tree so it matches the
+          # released source exactly.
+          version="${GITHUB_REF_NAME#v}"
+          zip_versioned="release_zips/OctoPrint-PandaBranchPlus-${version}.zip"
+          zip_latest="release_zips/OctoPrint-PandaBranchPlus-latest.zip"
+
+          shopt -s nullglob
+          sdist_candidates=(dist/*"${version}".tar.gz)
+          if (( ${#sdist_candidates[@]} != 1 )); then
+            echo "Expected exactly one sdist tarball matching version ${version}, found ${#sdist_candidates[@]}" >&2
+            ls -la dist >&2 || true
+            exit 1
+          fi
+          sdist="${sdist_candidates[0]}"
+
+          python - "$sdist" "$zip_versioned" <<'PY'
+          import sys
+          import tarfile
+          import zipfile
+          from pathlib import Path, PurePosixPath
+
+          tar_path = Path(sys.argv[1])
+          zip_path = Path(sys.argv[2])
+          zip_path.parent.mkdir(parents=True, exist_ok=True)
+
+          with tarfile.open(tar_path, "r:gz") as tf, zipfile.ZipFile(
+              zip_path, "w", compression=zipfile.ZIP_DEFLATED
+          ) as zf:
+              for member in tf.getmembers():
+                  if not member.isfile():
+                      continue
+
+                  # Defensive: never let a tar member become a path-traversal
+                  # entry in the zip. Tar archives always use POSIX paths.
+                  member_path = PurePosixPath(member.name)
+                  if (
+                      member_path.is_absolute()
+                      or ".." in member_path.parts
+                      or ":" in member.name
+                      or member.name.startswith("\\")
+                  ):
+                      continue
+
+                  extracted = tf.extractfile(member)
+                  if extracted is None:
+                      continue
+
+                  zi = zipfile.ZipInfo(str(member_path))
+                  zi.external_attr = (member.mode & 0o777) << 16
+                  zf.writestr(zi, extracted.read())
+          PY
+
+          cp -f "$zip_versioned" "$zip_latest"
+
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65 # v2
+        with:
+          files: |
+            release_zips/*
+          generate_release_notes: true
+          prerelease: ${{ steps.prerelease.outputs.is_prerelease }}
+
+      # Uncomment to publish to PyPI:
+      # - name: Publish to PyPI
+      #   uses: pypa/gh-action-pypi-publish@release/v1
+      #   with:
+      #     password: ${{ secrets.PYPI_API_TOKEN }}

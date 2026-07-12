@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="PandaBranchPlus plugin icon">
+  <title>PandaBranchPlus</title>
+  <defs>
+    <linearGradient id="hub-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3a3a3a"/>
+      <stop offset="100%" stop-color="#1a1a1a"/>
+    </linearGradient>
+    <radialGradient id="face-grad" cx="45%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e8e8e8"/>
+    </radialGradient>
+    <linearGradient id="bolt-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e05545"/>
+      <stop offset="100%" stop-color="#c0392f"/>
+    </linearGradient>
+    <filter id="bolt-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Branch traces: hub fans out to the switched channels (right side) -->
+  <path d="M40 32 H46 Q49 32 49 29 V15 Q49 12 52 12 H56" fill="none" stroke="#c0392f" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M40 32 H48 Q51 32 51 30 V24 Q51 22 54 22 H56" fill="none" stroke="#e05545" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M40 32 H56" fill="none" stroke="#c0392f" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M40 32 H48 Q51 32 51 34 V40 Q51 42 54 42 H56" fill="none" stroke="#e05545" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M40 32 H46 Q49 32 49 35 V49 Q49 52 52 52 H56" fill="none" stroke="#c0392f" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Channel port dots -->
+  <circle cx="58" cy="12" r="2.6" fill="#c0392f"/>
+  <circle cx="58" cy="22" r="2.6" fill="#e05545"/>
+  <circle cx="58" cy="32" r="2.6" fill="#c0392f"/>
+  <circle cx="58" cy="42" r="2.6" fill="#e05545"/>
+  <circle cx="58" cy="52" r="2.6" fill="#c0392f"/>
+
+  <!-- Hub body behind the panda -->
+  <rect x="4" y="12" width="36" height="40" rx="7" fill="url(#hub-grad)"/>
+
+  <!-- Panda ears -->
+  <circle cx="11" cy="18" r="5.5" fill="#1a1a1a"/>
+  <circle cx="33" cy="18" r="5.5" fill="#1a1a1a"/>
+  <circle cx="11" cy="18" r="2.4" fill="#3a3a3a"/>
+  <circle cx="33" cy="18" r="2.4" fill="#3a3a3a"/>
+
+  <!-- Panda face -->
+  <ellipse cx="22" cy="33" rx="15" ry="13.5" fill="url(#face-grad)"/>
+  <!-- Eye patches -->
+  <ellipse cx="15.5" cy="30.5" rx="4.6" ry="5.6" fill="#1a1a1a" transform="rotate(-18 15.5 30.5)"/>
+  <ellipse cx="28.5" cy="30.5" rx="4.6" ry="5.6" fill="#1a1a1a" transform="rotate(18 28.5 30.5)"/>
+  <circle cx="16.5" cy="29.5" r="1.5" fill="#ffffff"/>
+  <circle cx="27.5" cy="29.5" r="1.5" fill="#ffffff"/>
+  <!-- Nose + mouth -->
+  <ellipse cx="22" cy="37.5" rx="2.4" ry="1.7" fill="#1a1a1a"/>
+  <path d="M22 39 Q22 41.5 19.5 42 M22 39 Q22 41.5 24.5 42" fill="none" stroke="#1a1a1a" stroke-width="1.1" stroke-linecap="round"/>
+
+  <!-- Power bolt badge (bottom right of face, the "Plus" of the hub) -->
+  <circle cx="33" cy="45" r="8" fill="url(#bolt-grad)" filter="url(#bolt-glow)"/>
+  <path d="M34.8 39.5 L30 45.5 h2.8 l-1.6 5 4.8-6 h-2.8 z" fill="#ffffff"/>
+</svg>

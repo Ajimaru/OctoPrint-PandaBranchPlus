@@ -1,0 +1,25 @@
+# Codacy exclude paths. The first block is project-specific (tests); the rest
+# mirrors .gitignore so Codacy skips the same build/cache/tool paths. Keep the
+# mirror block in sync with .gitignore.
+exclude_paths:
+  # Project-specific
+  - "tests/**"
+  # Mirror of .gitignore
+  - ".venv*/**"
+  - "**/*.pyc"
+  - "OctoPrint_PandaBranchPlus.egg-info/**"
+  - "**/*.egg-info/**"
+  - "build/**"
+  - "dist/**"
+  - "**/*.egg/**"
+  - ".ruff_cache/**"
+  - ".pytest_cache/**"
+  - ".idea/**"
+  - ".vscode/**"
+  - ".ideas/**"
+  - ".development/**"
+  - ".logs/**"
+  - ".cache/**"
+  - ".codacy/**"
+  - "site/**"
+  - "node_modules/**"
