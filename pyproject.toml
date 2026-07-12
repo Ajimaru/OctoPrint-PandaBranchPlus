@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "OctoPrint-PandaBranchPlus"
+version = "0.1.0"
+description = "Assign functions to the 10 power channels of the BIQU Panda Branch Plus and automate them based on the printer state."
+authors = [
+    {name = "Ajimaru", email = "ajimaru_gdr@pm.me"}
+]
+readme = {file = "README.md", content-type = "text/markdown"}
+dynamic = [
+    "license"
+]
+
+requires-python = ">=3.7, <4"
+
+# any additional requirements (besides OctoPrint) should be listed here
+dependencies = [
+    "websocket-client>=1.0",
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = [
+    "octoprint_pandabranchplus",
+    "octoprint_pandabranchplus.*"
+]
+
+[project.entry-points."octoprint.plugin"]
+pandabranchplus = "octoprint_pandabranchplus"
+
+[project.urls]
+Homepage = "https://github.com/Ajimaru/OctoPrint-PandaBranchPlus"
+
+[project.optional-dependencies]
+develop = [
+    "go-task-bin"
+]

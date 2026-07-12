@@ -1,0 +1,364 @@
+# Translations template for PROJECT.
+# Copyright (C) 2026 The OctoPrint Project
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: i18n@octoprint.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:27
+msgid "Advanced — only if firmware differs."
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:127
+msgid "Apply rules (leave manual channels alone)"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:9
+msgid ""
+"Assign a function to each of the 10 power channels and automate them based "
+"on the printer state."
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:33
+msgid "Auto"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:59
+msgid "Automation"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:65
+msgid "Automation enabled"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:31
+msgid "Automation: the channel follows the state matrix below."
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:43
+msgid ""
+"Backoff window between reconnect attempts when the Panda is unreachable. The"
+" delay doubles from min to max."
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:111
+msgid "Bed"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:77
+msgid "Both must say on (AND)"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:113
+msgid "Chamber"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:72
+msgid "Combine state and temperature rule"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:116
+msgid "Confirm before manually switching on 24V channels"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:6
+msgid "Connection"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:94
+msgid ""
+"Dead band below the threshold before a temperature rule releases — prevents "
+"rapid on/off flapping around the threshold."
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:141
+msgid "Debug logging"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:135
+msgid "Diagnostics"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:78
+msgid "Either may say on (OR)"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:85
+msgid "Error"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:94
+msgid "Failsafe"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:51
+msgid ""
+"For each printer state: switch the channel on, off, or leave it as it is "
+"(ignore)."
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:99
+msgid "Hold"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:53
+msgid "Idle"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:57
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:65
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:73
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:81
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:89
+msgid "Ignore"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:148
+msgid "Log raw WebSocket frames"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:150
+msgid ""
+"Logs every frame exchanged with the Panda at debug level. Only for protocol "
+"diagnostics — noisy."
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:39
+msgid "Manual"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:37
+msgid ""
+"Manual: you switch the channel yourself, automation keeps its hands off."
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:67
+msgid ""
+"Master switch. When off, no rule ever switches a channel — manual control "
+"keeps working."
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:98
+msgid "Minimum switch interval"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:23
+msgid "Name this channel after what is plugged into it. Saved automatically."
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:26
+msgid "OFF"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:26
+msgid "ON"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:56
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:64
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:72
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:80
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:88
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:97
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:123
+msgid "Off"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:55
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:63
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:71
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:79
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:87
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:98
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:122
+msgid "On"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:123
+msgid "On plugin startup"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:104
+msgid ""
+"Optional temperature rule: switches the channel when the sensor crosses the "
+"threshold (with hysteresis). How it combines with the state matrix is a "
+"global setting."
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:7
+msgid "Panda Branch Plus"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:14
+msgid "Panda disconnected — channels are holding their last state."
+msgstr ""
+
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:245
+#, python-format
+msgid "Panda found — %(count)d channels."
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:8
+msgid "Panda host / IP"
+msgstr ""
+
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:254
+msgid "Panda not reachable at this address."
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:77
+msgid "Paused"
+msgstr ""
+
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:252
+msgid "Please enter a host / IP first."
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:61
+msgid "Preparing"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:69
+msgid "Printing"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:107
+msgid ""
+"Rate limit per channel: automation will not switch the same channel again "
+"within this interval."
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:31
+msgid "Reconnect delay (min / max)"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:129
+msgid "Restore manual channels, then apply rules"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:110
+msgid "Safety"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:118
+msgid ""
+"Shows a confirmation dialog before a manual switch-on of an MX3.0 24V "
+"channel — that is where heaters and pumps live."
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:128
+msgid "Switch everything off first, then apply rules"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:45
+msgid "Switch off"
+msgstr ""
+
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:220
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:45
+msgid "Switch on"
+msgstr ""
+
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:213
+msgid "Switch on 24V channel?"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:44
+msgid "Switch the channel now. In auto mode the rules may switch it back."
+msgstr ""
+
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:200
+msgid "Switching failed"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:85
+msgid "Temperature hysteresis"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:107
+msgid "Temperature rule"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:76
+msgid "Temperature rule overrides the matrix"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:54
+msgid "Test connection"
+msgstr ""
+
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:266
+msgid "Test failed — see the OctoPrint log."
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:13
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:15
+msgid ""
+"The IP or hostname of the Panda Branch Plus itself (not the printer). Enter "
+"it manually — there is no auto-detect."
+msgstr ""
+
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:215
+#, python-format
+msgid ""
+"This switches on \"%(label)s\" (%(type)s). Make sure the connected device is"
+" safe to power."
+msgstr ""
+
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:253
+msgid "Timeout — host did not answer."
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:112
+msgid "Tool"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:143
+msgid ""
+"Verbose plugin log (rule evaluations, reconnects). Find it under Settings → "
+"Logging → octoprint.plugins.pandabranchplus."
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:19
+msgid "WebSocket port / path"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:132
+msgid ""
+"What happens to the channels when the plugin first connects to the Panda "
+"after OctoPrint starts."
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:81
+msgid ""
+"What happens when a channel has both a state rule and a temperature rule. "
+"Override: while the temperature rule is active it wins; otherwise the matrix"
+" decides."
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:93
+msgid ""
+"What the channel falls back to when OctoPrint shuts down. Hold keeps the "
+"current state."
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:115
+msgid "above"
+msgstr ""
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:41
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:105
+msgid "seconds"
+msgstr ""
