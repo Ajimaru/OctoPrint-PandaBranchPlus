@@ -1,0 +1,155 @@
+{# Panda Branch Plus — settings dialog.
+   Connection / Automation / Safety / Diagnostics, per the design in
+   .ideas/channel-automation-plan.md. Help texts use (?) title tooltips. #}
+<div id="settings_plugin_pandabranchplus">
+    <form class="form-horizontal">
+        <h4>{{ _("Connection") }}</h4>
+        <div class="control-group">
+            <label class="control-label">{{ _("Panda host / IP") }}</label>
+            <div class="controls">
+                <input type="text"
+                       class="input-medium"
+                       data-bind="value: settings.plugins.pandabranchplus.host"
+                       title="{{ _('The IP or hostname of the Panda Branch Plus itself (not the printer). Enter it manually — there is no auto-detect.') }}" />
+                <span class="pbp-help"
+                      title="{{ _('The IP or hostname of the Panda Branch Plus itself (not the printer). Enter it manually — there is no auto-detect.') }}">(?)</span>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">{{ _("WebSocket port / path") }}</label>
+            <div class="controls">
+                <input type="number"
+                       class="input-mini"
+                       data-bind="value: settings.plugins.pandabranchplus.ws_port" />
+                <input type="text"
+                       class="input-small"
+                       data-bind="value: settings.plugins.pandabranchplus.ws_path" />
+                <span class="help-inline">{{ _("Advanced — only if firmware differs.") }}</span>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">{{ _("Reconnect delay (min / max)") }}</label>
+            <div class="controls">
+                <input type="number"
+                       class="input-mini"
+                       min="1"
+                       data-bind="value: settings.plugins.pandabranchplus.reconnect_min" />
+                <input type="number"
+                       class="input-mini"
+                       min="1"
+                       data-bind="value: settings.plugins.pandabranchplus.reconnect_max" />
+                {{ _("seconds") }}
+                <span class="pbp-help"
+                      title="{{ _('Backoff window between reconnect attempts when the Panda is unreachable. The delay doubles from min to max.') }}">(?)</span>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <button type="button"
+                        class="btn"
+                        data-bind="click: testConnection, enable: !testing()">
+                    <i class="fa fa-spinner fa-spin"
+                       data-bind="visible: testing"
+                       style="display: none"></i>
+                    {{ _("Test connection") }}
+                </button>
+                <span class="help-inline" data-bind="text: testResult, css: testResultCss"></span>
+            </div>
+        </div>
+        <h4>{{ _("Automation") }}</h4>
+        <div class="control-group">
+            <div class="controls">
+                <label class="checkbox">
+                    <input type="checkbox"
+                           data-bind="checked: settings.plugins.pandabranchplus.automation_enabled" />
+                    {{ _("Automation enabled") }}
+                    <span class="pbp-help"
+                          title="{{ _('Master switch. When off, no rule ever switches a channel — manual control keeps working.') }}">(?)</span>
+                </label>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">{{ _("Combine state and temperature rule") }}</label>
+            <div class="controls">
+                <select class="pbp-select-auto"
+                        data-bind="value: settings.plugins.pandabranchplus.combine_logic">
+                    <option value="temp_override">{{ _("Temperature rule overrides the matrix") }}</option>
+                    <option value="and">{{ _("Both must say on (AND)") }}</option>
+                    <option value="or">{{ _("Either may say on (OR)") }}</option>
+                </select>
+                <span class="pbp-help"
+                      title="{{ _('What happens when a channel has both a state rule and a temperature rule. Override: while the temperature rule is active it wins; otherwise the matrix decides.') }}">(?)</span>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">{{ _("Temperature hysteresis") }}</label>
+            <div class="controls">
+                <input type="number"
+                       class="input-mini"
+                       min="0"
+                       step="1"
+                       data-bind="value: settings.plugins.pandabranchplus.temp_hysteresis" />
+                &deg;C
+                <span class="pbp-help"
+                      title="{{ _('Dead band below the threshold before a temperature rule releases — prevents rapid on/off flapping around the threshold.') }}">(?)</span>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">{{ _("Minimum switch interval") }}</label>
+            <div class="controls">
+                <input type="number"
+                       class="input-mini"
+                       min="0"
+                       step="1"
+                       data-bind="value: settings.plugins.pandabranchplus.min_switch_interval" />
+                {{ _("seconds") }}
+                <span class="pbp-help"
+                      title="{{ _('Rate limit per channel: automation will not switch the same channel again within this interval.') }}">(?)</span>
+            </div>
+        </div>
+        <h4>{{ _("Safety") }}</h4>
+        <div class="control-group">
+            <div class="controls">
+                <label class="checkbox">
+                    <input type="checkbox"
+                           data-bind="checked: settings.plugins.pandabranchplus.confirm_high_power" />
+                    {{ _("Confirm before manually switching on 24V channels") }}
+                    <span class="pbp-help"
+                          title="{{ _('Shows a confirmation dialog before a manual switch-on of an MX3.0 24V channel — that is where heaters and pumps live.') }}">(?)</span>
+                </label>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">{{ _("On plugin startup") }}</label>
+            <div class="controls">
+                <select class="pbp-select-auto"
+                        data-bind="value: settings.plugins.pandabranchplus.startup_behaviour">
+                    <option value="leave">{{ _("Apply rules (leave manual channels alone)") }}</option>
+                    <option value="all_off">{{ _("Switch everything off first, then apply rules") }}</option>
+                    <option value="restore">{{ _("Restore manual channels, then apply rules") }}</option>
+                </select>
+                <span class="pbp-help"
+                      title="{{ _('What happens to the channels when the plugin first connects to the Panda after OctoPrint starts.') }}">(?)</span>
+            </div>
+        </div>
+        <h4>{{ _("Diagnostics") }}</h4>
+        <div class="control-group">
+            <div class="controls">
+                <label class="checkbox">
+                    <input type="checkbox"
+                           data-bind="checked: settings.plugins.pandabranchplus.debug_logging" />
+                    {{ _("Debug logging") }}
+                    <span class="pbp-help"
+                          title="{{ _('Verbose plugin log (rule evaluations, reconnects). Find it under Settings → Logging → octoprint.plugins.pandabranchplus.') }}">(?)</span>
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox"
+                           data-bind="checked: settings.plugins.pandabranchplus.frame_log" />
+                    {{ _("Log raw WebSocket frames") }}
+                    <span class="pbp-help"
+                          title="{{ _('Logs every frame exchanged with the Panda at debug level. Only for protocol diagnostics — noisy.') }}">(?)</span>
+                </label>
+            </div>
+        </div>
+    </form>
+</div>

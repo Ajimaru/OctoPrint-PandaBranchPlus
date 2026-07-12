@@ -1,0 +1,422 @@
+# German translations for PROJECT.
+# Copyright (C) 2026 The OctoPrint Project
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: i18n@octoprint.org\n"
+"POT-Creation-Date: 2026-07-12 13:32+0200\n"
+"PO-Revision-Date: 2026-07-12 13:32+0200\n"
+"Last-Translator: Ajimaru <ajimaru_gdr@pm.me>\n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: build/lib/octoprint_pandabranchplus/static/js/pandabranchplus.js:102
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:169
+msgid "Switching failed"
+msgstr "Schalten fehlgeschlagen"
+
+#: build/lib/octoprint_pandabranchplus/static/js/pandabranchplus.js:129
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:212
+#, python-format
+msgid "Panda found — %(count)d channels."
+msgstr "Panda gefunden — %(count)d Kanäle."
+
+#: build/lib/octoprint_pandabranchplus/static/js/pandabranchplus.js:136
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:219
+msgid "Please enter a host / IP first."
+msgstr "Bitte zuerst Host / IP eingeben."
+
+#: build/lib/octoprint_pandabranchplus/static/js/pandabranchplus.js:137
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:220
+msgid "Timeout — host did not answer."
+msgstr "Timeout — Host hat nicht geantwortet."
+
+#: build/lib/octoprint_pandabranchplus/static/js/pandabranchplus.js:138
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:221
+msgid "Panda not reachable at this address."
+msgstr "Panda unter dieser Adresse nicht erreichbar."
+
+#: build/lib/octoprint_pandabranchplus/static/js/pandabranchplus.js:145
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:228
+msgid "Test failed — see the OctoPrint log."
+msgstr "Test fehlgeschlagen — siehe OctoPrint-Log."
+
+#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:7
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:6
+msgid "Connection"
+msgstr "Verbindung"
+
+#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:10
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:9
+msgid "Panda host / IP"
+msgstr "Panda-Host / IP"
+
+#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:14
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:13
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:14
+msgid ""
+"The IP or hostname of the Panda Branch Plus itself (not the printer). Enter "
+"it manually — there is no auto-detect."
+msgstr ""
+"IP oder Hostname des Panda Branch Plus selbst (nicht des Druckers). Manuell "
+"eintragen — es gibt keine automatische Erkennung."
+
+#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:19
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:19
+msgid "WebSocket port / path"
+msgstr "WebSocket-Port / -Pfad"
+
+#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:25
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:25
+msgid "Advanced — only if firmware differs."
+msgstr "Fortgeschritten — nur falls die Firmware abweicht."
+
+#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:34
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:46
+msgid "Test connection"
+msgstr "Verbindung testen"
+
+#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:40
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:52
+msgid "Automation"
+msgstr "Automatik"
+
+#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:46
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:59
+msgid "Automation enabled"
+msgstr "Automatik aktiviert"
+
+#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:7
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:7
+msgid "Panda Branch Plus"
+msgstr "Panda Branch Plus"
+
+#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:9
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:9
+msgid ""
+"Assign a function to each of the 10 power channels and automate them based "
+"on the printer state."
+msgstr ""
+"Belege jeden der 10 Stromkanäle mit einer Funktion und automatisiere sie "
+"anhand des Druckerzustands."
+
+#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:14
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:14
+msgid "Panda disconnected — channels are holding their last state."
+msgstr "Panda getrennt — die Kanäle behalten ihren letzten Zustand."
+
+#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:24
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:27
+msgid "ON"
+msgstr "AN"
+
+#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:24
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:27
+msgid "OFF"
+msgstr "AUS"
+
+#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:28
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:42
+msgid "Switch off"
+msgstr "Ausschalten"
+
+#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:28
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:187
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:42
+msgid "Switch on"
+msgstr "Einschalten"
+
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:182
+msgid "Switch on 24V channel?"
+msgstr "24V-Kanal einschalten?"
+
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:184
+#, python-format
+msgid ""
+"This switches on \"%(label)s\" (%(type)s). Make sure the connected device is"
+" safe to power."
+msgstr ""
+"Dies schaltet „%(label)s\" (%(type)s) ein. Stelle sicher, dass das "
+"angeschlossene Gerät gefahrlos eingeschaltet werden kann."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:30
+msgid "Reconnect delay (min / max)"
+msgstr "Reconnect-Verzögerung (min / max)"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:36
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:93
+msgid "seconds"
+msgstr "Sekunden"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:37
+msgid ""
+"Backoff window between reconnect attempts when the Panda is unreachable. The"
+" delay doubles from min to max."
+msgstr ""
+"Wartefenster zwischen Reconnect-Versuchen, wenn der Panda nicht erreichbar "
+"ist. Die Verzögerung verdoppelt sich von min bis max."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:60
+msgid ""
+"Master switch. When off, no rule ever switches a channel — manual control "
+"keeps working."
+msgstr ""
+"Hauptschalter. Wenn aus, schaltet keine Regel jemals einen Kanal — manuelles"
+" Schalten funktioniert weiter."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:66
+msgid "Combine state and temperature rule"
+msgstr "Zustands- und Temperaturregel kombinieren"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:70
+msgid "Temperature rule overrides the matrix"
+msgstr "Temperaturregel übersteuert die Matrix"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:71
+msgid "Both must say on (AND)"
+msgstr "Beide müssen „an\" sagen (UND)"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:72
+msgid "Either may say on (OR)"
+msgstr "Eine von beiden genügt (ODER)"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:74
+msgid ""
+"What happens when a channel has both a state rule and a temperature rule. "
+"Override: while the temperature rule is active it wins; otherwise the matrix"
+" decides."
+msgstr ""
+"Was passiert, wenn ein Kanal sowohl eine Zustands- als auch eine "
+"Temperaturregel hat. Übersteuern: solange die Temperaturregel aktiv ist, "
+"gewinnt sie; sonst entscheidet die Matrix."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:79
+msgid "Temperature hysteresis"
+msgstr "Temperatur-Hysterese"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:84
+msgid ""
+"Dead band below the threshold before a temperature rule releases — prevents "
+"rapid on/off flapping around the threshold."
+msgstr ""
+"Totband unterhalb der Schwelle, bevor eine Temperaturregel wieder loslässt —"
+" verhindert schnelles An/Aus-Flattern um die Schwelle."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:89
+msgid "Minimum switch interval"
+msgstr "Minimales Schaltintervall"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:94
+msgid ""
+"Rate limit per channel: automation will not switch the same channel again "
+"within this interval."
+msgstr ""
+"Ratenbegrenzung pro Kanal: Die Automatik schaltet denselben Kanal innerhalb "
+"dieses Intervalls nicht erneut."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:98
+msgid "Safety"
+msgstr "Sicherheit"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:105
+msgid "Confirm before manually switching on 24V channels"
+msgstr "Vor dem manuellen Einschalten von 24V-Kanälen nachfragen"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:106
+msgid ""
+"Shows a confirmation dialog before a manual switch-on of an MX3.0 24V "
+"channel — that is where heaters and pumps live."
+msgstr ""
+"Zeigt eine Bestätigung vor dem manuellen Einschalten eines MX3.0-24V-Kanals "
+"— dort hängen Heizungen und Pumpen."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:112
+msgid "On plugin startup"
+msgstr "Beim Plugin-Start"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:116
+msgid "Apply rules (leave manual channels alone)"
+msgstr "Regeln anwenden (manuelle Kanäle nicht anfassen)"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:117
+msgid "Switch everything off first, then apply rules"
+msgstr "Erst alles ausschalten, dann Regeln anwenden"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:118
+msgid "Restore manual channels, then apply rules"
+msgstr "Manuelle Kanäle wiederherstellen, dann Regeln anwenden"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:120
+msgid ""
+"What happens to the channels when the plugin first connects to the Panda "
+"after OctoPrint starts."
+msgstr ""
+"Was mit den Kanälen passiert, wenn sich das Plugin nach dem OctoPrint-Start "
+"zum ersten Mal mit dem Panda verbindet."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:124
+msgid "Diagnostics"
+msgstr "Diagnose"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:131
+msgid "Debug logging"
+msgstr "Debug-Protokollierung"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:132
+msgid ""
+"Verbose plugin log (rule evaluations, reconnects). Find it under Settings → "
+"Logging → octoprint.plugins.pandabranchplus."
+msgstr ""
+"Ausführliches Plugin-Log (Regelauswertungen, Reconnects). Zu finden unter "
+"Einstellungen → Logging → octoprint.plugins.pandabranchplus."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:137
+msgid "Log raw WebSocket frames"
+msgstr "Rohe WebSocket-Frames protokollieren"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:138
+msgid ""
+"Logs every frame exchanged with the Panda at debug level. Only for protocol "
+"diagnostics — noisy."
+msgstr ""
+"Protokolliert jeden mit dem Panda ausgetauschten Frame auf Debug-Level. Nur "
+"für Protokoll-Diagnose — sehr gesprächig."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:24
+msgid "Name this channel after what is plugged into it. Saved automatically."
+msgstr ""
+"Benenne den Kanal nach dem, was angeschlossen ist. Wird automatisch "
+"gespeichert."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:31
+msgid "Automation: the channel follows the state matrix below."
+msgstr "Automatik: Der Kanal folgt der Zustands-Matrix unten."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:33
+msgid "Auto"
+msgstr "Auto"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:35
+msgid ""
+"Manual: you switch the channel yourself, automation keeps its hands off."
+msgstr ""
+"Manuell: Du schaltest den Kanal selbst, die Automatik fasst ihn nicht an."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:37
+msgid "Manual"
+msgstr "Manuell"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:40
+msgid "Switch the channel now. In auto mode the rules may switch it back."
+msgstr ""
+"Kanal jetzt schalten. Im Auto-Modus können die Regeln ihn zurückschalten."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:48
+msgid ""
+"For each printer state: switch the channel on, off, or leave it as it is "
+"(ignore)."
+msgstr ""
+"Pro Druckerzustand: Kanal einschalten, ausschalten oder so lassen, wie er "
+"ist (ignorieren)."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:50
+msgid "Idle"
+msgstr "Leerlauf"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:52
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:60
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:68
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:76
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:84
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:95
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:118
+msgid "On"
+msgstr "An"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:53
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:61
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:69
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:77
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:85
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:94
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:119
+msgid "Off"
+msgstr "Aus"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:54
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:62
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:70
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:78
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:86
+msgid "Ignore"
+msgstr "Ignorieren"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:58
+msgid "Preparing"
+msgstr "Vorbereiten"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:66
+msgid "Printing"
+msgstr "Drucken"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:74
+msgid "Paused"
+msgstr "Pausiert"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:82
+msgid "Error"
+msgstr "Fehler"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:90
+msgid ""
+"What the channel falls back to when OctoPrint shuts down. Hold keeps the "
+"current state."
+msgstr ""
+"Worauf der Kanal zurückfällt, wenn OctoPrint herunterfährt. „Halten\" behält"
+" den aktuellen Zustand."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:91
+msgid "Failsafe"
+msgstr "Failsafe"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:96
+msgid "Hold"
+msgstr "Halten"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:102
+msgid ""
+"Optional temperature rule: switches the channel when the sensor crosses the "
+"threshold (with hysteresis). How it combines with the state matrix is a "
+"global setting."
+msgstr ""
+"Optionale Temperaturregel: schaltet den Kanal, wenn der Sensor die Schwelle "
+"überschreitet (mit Hysterese). Wie sie mit der Zustands-Matrix kombiniert "
+"wird, ist eine globale Einstellung."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:105
+msgid "Temperature rule"
+msgstr "Temperaturregel"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:109
+msgid "Bed"
+msgstr "Bett"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:110
+msgid "Tool"
+msgstr "Düse"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:111
+msgid "Chamber"
+msgstr "Kammer"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:113
+msgid "above"
+msgstr "über"

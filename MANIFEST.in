@@ -1,0 +1,4 @@
+include README.md
+recursive-include octoprint_pandabranchplus/templates *
+recursive-include octoprint_pandabranchplus/translations *
+recursive-include octoprint_pandabranchplus/static *

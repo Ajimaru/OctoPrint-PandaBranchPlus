@@ -1,0 +1,96 @@
+site_name: OctoPrint-PandaBranchPlus (Developer Docs)
+site_description: >-
+  Channel automation for the BIQU Panda Branch Plus power hub in OctoPrint —
+  developer and API documentation.
+site_url: https://ajimaru.github.io/OctoPrint-PandaBranchPlus/
+repo_url: https://github.com/Ajimaru/OctoPrint-PandaBranchPlus
+repo_name: Ajimaru/OctoPrint-PandaBranchPlus
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  icon:
+    logo: material/power-plug
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - content.tabs.link
+    - search.highlight
+    - search.suggest
+  palette:
+    - scheme: default
+      primary: red
+      accent: red
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths: [.]
+          options:
+            show_source: true
+            show_root_heading: true
+            show_root_full_path: false
+            docstring_style: google
+            merge_init_into_class: true
+            separate_signature: true
+            show_signature_annotations: true
+            filters:
+              - "!^_"
+
+nav:
+  - Overview: index.md
+  - Getting started: getting-started.md
+  - Architecture:
+      - Overview: architecture/overview.md
+      - WebSocket client: architecture/ws-client.md
+      - Rule engine: architecture/rule-engine.md
+      - OctoPrint integration: architecture/octoprint-integration.md
+      - Settings: architecture/settings.md
+  - API:
+      - Python: api/python.md
+      - JavaScript: api/javascript.md
+  - Frontend:
+      - Tab and settings UI: frontend/ui.md
+      - Internationalization: frontend/i18n.md
+  - Security: security.md
+  - Development:
+      - Contributing: development/contributing.md
+      - Testing: development/testing.md
+      - Building the docs: development/docs.md
+      - Release process: development/release-process.md
+  - Reference:
+      - Configuration: reference/configuration.md
+      - HTTP API: reference/http-api.md
+      - Panda WS protocol: reference/panda-ws-protocol.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Ajimaru/OctoPrint-PandaBranchPlus

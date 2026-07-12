@@ -1,0 +1,107 @@
+// Panda Branch Plus — tab styles.
+// Build to ../css/pandabranchplus.css (see Taskfile). The generated CSS is
+// committed so the plugin renders without a build step during development.
+
+#tab_plugin_pandabranchplus {
+    .pbp-channel {
+        padding: 10px 12px;
+        margin-bottom: 10px;
+        border: 1px solid rgba(128, 128, 128, 0.35);
+        border-radius: 6px;
+    }
+
+    .pbp-head {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .pbp-id {
+        font-family: monospace;
+        font-size: 11px;
+        color: #888;
+        min-width: 44px;
+    }
+
+    .pbp-badge {
+        font-size: 11px;
+        font-weight: bold;
+        text-transform: uppercase;
+        white-space: nowrap;
+        padding: 2px 6px;
+        border-radius: 4px;
+        background: rgba(192, 57, 47, 0.15);
+        color: #c0392f;
+    }
+
+    .pbp-label {
+        flex: 1;
+        min-width: 120px;
+        max-width: 260px;
+        margin-bottom: 0;
+    }
+
+    .pbp-state {
+        font-weight: bold;
+        min-width: 30px;
+
+        &.on { color: #2f9e5f; }
+        &.off { color: #8a939b; }
+    }
+
+    .pbp-body {
+        margin-top: 8px;
+        padding-top: 8px;
+        border-top: 1px dashed rgba(128, 128, 128, 0.3);
+    }
+
+    .pbp-matrix {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .pbp-matrix-cell {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            color: #888;
+            margin-bottom: 2px;
+        }
+
+        select {
+            margin-bottom: 0;
+            width: 90px;
+        }
+    }
+
+    .pbp-temp {
+        margin-top: 8px;
+
+        select,
+        input {
+            margin-bottom: 0;
+        }
+    }
+}
+
+#tab_plugin_pandabranchplus,
+#settings_plugin_pandabranchplus {
+    .pbp-help {
+        cursor: help;
+        color: #888;
+        font-size: 11px;
+    }
+
+    // Selects whose option texts outgrow the fixed Bootstrap input widths
+    // (translations make them even longer): size to the longest option.
+    select.pbp-select-auto {
+        width: auto;
+        max-width: 100%;
+    }
+}

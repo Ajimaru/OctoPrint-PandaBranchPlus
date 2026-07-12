@@ -1,0 +1,28 @@
+## Global owner
+
+* @Ajimaru
+
+## Core plugin
+
+octoprint_pandabranchplus/__init__.py @Ajimaru
+octoprint_pandabranchplus/panda_ws.py @Ajimaru
+octoprint_pandabranchplus/hardware.py @Ajimaru
+
+## Frontend
+
+octoprint_pandabranchplus/static/ @Ajimaru
+octoprint_pandabranchplus/templates/ @Ajimaru
+
+## Project / community docs
+
+README.md @Ajimaru
+CONTRIBUTING.md @Ajimaru
+SECURITY.md @Ajimaru
+CODE_OF_CONDUCT.md @Ajimaru
+AUTHORS.md @Ajimaru
+
+## Build & CI
+
+setup.py @Ajimaru
+pyproject.toml @Ajimaru
+.github/ @Ajimaru
