@@ -18,281 +18,14 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.18.0\n"
 
-#: build/lib/octoprint_pandabranchplus/static/js/pandabranchplus.js:200
-#: octoprint_pandabranchplus/static/js/pandabranchplus.js:200
-msgid "Switching failed"
-msgstr "Schalten fehlgeschlagen"
-
-#: build/lib/octoprint_pandabranchplus/static/js/pandabranchplus.js:213
-#: octoprint_pandabranchplus/static/js/pandabranchplus.js:213
-msgid "Switch on 24V channel?"
-msgstr "24V-Kanal einschalten?"
-
-#: build/lib/octoprint_pandabranchplus/static/js/pandabranchplus.js:215
-#: octoprint_pandabranchplus/static/js/pandabranchplus.js:215
-#, python-format
-msgid ""
-"This switches on \"%(label)s\" (%(type)s). Make sure the connected device is"
-" safe to power."
-msgstr ""
-"Dies schaltet „%(label)s\" (%(type)s) ein. Stelle sicher, dass das "
-"angeschlossene Gerät gefahrlos eingeschaltet werden kann."
-
-#: build/lib/octoprint_pandabranchplus/static/js/pandabranchplus.js:220
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:45
-#: octoprint_pandabranchplus/static/js/pandabranchplus.js:220
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:45
-msgid "Switch on"
-msgstr "Einschalten"
-
-#: build/lib/octoprint_pandabranchplus/static/js/pandabranchplus.js:245
-#: octoprint_pandabranchplus/static/js/pandabranchplus.js:245
-#, python-format
-msgid "Panda found — %(count)d channels."
-msgstr "Panda gefunden — %(count)d Kanäle."
-
-#: build/lib/octoprint_pandabranchplus/static/js/pandabranchplus.js:252
-#: octoprint_pandabranchplus/static/js/pandabranchplus.js:252
-msgid "Please enter a host / IP first."
-msgstr "Bitte zuerst Host / IP eingeben."
-
-#: build/lib/octoprint_pandabranchplus/static/js/pandabranchplus.js:253
-#: octoprint_pandabranchplus/static/js/pandabranchplus.js:253
-msgid "Timeout — host did not answer."
-msgstr "Timeout — Host hat nicht geantwortet."
-
-#: build/lib/octoprint_pandabranchplus/static/js/pandabranchplus.js:254
-#: octoprint_pandabranchplus/static/js/pandabranchplus.js:254
-msgid "Panda not reachable at this address."
-msgstr "Panda unter dieser Adresse nicht erreichbar."
-
-#: build/lib/octoprint_pandabranchplus/static/js/pandabranchplus.js:266
-#: octoprint_pandabranchplus/static/js/pandabranchplus.js:266
-msgid "Test failed — see the OctoPrint log."
-msgstr "Test fehlgeschlagen — siehe OctoPrint-Log."
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:6
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:6
-msgid "Connection"
-msgstr "Verbindung"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:8
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:8
-msgid "Panda host / IP"
-msgstr "Panda-Host / IP"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:13
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:15
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:13
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:15
-msgid ""
-"The IP or hostname of the Panda Branch Plus itself (not the printer). Enter "
-"it manually — there is no auto-detect."
-msgstr ""
-"IP oder Hostname des Panda Branch Plus selbst (nicht des Druckers). Manuell "
-"eintragen — es gibt keine automatische Erkennung."
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:19
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:19
-msgid "WebSocket port / path"
-msgstr "WebSocket-Port / -Pfad"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:27
 #: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:27
 msgid "Advanced — only if firmware differs."
 msgstr "Fortgeschritten — nur falls die Firmware abweicht."
 
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:31
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:31
-msgid "Reconnect delay (min / max)"
-msgstr "Reconnect-Verzögerung (min / max)"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:41
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:105
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:41
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:105
-msgid "seconds"
-msgstr "Sekunden"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:43
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:43
-msgid ""
-"Backoff window between reconnect attempts when the Panda is unreachable. The"
-" delay doubles from min to max."
-msgstr ""
-"Wartefenster zwischen Reconnect-Versuchen, wenn der Panda nicht erreichbar "
-"ist. Die Verzögerung verdoppelt sich von min bis max."
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:54
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:54
-msgid "Test connection"
-msgstr "Verbindung testen"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:59
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:59
-msgid "Automation"
-msgstr "Automatik"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:65
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:65
-msgid "Automation enabled"
-msgstr "Automatik aktiviert"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:67
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:67
-msgid ""
-"Master switch. When off, no rule ever switches a channel — manual control "
-"keeps working."
-msgstr ""
-"Hauptschalter. Wenn aus, schaltet keine Regel jemals einen Kanal — manuelles"
-" Schalten funktioniert weiter."
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:72
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:72
-msgid "Combine state and temperature rule"
-msgstr "Zustands- und Temperaturregel kombinieren"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:76
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:76
-msgid "Temperature rule overrides the matrix"
-msgstr "Temperaturregel übersteuert die Matrix"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:77
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:77
-msgid "Both must say on (AND)"
-msgstr "Beide müssen „an\" sagen (UND)"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:78
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:78
-msgid "Either may say on (OR)"
-msgstr "Eine von beiden genügt (ODER)"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:81
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:81
-msgid ""
-"What happens when a channel has both a state rule and a temperature rule. "
-"Override: while the temperature rule is active it wins; otherwise the matrix"
-" decides."
-msgstr ""
-"Was passiert, wenn ein Kanal sowohl eine Zustands- als auch eine "
-"Temperaturregel hat. Übersteuern: solange die Temperaturregel aktiv ist, "
-"gewinnt sie; sonst entscheidet die Matrix."
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:85
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:85
-msgid "Temperature hysteresis"
-msgstr "Temperatur-Hysterese"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:94
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:94
-msgid ""
-"Dead band below the threshold before a temperature rule releases — prevents "
-"rapid on/off flapping around the threshold."
-msgstr ""
-"Totband unterhalb der Schwelle, bevor eine Temperaturregel wieder loslässt —"
-" verhindert schnelles An/Aus-Flattern um die Schwelle."
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:98
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:98
-msgid "Minimum switch interval"
-msgstr "Minimales Schaltintervall"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:107
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:107
-msgid ""
-"Rate limit per channel: automation will not switch the same channel again "
-"within this interval."
-msgstr ""
-"Ratenbegrenzung pro Kanal: Die Automatik schaltet denselben Kanal innerhalb "
-"dieses Intervalls nicht erneut."
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:110
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:110
-msgid "Safety"
-msgstr "Sicherheit"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:116
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:116
-msgid "Confirm before manually switching on 24V channels"
-msgstr "Vor dem manuellen Einschalten von 24V-Kanälen nachfragen"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:118
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:118
-msgid ""
-"Shows a confirmation dialog before a manual switch-on of an MX3.0 24V "
-"channel — that is where heaters and pumps live."
-msgstr ""
-"Zeigt eine Bestätigung vor dem manuellen Einschalten eines MX3.0-24V-Kanals "
-"— dort hängen Heizungen und Pumpen."
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:123
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:123
-msgid "On plugin startup"
-msgstr "Beim Plugin-Start"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:127
 #: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:127
 msgid "Apply rules (leave manual channels alone)"
 msgstr "Regeln anwenden (manuelle Kanäle nicht anfassen)"
 
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:128
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:128
-msgid "Switch everything off first, then apply rules"
-msgstr "Erst alles ausschalten, dann Regeln anwenden"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:129
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:129
-msgid "Restore manual channels, then apply rules"
-msgstr "Manuelle Kanäle wiederherstellen, dann Regeln anwenden"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:132
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:132
-msgid ""
-"What happens to the channels when the plugin first connects to the Panda "
-"after OctoPrint starts."
-msgstr ""
-"Was mit den Kanälen passiert, wenn sich das Plugin nach dem OctoPrint-Start "
-"zum ersten Mal mit dem Panda verbindet."
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:135
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:135
-msgid "Diagnostics"
-msgstr "Diagnose"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:141
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:141
-msgid "Debug logging"
-msgstr "Debug-Protokollierung"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:143
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:143
-msgid ""
-"Verbose plugin log (rule evaluations, reconnects). Find it under Settings → "
-"Logging → octoprint.plugins.pandabranchplus."
-msgstr ""
-"Ausführliches Plugin-Log (Regelauswertungen, Reconnects). Zu finden unter "
-"Einstellungen → Logging → octoprint.plugins.pandabranchplus."
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:148
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:148
-msgid "Log raw WebSocket frames"
-msgstr "Rohe WebSocket-Frames protokollieren"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:150
-#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:150
-msgid ""
-"Logs every frame exchanged with the Panda at debug level. Only for protocol "
-"diagnostics — noisy."
-msgstr ""
-"Protokolliert jeden mit dem Panda ausgetauschten Frame auf Debug-Level. Nur "
-"für Protokoll-Diagnose — sehr gesprächig."
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:7
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:7
-msgid "Panda Branch Plus"
-msgstr "Panda Branch Plus"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:9
 #: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:9
 msgid ""
 "Assign a function to each of the 10 power channels and automate them based "
@@ -301,62 +34,82 @@ msgstr ""
 "Belege jeden der 10 Stromkanäle mit einer Funktion und automatisiere sie "
 "anhand des Druckerzustands."
 
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:14
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:14
-msgid "Panda disconnected — channels are holding their last state."
-msgstr "Panda getrennt — die Kanäle behalten ihren letzten Zustand."
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:23
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:23
-msgid "Name this channel after what is plugged into it. Saved automatically."
-msgstr ""
-"Benenne den Kanal nach dem, was angeschlossen ist. Wird automatisch "
-"gespeichert."
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:26
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:26
-msgid "ON"
-msgstr "AN"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:26
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:26
-msgid "OFF"
-msgstr "AUS"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:31
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:31
-msgid "Automation: the channel follows the state matrix below."
-msgstr "Automatik: Der Kanal folgt der Zustands-Matrix unten."
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:33
 #: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:33
 msgid "Auto"
 msgstr "Auto"
 
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:37
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:37
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:59
+msgid "Automation"
+msgstr "Automatik"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:65
+msgid "Automation enabled"
+msgstr "Automatik aktiviert"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:31
+msgid "Automation: the channel follows the state matrix below."
+msgstr "Automatik: Der Kanal folgt der Zustands-Matrix unten."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:43
 msgid ""
-"Manual: you switch the channel yourself, automation keeps its hands off."
+"Backoff window between reconnect attempts when the Panda is unreachable. The"
+" delay doubles from min to max."
 msgstr ""
-"Manuell: Du schaltest den Kanal selbst, die Automatik fasst ihn nicht an."
+"Wartefenster zwischen Reconnect-Versuchen, wenn der Panda nicht erreichbar "
+"ist. Die Verzögerung verdoppelt sich von min bis max."
 
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:39
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:39
-msgid "Manual"
-msgstr "Manuell"
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:111
+msgid "Bed"
+msgstr "Bett"
 
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:44
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:44
-msgid "Switch the channel now. In auto mode the rules may switch it back."
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:77
+msgid "Both must say on (AND)"
+msgstr "Beide müssen „an\" sagen (UND)"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:113
+msgid "Chamber"
+msgstr "Kammer"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:72
+msgid "Combine state and temperature rule"
+msgstr "Zustands- und Temperaturregel kombinieren"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:116
+msgid "Confirm before manually switching on 24V channels"
+msgstr "Vor dem manuellen Einschalten von 24V-Kanälen nachfragen"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:6
+msgid "Connection"
+msgstr "Verbindung"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:94
+msgid ""
+"Dead band below the threshold before a temperature rule releases — prevents "
+"rapid on/off flapping around the threshold."
 msgstr ""
-"Kanal jetzt schalten. Im Auto-Modus können die Regeln ihn zurückschalten."
+"Totband unterhalb der Schwelle, bevor eine Temperaturregel wieder loslässt —"
+" verhindert schnelles An/Aus-Flattern um die Schwelle."
 
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:45
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:45
-msgid "Switch off"
-msgstr "Ausschalten"
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:141
+msgid "Debug logging"
+msgstr "Debug-Protokollierung"
 
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:51
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:135
+msgid "Diagnostics"
+msgstr "Diagnose"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:78
+msgid "Either may say on (OR)"
+msgstr "Eine von beiden genügt (ODER)"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:85
+msgid "Error"
+msgstr "Fehler"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:94
+msgid "Failsafe"
+msgstr "Failsafe"
+
 #: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:51
 msgid ""
 "For each printer state: switch the channel on, off, or leave it as it is "
@@ -365,35 +118,70 @@ msgstr ""
 "Pro Druckerzustand: Kanal einschalten, ausschalten oder so lassen, wie er "
 "ist (ignorieren)."
 
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:53
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:99
+msgid "Hold"
+msgstr "Halten"
+
 #: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:53
 msgid "Idle"
 msgstr "Leerlauf"
 
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:55
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:63
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:71
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:79
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:87
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:98
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:122
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:55
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:63
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:71
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:79
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:87
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:98
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:122
-msgid "On"
-msgstr "An"
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:57
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:65
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:73
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:81
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:89
+msgid "Ignore"
+msgstr "Ignorieren"
 
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:56
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:64
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:72
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:80
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:88
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:97
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:123
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:148
+msgid "Log raw WebSocket frames"
+msgstr "Rohe WebSocket-Frames protokollieren"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:150
+msgid ""
+"Logs every frame exchanged with the Panda at debug level. Only for protocol "
+"diagnostics — noisy."
+msgstr ""
+"Protokolliert jeden mit dem Panda ausgetauschten Frame auf Debug-Level. Nur "
+"für Protokoll-Diagnose — sehr gesprächig."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:39
+msgid "Manual"
+msgstr "Manuell"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:37
+msgid ""
+"Manual: you switch the channel yourself, automation keeps its hands off."
+msgstr ""
+"Manuell: Du schaltest den Kanal selbst, die Automatik fasst ihn nicht an."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:67
+msgid ""
+"Master switch. When off, no rule ever switches a channel — manual control "
+"keeps working."
+msgstr ""
+"Hauptschalter. Wenn aus, schaltet keine Regel jemals einen Kanal — manuelles"
+" Schalten funktioniert weiter."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:98
+msgid "Minimum switch interval"
+msgstr "Minimales Schaltintervall"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:23
+msgid "Name this channel after what is plugged into it. Saved automatically."
+msgstr ""
+"Benenne den Kanal nach dem, was angeschlossen ist. Wird automatisch "
+"gespeichert."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:26
+msgid "OFF"
+msgstr "AUS"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:26
+msgid "ON"
+msgstr "AN"
+
 #: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:56
 #: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:64
 #: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:72
@@ -404,59 +192,20 @@ msgstr "An"
 msgid "Off"
 msgstr "Aus"
 
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:57
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:65
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:73
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:81
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:89
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:57
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:65
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:73
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:81
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:89
-msgid "Ignore"
-msgstr "Ignorieren"
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:55
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:63
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:71
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:79
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:87
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:98
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:122
+msgid "On"
+msgstr "An"
 
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:61
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:61
-msgid "Preparing"
-msgstr "Vorbereiten"
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:123
+msgid "On plugin startup"
+msgstr "Beim Plugin-Start"
 
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:69
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:69
-msgid "Printing"
-msgstr "Drucken"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:77
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:77
-msgid "Paused"
-msgstr "Pausiert"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:85
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:85
-msgid "Error"
-msgstr "Fehler"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:93
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:93
-msgid ""
-"What the channel falls back to when OctoPrint shuts down. Hold keeps the "
-"current state."
-msgstr ""
-"Worauf der Kanal zurückfällt, wenn OctoPrint herunterfährt. „Halten\" behält"
-" den aktuellen Zustand."
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:94
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:94
-msgid "Failsafe"
-msgstr "Failsafe"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:99
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:99
-msgid "Hold"
-msgstr "Halten"
-
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:104
 #: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:104
 msgid ""
 "Optional temperature rule: switches the channel when the sensor crosses the "
@@ -467,881 +216,186 @@ msgstr ""
 "überschreitet (mit Hysterese). Wie sie mit der Zustands-Matrix kombiniert "
 "wird, ist eine globale Einstellung."
 
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:107
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:7
+msgid "Panda Branch Plus"
+msgstr "Panda Branch Plus"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:14
+msgid "Panda disconnected — channels are holding their last state."
+msgstr "Panda getrennt — die Kanäle behalten ihren letzten Zustand."
+
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:245
+#, python-format
+msgid "Panda found — %(count)d channels."
+msgstr "Panda gefunden — %(count)d Kanäle."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:8
+msgid "Panda host / IP"
+msgstr "Panda-Host / IP"
+
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:254
+msgid "Panda not reachable at this address."
+msgstr "Panda unter dieser Adresse nicht erreichbar."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:77
+msgid "Paused"
+msgstr "Pausiert"
+
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:252
+msgid "Please enter a host / IP first."
+msgstr "Bitte zuerst Host / IP eingeben."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:61
+msgid "Preparing"
+msgstr "Vorbereiten"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:69
+msgid "Printing"
+msgstr "Drucken"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:107
+msgid ""
+"Rate limit per channel: automation will not switch the same channel again "
+"within this interval."
+msgstr ""
+"Ratenbegrenzung pro Kanal: Die Automatik schaltet denselben Kanal innerhalb "
+"dieses Intervalls nicht erneut."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:31
+msgid "Reconnect delay (min / max)"
+msgstr "Reconnect-Verzögerung (min / max)"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:129
+msgid "Restore manual channels, then apply rules"
+msgstr "Manuelle Kanäle wiederherstellen, dann Regeln anwenden"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:110
+msgid "Safety"
+msgstr "Sicherheit"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:118
+msgid ""
+"Shows a confirmation dialog before a manual switch-on of an MX3.0 24V "
+"channel — that is where heaters and pumps live."
+msgstr ""
+"Zeigt eine Bestätigung vor dem manuellen Einschalten eines MX3.0-24V-Kanals "
+"— dort hängen Heizungen und Pumpen."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:128
+msgid "Switch everything off first, then apply rules"
+msgstr "Erst alles ausschalten, dann Regeln anwenden"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:45
+msgid "Switch off"
+msgstr "Ausschalten"
+
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:220
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:45
+msgid "Switch on"
+msgstr "Einschalten"
+
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:213
+msgid "Switch on 24V channel?"
+msgstr "24V-Kanal einschalten?"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:44
+msgid "Switch the channel now. In auto mode the rules may switch it back."
+msgstr ""
+"Kanal jetzt schalten. Im Auto-Modus können die Regeln ihn zurückschalten."
+
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:200
+msgid "Switching failed"
+msgstr "Schalten fehlgeschlagen"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:85
+msgid "Temperature hysteresis"
+msgstr "Temperatur-Hysterese"
+
 #: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:107
 msgid "Temperature rule"
 msgstr "Temperaturregel"
 
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:111
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:111
-msgid "Bed"
-msgstr "Bett"
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:76
+msgid "Temperature rule overrides the matrix"
+msgstr "Temperaturregel übersteuert die Matrix"
 
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:112
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:54
+msgid "Test connection"
+msgstr "Verbindung testen"
+
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:266
+msgid "Test failed — see the OctoPrint log."
+msgstr "Test fehlgeschlagen — siehe OctoPrint-Log."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:13
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:15
+msgid ""
+"The IP or hostname of the Panda Branch Plus itself (not the printer). Enter "
+"it manually — there is no auto-detect."
+msgstr ""
+"IP oder Hostname des Panda Branch Plus selbst (nicht des Druckers). Manuell "
+"eintragen — es gibt keine automatische Erkennung."
+
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:215
+#, python-format
+msgid ""
+"This switches on \"%(label)s\" (%(type)s). Make sure the connected device is"
+" safe to power."
+msgstr ""
+"Dies schaltet „%(label)s\" (%(type)s) ein. Stelle sicher, dass das "
+"angeschlossene Gerät gefahrlos eingeschaltet werden kann."
+
+#: octoprint_pandabranchplus/static/js/pandabranchplus.js:253
+msgid "Timeout — host did not answer."
+msgstr "Timeout — Host hat nicht geantwortet."
+
 #: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:112
 msgid "Tool"
 msgstr "Düse"
 
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:113
-#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:113
-msgid "Chamber"
-msgstr "Kammer"
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:143
+msgid ""
+"Verbose plugin log (rule evaluations, reconnects). Find it under Settings → "
+"Logging → octoprint.plugins.pandabranchplus."
+msgstr ""
+"Ausführliches Plugin-Log (Regelauswertungen, Reconnects). Zu finden unter "
+"Einstellungen → Logging → octoprint.plugins.pandabranchplus."
 
-#: build/lib/octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:115
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:19
+msgid "WebSocket port / path"
+msgstr "WebSocket-Port / -Pfad"
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:132
+msgid ""
+"What happens to the channels when the plugin first connects to the Panda "
+"after OctoPrint starts."
+msgstr ""
+"Was mit den Kanälen passiert, wenn sich das Plugin nach dem OctoPrint-Start "
+"zum ersten Mal mit dem Panda verbindet."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:81
+msgid ""
+"What happens when a channel has both a state rule and a temperature rule. "
+"Override: while the temperature rule is active it wins; otherwise the matrix"
+" decides."
+msgstr ""
+"Was passiert, wenn ein Kanal sowohl eine Zustands- als auch eine "
+"Temperaturregel hat. Übersteuern: solange die Temperaturregel aktiv ist, "
+"gewinnt sie; sonst entscheidet die Matrix."
+
+#: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:93
+msgid ""
+"What the channel falls back to when OctoPrint shuts down. Hold keeps the "
+"current state."
+msgstr ""
+"Worauf der Kanal zurückfällt, wenn OctoPrint herunterfährt. „Halten\" behält"
+" den aktuellen Zustand."
+
 #: octoprint_pandabranchplus/templates/pandabranchplus_tab.jinja2:115
 msgid "above"
 msgstr "über"
 
-#: node_modules/ajv/dist/ajv.bundle.js:229
-#: node_modules/ajv/lib/compile/formats.js:72
-#, python-brace-format
-msgid "{|}~-]+(?:.[a-z0-9!#$%&'*+/=?^_"
-msgstr ""
-
-#: node_modules/ajv/dist/ajv.min.js:2
-#, python-format
-msgid ""
-"{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/i,hostname:e,ipv4:/^(?:(?:25[0-5]|2[0-4]d|[01]?dd?).){3}(?:25[0-5]|2[0-4]d|[01]?dd?)$/,ipv6:/^s*(?:(?:(?:[0-9a-f]{1,4}:){7}(?:[0-9a-f]{1,4}|:))|(?:(?:[0-9a-f]{1,4}:){6}(?::[0-9a-f]{1,4}|(?:(?:25[0-5]|2[0-4]d|1dd|[1-9]?d)(?:.(?:25[0-5]|2[0-4]d|1dd|[1-9]?d)){3})|:))|(?:(?:[0-9a-f]{1,4}:){5}(?:(?:(?::[0-9a-f]{1,4}){1,2})|:(?:(?:25[0-5]|2[0-4]d|1dd|[1-9]?d)(?:.(?:25[0-5]|2[0-4]d|1dd|[1-9]?d)){3})|:))|(?:(?:[0-9a-f]{1,4}:){4}(?:(?:(?::[0-9a-f]{1,4}){1,3})|(?:(?::[0-9a-f]{1,4})?:(?:(?:25[0-5]|2[0-4]d|1dd|[1-9]?d)(?:.(?:25[0-5]|2[0-4]d|1dd|[1-9]?d)){3}))|:))|(?:(?:[0-9a-f]{1,4}:){3}(?:(?:(?::[0-9a-f]{1,4}){1,4})|(?:(?::[0-9a-f]{1,4}){0,2}:(?:(?:25[0-5]|2[0-4]d|1dd|[1-9]?d)(?:.(?:25[0-5]|2[0-4]d|1dd|[1-9]?d)){3}))|:))|(?:(?:[0-9a-f]{1,4}:){2}(?:(?:(?::[0-9a-f]{1,4}){1,5})|(?:(?::[0-9a-f]{1,4}){0,3}:(?:(?:25[0-5]|2[0-4]d|1dd|[1-9]?d)(?:.(?:25[0-5]|2[0-4]d|1dd|[1-9]?d)){3}))|:))|(?:(?:[0-9a-f]{1,4}:){1}(?:(?:(?::[0-9a-f]{1,4}){1,6})|(?:(?::[0-9a-f]{1,4}){0,4}:(?:(?:25[0-5]|2[0-4]d|1dd|[1-9]?d)(?:.(?:25[0-5]|2[0-4]d|1dd|[1-9]?d)){3}))|:))|(?::(?:(?:(?::[0-9a-f]{1,4}){1,7})|(?:(?::[0-9a-f]{1,4}){0,5}:(?:(?:25[0-5]|2[0-4]d|1dd|[1-9]?d)(?:.(?:25[0-5]|2[0-4]d|1dd|[1-9]?d)){3}))|:)))(?:%.+)?s*$/i,regex:E,uuid:u,\"json-pointer\":h,\"json-pointer-uri-fragment\":d,\"relative-json-pointer\":p};var y=/t|s/i;var g=//|:/;var P=/[^\\]\\Z/;function E(e){if(P.test(e))return!1;try{return new RegExp(e),!0}catch(e){return!1}}},{\"./util\":10}],5:[function(e,r,t){var $=e(\"./resolve\"),j=e(\"./util\"),D=e(\"./error_classes\"),O=e(\"fast-json-stable-stringify\"),I=e(\"../dotjs/validate\"),A=j.ucs2length,k=e(\"fast-deep-equal\"),C=D.Validation;function L(e,i,n,r){var l=this,c=this._opts,u=[void 0],h={},d=[],t={},p=[],a={},f=[];function m(e,r){return\"var pattern\"+e+\" = \"+(c.regExp?\"regExp\":\"new RegExp\")+\"(\"+j.toQuotedString(r[e])+\");\"}i=i||{schema:e,refVal:u,refs:h};var s=function(e,r,t){var a=N.call(this,e,r,t);return 0<=a?{index:a,compiling:!0}:(this._compilations[a=this._compilations.length]={schema:e,root:r,baseId:t},{index:a,compiling:!1})}.call(this,e,i,r),o=this._compilations[s.index];if(s.compiling)return o.callValidate=E;var v=this._formats,y=this.RULES;try{var g=w(e,i,n,r),P=(o.validate=g,o.callValidate);return P&&(P.schema=g.schema,P.errors=null,P.refs=g.refs,P.refVal=g.refVal,P.root=g.root,P.$async=g.$async,c.sourceCode)&&(P.source=g.source),g}finally{!function(e,r,t){e=N.call(this,e,r,t);0<=e&&this._compilations.splice(e,1)}.call(this,e,i,r)}function E(){var e=o.validate,r=e.apply(this,arguments);return E.errors=e.errors,r}function w(e,r,t,a){var s=!r||r.schema==e;if(r.schema!=i.schema)return L.call(l,e,r,t,a);t=!0===e.$async,a=I({isTop:!0,schema:e,isRoot:s,baseId:a,root:r,schemaPath:\"\",errSchemaPath:\"#\",errorPath:'\"\"',MissingRefError:D.MissingRef,RULES:y,validate:I,util:j,resolve:$,resolveRef:b,usePattern:F,useDefault:x,useCustomRule:R,opts:c,formats:v,logger:l.logger,self:l}),a=Q(u,q)+Q(d,m)+Q(p,z)+Q(f,T)+a;c.processCode&&(a=c.processCode(a,e));try{var o=new Function(\"self\",\"RULES\",\"formats\",\"root\",\"refVal\",\"defaults\",\"customRules\",\"equal\",\"ucs2length\",\"ValidationError\",\"regExp\",a)(l,y,v,i,u,p,f,k,A,C,c.regExp);u[0]=o}catch(e){throw l.logger.error(\"Error compiling schema, function code:\",a),e}return o.schema=e,o.errors=null,o.refs=h,o.refVal=u,o.root=s?o:r,t&&(o.$async=!0),!0===c.sourceCode&&(o.source={code:a,patterns:d,defaults:p}),o}function b(e,r,t){r=$.url(e,r);var a=h[r];if(void 0!==a)return _(s=u[a],o=\"refVal[\"+a+\"]\");if(!t&&i.refs){a=i.refs[r];if(void 0!==a)return _(s=i.refVal[a],o=S(r,s))}var s,o=S(r),t=$.call(l,w,i,r);if(void 0!==(t=void 0===t&&(a=n&&n[r])?$.inlineRef(a,c.inlineRefs)?a:L.call(l,a,i,n,e):t))return s=t,u[h[r]]=s,_(t,o);delete h[r]}function S(e,r){var t=u.length;return u[t]=r,\"refVal\"+(h[e]=t)}function _(e,r){return\"object\"==typeof e||\"boolean\"==typeof e?{code:r,schema:e,inline:!0}:{code:r,$async:e&&!!e.$async}}function F(e){var r=t[e];return void 0===r&&(r=t[e]=d.length,d[r]=e),\"pattern\"+r}function x(e){switch(typeof e){case\"boolean\":case\"number\":return\"\"+e;case\"string\":return j.toQuotedString(e);case\"object\":var r,t;return null===e?\"null\":(r=O(e),void 0===(t=a[r])&&(t=a[r]=p.length,p[t]=e),\"default\"+t)}}function R(e,r,t,a){if(!1!==l._opts.validateSchema){var s=e.definition.dependencies;if(s&&!s.every(function(e){return Object.prototype.hasOwnProperty.call(t,e)}))throw new Error(\"parent schema must have all required keywords: \"+s.join(\",\"));s=e.definition.validateSchema;if(s)if(!s(r)){s=\"keyword schema is invalid: \"+l.errorsText(s.errors);if(\"log\"!=l._opts.validateSchema)throw new Error(s);l.logger.error(s)}}var o,s=e.definition.compile,i=e.definition.inline,n=e.definition.macro;if(s)o=s.call(l,r,t,a);else if(n)o=n.call(l,r,t,a),!1!==c.validateSchema&&l.validateSchema(o,!0);else if(i)o=i.call(l,a,e.keyword,r,t);else if(!(o=e.definition.validate))return;if(void 0===o)throw new Error('custom keyword \"'+e.keyword+'\"failed to compile');s=f.length;return{code:\"customRule\"+s,validate:f[s]=o}}}function N(e,r,t){for(var a=0;a<this._compilations.length;a++){var s=this._compilations[a];if(s.schema==e&&s.root==r&&s.baseId==t)return a}return-1}function z(e){return\"var default\"+e+\" = defaults[\"+e+\"];\"}function q(e,r){return void 0===r[e]?\"\":\"var refVal\"+e+\" = refVal[\"+e+\"];\"}function T(e){return\"var customRule\"+e+\" = customRules[\"+e+\"];\"}function Q(e,r){if(!e.length)return\"\";for(var t=\"\",a=0;a<e.length;a++)t+=r(a,e);return t}r.exports=L},{\"../dotjs/validate\":38,\"./error_classes\":3,\"./resolve\":6,\"./util\":10,\"fast-deep-equal\":42,\"fast-json-stable-stringify\":43}],6:[function(e,r,t){var p=e(\"uri-js\"),f=e(\"fast-deep-equal\"),m=e(\"./util\"),n=e(\"./schema_obj\"),a=e(\"json-schema-traverse\");function l(e,r,t){var a,s,o,i=this._refs[t];if(\"string\"==typeof i){if(!this._refs[i])return l.call(this,e,r,i);i=this._refs[i]}return(i=i||this._schemas[t])instanceof n?d(i.schema,this._opts.inlineRefs)?i.schema:i.validate||this._compile(i):((i=c.call(this,r,t))&&(a=i.schema,r=i.root,o=i.baseId),a instanceof n?s=a.validate||e.call(this,a.schema,r,void 0,o):void 0!==a&&(s=d(a,this._opts.inlineRefs)?a:e.call(this,a,r,void 0,o)),s)}function c(e,r){var t=p.parse(r),a=y(t),s=v(this._getId(e.schema));if(0===Object.keys(e.schema).length||a!==s){var a=g(a),o=this._refs[a];if(\"string\"==typeof o)return function(e,r,t){r=c.call(this,e,r);{var a,s;if(r)return a=r.baseId,e=r.root,(s=this._getId(r=r.schema))&&(a=P(a,s)),i.call(this,t,a,r,e)}}.call(this,e,o,t);if(o instanceof n)o.validate||this._compile(o);else{if(!((o=this._schemas[a])instanceof n))return;if(o.validate||this._compile(o),a==g(r))return{schema:o,root:e,baseId:s}}if(!(e=o).schema)return;s=v(this._getId(e.schema))}return i.call(this,t,s,e.schema,e)}(r.exports=l).normalizeId=g,l.fullPath=v,l.url=P,l.ids=function(e){var r=g(this._getId(e)),c={\"\":r},u={\"\":v(r,!1)},h={},d=this;return a(e,{allKeys:!0},function(e,r,t,a,s,o,i){if(\"\"!==r){var n=d._getId(e),l=c[a],a=u[a]+\"/\"+s;if(void 0!==i&&(a+=\"/\"+(\"number\"==typeof i?i:m.escapeFragment(i))),\"string\"==typeof n){n=l=g(l?p.resolve(l,n):n),s=d._refs[n];if((s=\"string\"==typeof s?d._refs[s]:s)&&s.schema){if(!f(e,s.schema))throw new Error('id \"'+n+'\" resolves to more than one schema')}else if(n!=g(a))if(\"#\"==n[0]){if(h[n]&&!f(e,h[n]))throw new Error('id \"'+n+'\" resolves to more than one schema');h[n]=e}else d._refs[n]=a}c[r]=l,u[r]=a}}),h},l.inlineRef=d,l.schema=c;var u=m.toHash([\"properties\",\"patternProperties\",\"enum\",\"dependencies\",\"definitions\"]);function i(e,r,t,a){if(e.fragment=e.fragment||\"\",\"/\"==e.fragment.slice(0,1)){for(var s=e.fragment.split(\"/\"),o=1;o<s.length;o++){var i=s[o];if(i){if(void 0===(t=t[i=m.unescapeFragment(i)]))break;u[i]||((i=this._getId(t))&&(r=P(r,i)),t.$ref&&(i=P(r,t.$ref),i=c.call(this,a,i))&&(t=i.schema,a=i.root,r=i.baseId))}}return void 0!==t&&t!==a.schema?{schema:t,root:a,baseId:r}:void 0}}var h=m.toHash([\"type\",\"format\",\"pattern\",\"maxLength\",\"minLength\",\"maxProperties\",\"minProperties\",\"maxItems\",\"minItems\",\"maximum\",\"minimum\",\"uniqueItems\",\"multipleOf\",\"required\",\"enum\"]);function d(e,r){return!1!==r&&(void 0===r||!0===r?function e(r){var t;if(Array.isArray(r)){for(var a=0;a<r.length;a++)if(\"object\"==typeof(t=r[a])&&!e(t))return!1}else for(var s in r){if(\"$ref\"==s)return!1;if(\"object\"==typeof(t=r[s])&&!e(t))return!1}return!0}(e):r?function e(r){var t,a=0;if(Array.isArray(r)){for(var s=0;s<r.length;s++)if(\"object\"==typeof(t=r[s])&&(a+=e(t)),a==1/0)return 1/0}else for(var o in r){if(\"$ref\"==o)return 1/0;if(h[o])a++;else if(\"object\"==typeof(t=r[o])&&(a+=e(t)+1),a==1/0)return 1/0}return a}(e)<=r:void 0)}function v(e,r){return!1!==r&&(e=g(e)),y(p.parse(e))}function y(e){return p.serialize(e).split(\"#\")[0]+\"#\"}var s=/#/?$/;function g(e){return e?e.replace(s,\"\"):\"\"}function P(e,r){return r=g(r),p.resolve(e,r)}},{\"./schema_obj\":8,\"./util\":10,\"fast-deep-equal\":42,\"json-schema-traverse\":44,\"uri-js\":45}],7:[function(e,r,t){var o=e(\"../dotjs\"),i=e(\"./util\").toHash;r.exports=function(){var a=[{type:\"number\",rules:[{maximum:[\"exclusiveMaximum\"]},{minimum:[\"exclusiveMinimum\"]},\"multipleOf\",\"format\"]},{type:\"string\",rules:[\"maxLength\",\"minLength\",\"pattern\",\"format\"]},{type:\"array\",rules:[\"maxItems\",\"minItems\",\"items\",\"contains\",\"uniqueItems\"]},{type:\"object\",rules:[\"maxProperties\",\"minProperties\",\"required\",\"dependencies\",\"propertyNames\",{properties:[\"additionalProperties\",\"patternProperties\"]}]},{rules:[\"$ref\",\"const\",\"enum\",\"not\",\"anyOf\",\"oneOf\",\"allOf\",\"if\"]}],s=[\"type\",\"$comment\"];return a.all=i(s),a.types=i([\"number\",\"integer\",\"string\",\"array\",\"object\",\"boolean\",\"null\"]),a.forEach(function(e){e.rules=e.rules.map(function(e){var r,t;return\"object\"==typeof e&&(t=e[r=Object.keys(e)[0]],e=r,t.forEach(function(e){s.push(e),a.all[e]=!0})),s.push(e),a.all[e]={keyword:e,code:o[e],implements:t}}),a.all.$comment={keyword:\"$comment\",code:o.$comment},e.type&&(a.types[e.type]=e)}),a.keywords=i(s.concat([\"$schema\",\"$id\",\"id\",\"$data\",\"$async\",\"title\",\"description\",\"default\",\"definitions\",\"examples\",\"readOnly\",\"writeOnly\",\"contentMediaType\",\"contentEncoding\",\"additionalItems\",\"then\",\"else\"])),a.custom={},a}},{\"../dotjs\":27,\"./util\":10}],8:[function(e,r,t){var a=e(\"./util\");r.exports=function(e){a.copy(e,this)}},{\"./util\":10}],9:[function(e,r,t){r.exports=function(e){for(var r,t=0,a=e.length,s=0;s<a;)t++,55296<=(r=e.charCodeAt(s++))&&r<=56319&&s<a&&56320==(64512&e.charCodeAt(s))&&s++;return t}},{}],10:[function(e,r,t){function o(e,r,t,a){var s=a?\" !== \":\" === \",o=a?\" || \":\" && \",i=a?\"!\":\"\",n=a?\"\":\"!\";switch(e){case\"null\":return r+s+\"null\";case\"array\":return i+\"Array.isArray(\"+r+\")\";case\"object\":return\"(\"+i+r+o+\"typeof \"+r+s+'\"object\"'+o+n+\"Array.isArray(\"+r+\"))\";case\"integer\":return\"(typeof \"+r+s+'\"number\"'+o+n+\"(\"+r+\" % 1)\"+o+r+s+r+(t?o+i+\"isFinite(\"+r+\")\":\"\")+\")\";case\"number\":return\"(typeof \"+r+s+'\"'+e+'\"'+(t?o+i+\"isFinite(\"+r+\")\":\"\")+\")\";default:return\"typeof \"+r+s+'\"'+e+'\"'}}r.exports={copy:function(e,r){for(var t in r=r||{},e)r[t]=e[t];return r},checkDataType:o,checkDataTypes:function(e,r,t){{if(1===e.length)return o(e[0],r,t,!0);var a,s=\"\",e=n(e);for(a in e.array&&e.object&&(s=e.null?\"(\":\"(!\"+r+\" || \",s+=\"typeof \"+r+' !== \"object\")',delete e.null,delete e.array,delete e.object),e.number&&delete e.integer,e)s+=(s?\" && \":\"\")+o(a,r,t,!0);return s}},coerceToTypes:function(e,r){{if(!Array.isArray(r))return i[r]?[r]:\"array\"===e&&\"array\"===r?[\"array\"]:void 0;for(var t=[],a=0;a<r.length;a++){var s=r[a];(i[s]||\"array\"===e&&\"array\"===s)&&(t[t.length]=s)}return t.length?t:void 0}},toHash:n,getProperty:u,escapeQuotes:l,equal:e(\"fast-deep-equal\"),ucs2length:e(\"./ucs2length\"),varOccurences:function(e,r){r+=\"[^0-9]\";e=e.match(new RegExp(r,\"g\"));return e?e.length:0},varReplace:function(e,r,t){return r+=\"([^0-9])\",t=t.replace(/$/g,\"$$$$\"),e.replace(new RegExp(r,\"g\"),t+\"$1\")},schemaHasRules:function(e,r){if(\"boolean\"==typeof e)return!e;for(var t in e)if(r[t])return!0},schemaHasRulesExcept:function(e,r,t){if(\"boolean\"==typeof e)return!e&&\"not\"!=t;for(var a in e)if(a!=t&&r[a])return!0},schemaUnknownRules:function(e,r){if(\"boolean\"!=typeof e)for(var t in e)if(!r[t])return t},toQuotedString:c,getPathExpr:function(e,r,t,a){return p(e,t?\"'/' + \"+r+(a?\"\":\".replace(/~/g, '~0').replace(/\\//g, '~1')\"):a?\"'[' + \"+r+\" + ']'\":\"'[\\'' + \"+r+\" + '\\']'\")},getPath:function(e,r,t){t=c(t?\"/\"+f(r):u(r));return p(e,t)},getData:function(e,r,t){var a,s,o;if(\"\"===e)return\"rootData\";if(\"/\"==e[0]){if(!h.test(e))throw new Error(\"Invalid JSON-pointer: \"+e);a=e,s=\"rootData\"}else{if(!(o=e.match(d)))throw new Error(\"Invalid JSON-pointer: \"+e);if(e=+o[1],\"#\"==(a=o[2])){if(r<=e)throw new Error(\"Cannot access property/index \"+e+\" levels up, current level is \"+r);return t[r-e]}if(r<e)throw new Error(\"Cannot access data \"+e+\" levels up, current level is \"+r);if(s=\"data\"+(r-e||\"\"),!a)return s}for(var i=s,n=a.split(\"/\"),l=0;l<n.length;l++){var c=n[l];c&&(s+=u(m(c)),i+=\" && \"+s)}return i},unescapeFragment:function(e){return m(decodeURIComponent(e))},unescapeJsonPointer:m,escapeFragment:function(e){return encodeURIComponent(f(e))},escapeJsonPointer:f};var i=n([\"string\",\"number\",\"integer\",\"boolean\",\"null\"]);function n(e){for(var r={},t=0;t<e.length;t++)r[e[t]]=!0;return r}var a=/^[a-z$_][a-z$_0-9]*$/i,s=/'|\\/g;function u(e){return\"number\"==typeof e?\"[\"+e+\"]\":a.test(e)?\".\"+e:\"['\"+l(e)+\"']\"}function l(e){return e.replace(s,\"\\$&\").replace(/\n"
-"/g,\"\\n\").replace(/\r"
-"/g,\"\\r\").replace(/\f"
-"/g,\"\\f\").replace(/\t/g,\"\\t\")}function c(e){return\"'\"+l(e)+\"'\"}var h=/^/(?:[^~]|~0|~1)*$/,d=/^([0-9]+)(#|/(?:[^~]|~0|~1)*)?$/;function p(e,r){return'\"\"'==e?r:(e+\" + \"+r).replace(/([^\\])' + '/g,\"$1\")}function f(e){return e.replace(/~/g,\"~0\").replace(///g,\"~1\")}function m(e){return e.replace(/~1/g,\"/\").replace(/~0/g,\"~\")}},{\"./ucs2length\":9,\"fast-deep-equal\":42}],11:[function(e,r,t){var l=[\"multipleOf\",\"maximum\",\"exclusiveMaximum\",\"minimum\",\"exclusiveMinimum\",\"maxLength\",\"minLength\",\"pattern\",\"additionalItems\",\"maxItems\",\"minItems\",\"uniqueItems\",\"maxProperties\",\"minProperties\",\"required\",\"additionalProperties\",\"enum\",\"format\",\"const\"];r.exports=function(e,r){for(var t=0;t<r.length;t++){e=JSON.parse(JSON.stringify(e));for(var a=r[t].split(\"/\"),s=e,o=1;o<a.length;o++)s=s[a[o]];for(o=0;o<l.length;o++){var i=l[o],n=s[i];n&&(s[i]={anyOf:[n,{$ref:\"https://raw.githubusercontent.com/ajv-validator/ajv/master/lib/refs/data.json#\"}]})}}return e}},{}],12:[function(e,r,t){e=e(\"./refs/json-schema-draft-07.json\");r.exports={$id:\"https://github.com/ajv-validator/ajv/blob/master/lib/definition_schema.js\",definitions:{simpleTypes:e.definitions.simpleTypes},type:\"object\",dependencies:{schema:[\"validate\"],$data:[\"validate\"],statements:[\"inline\"],valid:{not:{required:[\"macro\"]}}},properties:{type:e.properties.type,schema:{type:\"boolean\"},statements:{type:\"boolean\"},dependencies:{type:\"array\",items:{type:\"string\"}},metaSchema:{type:\"object\"},modifying:{type:\"boolean\"},valid:{type:\"boolean\"},$data:{type:\"boolean\"},async:{type:\"boolean\"},errors:{anyOf:[{type:\"boolean\"},{const:\"full\"}]}}}},{\"./refs/json-schema-draft-07.json\":41}],13:[function(e,r,t){r.exports=function(e,r,t){var a,s,o,i,n,l=\" \",c=e.level,u=e.dataLevel,h=e.schema[r],d=e.schemaPath+e.util.getProperty(r),p=e.errSchemaPath+\"/\"+r,f=!e.opts.allErrors,m=\"data\"+(u||\"\"),v=e.opts.$data&&h&&h.$data,y=v?(l+=\" var schema\"+c+\" = \"+e.util.getData(h.$data,u,e.dataPathArr)+\"; \",\"schema\"+c):h,g=\"maximum\"==r,P=g?\"exclusiveMaximum\":\"exclusiveMinimum\",E=e.schema[P],w=e.opts.$data&&E&&E.$data,b=g?\"<\":\">\",S=g?\">\":\"<\",_=void 0;if(!v&&\"number\"!=typeof h&&void 0!==h)throw new Error(r+\" must be number\");if(!w&&void 0!==E&&\"number\"!=typeof E&&\"boolean\"!=typeof E)throw new Error(P+\" must be number or boolean\");w?(u=e.util.getData(E.$data,u,e.dataPathArr),o=\"exclIsNumber\"+c,i=\"' + \"+(n=\"op\"+c)+\" + '\",_=P,(F=F||[]).push(l=l+(\" var schemaExcl\"+c+\" = \"+u+\"; \")+(\" var \"+(a=\"exclusive\"+c)+\"; var \"+(s=\"exclType\"+c)+\" = typeof \"+(u=\"schemaExcl\"+c)+\"; if (\"+s+\" != 'boolean' && \"+s+\" != 'undefined' && \"+s+\" != 'number') { \")),l=\"\",!1!==e.createErrors?(l+=\" { keyword: '\"+(_||\"_exclusiveLimit\")+\"' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(p)+\" , params: {} \",!1!==e.opts.messages&&(l+=\" , message: '\"+P+\" should be boolean' \"),e.opts.verbose&&(l+=\" , schema: validate.schema\"+d+\" , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+m+\" \"),l+=\" } \"):l+=\" {} \",x=l,l=(l=F.pop())+(!e.compositeRule&&f?e.async?\" throw new ValidationError([\"+x+\"]); \":\" validate.errors = [\"+x+\"]; return false; \":\" var err = \"+x+\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \")+\" } else if ( \",v&&(l+=\" (\"+y+\" !== undefined && typeof \"+y+\" != 'number') || \"),l+=\" \"+s+\" == 'number' ? ( (\"+a+\" = \"+y+\" === undefined || \"+u+\" \"+b+\"= \"+y+\") ? \"+m+\" \"+S+\"= \"+u+\" : \"+m+\" \"+S+\" \"+y+\" ) : ( (\"+a+\" = \"+u+\" === true) ? \"+m+\" \"+S+\"= \"+y+\" : \"+m+\" \"+S+\" \"+y+\" ) || \"+m+\" !== \"+m+\") { var op\"+c+\" = \"+a+\" ? '\"+b+\"' : '\"+b+\"='; \",void 0===h&&(p=e.errSchemaPath+\"/\"+(_=P),y=u,v=w)):(i=b,(o=\"number\"==typeof E)&&v?(n=\"'\"+i+\"'\",l+=\" if ( \",v&&(l+=\" (\"+y+\" !== undefined && typeof \"+y+\" != 'number') || \"),l+=\" ( \"+y+\" === undefined || \"+E+\" \"+b+\"= \"+y+\" ? \"+m+\" \"+S+\"= \"+E+\" : \"+m+\" \"+S+\" \"+y+\" ) || \"+m+\" !== \"+m+\") { \"):(o&&void 0===h?(a=!0,p=e.errSchemaPath+\"/\"+(_=P),y=E,S+=\"=\"):(o&&(y=Math[g?\"min\":\"max\"](E,h)),E===(!o||y)?(a=!0,p=e.errSchemaPath+\"/\"+(_=P),S+=\"=\"):(a=!1,i+=\"=\")),n=\"'\"+i+\"'\",l+=\" if ( \",v&&(l+=\" (\"+y+\" !== undefined && typeof \"+y+\" != 'number') || \"),l+=\" \"+m+\" \"+S+\" \"+y+\" || \"+m+\" !== \"+m+\") { \")),_=_||r;(F=F||[]).push(l),l=\"\",!1!==e.createErrors?(l+=\" { keyword: '\"+(_||\"_limit\")+\"' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(p)+\" , params: { comparison: \"+n+\", limit: \"+y+\", exclusive: \"+a+\" } \",!1!==e.opts.messages&&(l=l+\" , message: 'should be \"+i+\" \"+(v?\"' + \"+y:y+\"'\")),e.opts.verbose&&(l=(l+=\" , schema:  \")+(v?\"validate.schema\"+d:\"\"+h)+\"         , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+m+\" \"),l+=\" } \"):l+=\" {} \";var F,x=l;return l=(l=F.pop())+(!e.compositeRule&&f?e.async?\" throw new ValidationError([\"+x+\"]); \":\" validate.errors = [\"+x+\"]; return false; \":\" var err = \"+x+\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \")+\" } \",f&&(l+=\" else { \"),l}},{}],14:[function(e,r,t){r.exports=function(e,r,t){var a,s=\" \",o=e.level,i=e.dataLevel,n=e.schema[r],l=e.schemaPath+e.util.getProperty(r),c=e.errSchemaPath+\"/\"+r,u=!e.opts.allErrors,h=\"data\"+(i||\"\"),d=e.opts.$data&&n&&n.$data,i=d?(s+=\" var schema\"+o+\" = \"+e.util.getData(n.$data,i,e.dataPathArr)+\"; \",\"schema\"+o):n;if(d||\"number\"==typeof n)return s+=\"if ( \",d&&(s+=\" (\"+i+\" !== undefined && typeof \"+i+\" != 'number') || \"),(o=[]).push(s+=\" \"+h+\".length \"+(\"maxItems\"==(a=r)?\">\":\"<\")+\" \"+i+\") { \"),s=\"\",!1!==e.createErrors?(s+=\" { keyword: '\"+(a||\"_limitItems\")+\"' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(c)+\" , params: { limit: \"+i+\" } \",!1!==e.opts.messages&&(s=(s=(s+=\" , message: 'should NOT have \")+(\"maxItems\"==r?\"more\":\"fewer\")+\" than \")+(d?\"' + \"+i+\" + '\":\"\"+n)+\" items' \"),e.opts.verbose&&(s=(s+=\" , schema:  \")+(d?\"validate.schema\"+l:\"\"+n)+\"         , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+h+\" \"),s+=\" } \"):s+=\" {} \",a=s,s=(s=o.pop())+(!e.compositeRule&&u?e.async?\" throw new ValidationError([\"+a+\"]); \":\" validate.errors = [\"+a+\"]; return false; \":\" var err = \"+a+\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \")+\"} \",u&&(s+=\" else { \"),s;throw new Error(r+\" must be number\")}},{}],15:[function(e,r,t){r.exports=function(e,r,t){var a,s=\" \",o=e.level,i=e.dataLevel,n=e.schema[r],l=e.schemaPath+e.util.getProperty(r),c=e.errSchemaPath+\"/\"+r,u=!e.opts.allErrors,h=\"data\"+(i||\"\"),d=e.opts.$data&&n&&n.$data,i=d?(s+=\" var schema\"+o+\" = \"+e.util.getData(n.$data,i,e.dataPathArr)+\"; \",\"schema\"+o):n;if(d||\"number\"==typeof n)return s+=\"if ( \",d&&(s+=\" (\"+i+\" !== undefined && typeof \"+i+\" != 'number') || \"),(o=[]).push(s=s+(!1===e.opts.unicode?\" \"+h+\".length \":\" ucs2length(\"+h+\") \")+(\" \"+(\"maxLength\"==(a=r)?\">\":\"<\")+\" \"+i+\") { \")),s=\"\",!1!==e.createErrors?(s+=\" { keyword: '\"+(a||\"_limitLength\")+\"' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(c)+\" , params: { limit: \"+i+\" } \",!1!==e.opts.messages&&(s=(s=(s+=\" , message: 'should NOT be \")+(\"maxLength\"==r?\"longer\":\"shorter\")+\" than \")+(d?\"' + \"+i+\" + '\":\"\"+n)+\" characters' \"),e.opts.verbose&&(s=(s+=\" , schema:  \")+(d?\"validate.schema\"+l:\"\"+n)+\"         , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+h+\" \"),s+=\" } \"):s+=\" {} \",a=s,s=(s=o.pop())+(!e.compositeRule&&u?e.async?\" throw new ValidationError([\"+a+\"]); \":\" validate.errors = [\"+a+\"]; return false; \":\" var err = \"+a+\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \")+\"} \",u&&(s+=\" else { \"),s;throw new Error(r+\" must be number\")}},{}],16:[function(e,r,t){r.exports=function(e,r,t){var a,s=\" \",o=e.level,i=e.dataLevel,n=e.schema[r],l=e.schemaPath+e.util.getProperty(r),c=e.errSchemaPath+\"/\"+r,u=!e.opts.allErrors,h=\"data\"+(i||\"\"),d=e.opts.$data&&n&&n.$data,i=d?(s+=\" var schema\"+o+\" = \"+e.util.getData(n.$data,i,e.dataPathArr)+\"; \",\"schema\"+o):n;if(d||\"number\"==typeof n)return s+=\"if ( \",d&&(s+=\" (\"+i+\" !== undefined && typeof \"+i+\" != 'number') || \"),(o=[]).push(s+=\" Object.keys(\"+h+\").length \"+(\"maxProperties\"==(a=r)?\">\":\"<\")+\" \"+i+\") { \"),s=\"\",!1!==e.createErrors?(s+=\" { keyword: '\"+(a||\"_limitProperties\")+\"' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(c)+\" , params: { limit: \"+i+\" } \",!1!==e.opts.messages&&(s=(s=(s+=\" , message: 'should NOT have \")+(\"maxProperties\"==r?\"more\":\"fewer\")+\" than \")+(d?\"' + \"+i+\" + '\":\"\"+n)+\" properties' \"),e.opts.verbose&&(s=(s+=\" , schema:  \")+(d?\"validate.schema\"+l:\"\"+n)+\"         , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+h+\" \"),s+=\" } \"):s+=\" {} \",a=s,s=(s=o.pop())+(!e.compositeRule&&u?e.async?\" throw new ValidationError([\"+a+\"]); \":\" validate.errors = [\"+a+\"]; return false; \":\" var err = \"+a+\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \")+\"} \",u&&(s+=\" else { \"),s;throw new Error(r+\" must be number\")}},{}],17:[function(e,r,t){r.exports=function(e,r,t){var a=\" \",s=e.schema[r],o=e.schemaPath+e.util.getProperty(r),i=e.errSchemaPath+\"/\"+r,n=!e.opts.allErrors,l=e.util.copy(e),c=\"\",u=(l.level++,\"valid\"+l.level),h=l.baseId,d=!0,p=s;if(p)for(var f,m=-1,v=p.length-1;m<v;)f=p[m+=1],(e.opts.strictKeywords?\"object\"==typeof f&&0<Object.keys(f).length||!1===f:e.util.schemaHasRules(f,e.RULES.all))&&(d=!1,l.schema=f,l.schemaPath=o+\"[\"+m+\"]\",l.errSchemaPath=i+\"/\"+m,a+=\"  \"+e.validate(l)+\" \",l.baseId=h,n)&&(a+=\" if (\"+u+\") { \",c+=\"}\");return n&&(a+=d?\" if (true) { \":\" \"+c.slice(0,-1)+\" \"),a}},{}],18:[function(e,r,t){r.exports=function(r,e,t){var a=\" \",s=r.level,o=r.dataLevel,i=r.schema[e],n=r.schemaPath+r.util.getProperty(e),l=r.errSchemaPath+\"/\"+e,e=!r.opts.allErrors,o=\"data\"+(o||\"\"),c=\"valid\"+s,s=\"errs__\"+s,u=r.util.copy(r),h=\"\",d=(u.level++,\"valid\"+u.level);if(i.every(function(e){return r.opts.strictKeywords?\"object\"==typeof e&&0<Object.keys(e).length||!1===e:r.util.schemaHasRules(e,r.RULES.all)})){var p=u.baseId,f=(a+=\" var \"+s+\" = errors; var \"+c+\" = false;  \",r.compositeRule),m=(r.compositeRule=u.compositeRule=!0,i);if(m)for(var v,y=-1,g=m.length-1;y<g;)v=m[y+=1],u.schema=v,u.schemaPath=n+\"[\"+y+\"]\",u.errSchemaPath=l+\"/\"+y,a+=\"  \"+r.validate(u)+\" \",u.baseId=p,a+=\" \"+c+\" = \"+c+\" || \"+d+\"; if (!\"+c+\") { \",h+=\"}\";r.compositeRule=u.compositeRule=f,a+=\" \"+h+\" if (!\"+c+\") {   var err =   \",!1!==r.createErrors?(a+=\" { keyword: 'anyOf' , dataPath: (dataPath || '') + \"+r.errorPath+\" , schemaPath: \"+r.util.toQuotedString(l)+\" , params: {} \",!1!==r.opts.messages&&(a+=\" , message: 'should match some schema in anyOf' \"),r.opts.verbose&&(a+=\" , schema: validate.schema\"+n+\" , parentSchema: validate.schema\"+r.schemaPath+\" , data: \"+o+\" \"),a+=\" } \"):a+=\" {} \",a+=\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \",!r.compositeRule&&e&&(a+=r.async?\" throw new ValidationError(vErrors); \":\" validate.errors = vErrors; return false; \"),a+=\" } else {  errors = \"+s+\"; if (vErrors !== null) { if (\"+s+\") vErrors.length = \"+s+\"; else vErrors = null; } \",r.opts.allErrors&&(a+=\" } \")}else e&&(a+=\" if (true) { \");return a}},{}],19:[function(e,r,t){r.exports=function(e,r,t){var a=\" \",s=e.errSchemaPath+\"/\"+r,r=e.util.toQuotedString(e.schema[r]);return!0===e.opts.$comment?a+=\" console.log(\"+r+\");\":\"function\"==typeof e.opts.$comment&&(a+=\" self._opts.$comment(\"+r+\", \"+e.util.toQuotedString(s)+\", validate.root.schema);\"),a}},{}],20:[function(e,r,t){r.exports=function(e,r,t){var a=\" \",s=e.level,o=e.dataLevel,i=e.schema[r],n=e.schemaPath+e.util.getProperty(r),r=e.errSchemaPath+\"/\"+r,l=!e.opts.allErrors,c=\"data\"+(o||\"\"),u=\"valid\"+s,h=e.opts.$data&&i&&i.$data,i=(h&&(a+=\" var schema\"+s+\" = \"+e.util.getData(i.$data,o,e.dataPathArr)+\"; \"),h||(a+=\" var schema\"+s+\" = validate.schema\"+n+\";\"),[]),o=(i.push(a+=\"var \"+u+\" = equal(\"+c+\", schema\"+s+\"); if (!\"+u+\") {   \"),a=\"\",!1!==e.createErrors?(a+=\" { keyword: 'const' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(r)+\" , params: { allowedValue: schema\"+s+\" } \",!1!==e.opts.messages&&(a+=\" , message: 'should be equal to constant' \"),e.opts.verbose&&(a+=\" , schema: validate.schema\"+n+\" , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+c+\" \"),a+=\" } \"):a+=\" {} \",a);return a=(a=i.pop())+(!e.compositeRule&&l?e.async?\" throw new ValidationError([\"+o+\"]); \":\" validate.errors = [\"+o+\"]; return false; \":\" var err = \"+o+\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \")+\" }\",l&&(a+=\" else { \"),a}},{}],21:[function(e,r,t){r.exports=function(e,r,t){var a=\" \",s=e.level,o=e.dataLevel,i=e.schema[r],n=e.schemaPath+e.util.getProperty(r),r=e.errSchemaPath+\"/\"+r,l=!e.opts.allErrors,o=\"data\"+(o||\"\"),c=\"valid\"+s,u=\"errs__\"+s,h=e.util.copy(e),d=(h.level++,\"valid\"+h.level),s=\"i\"+s,p=h.dataLevel=e.dataLevel+1,f=\"data\"+p,m=e.baseId,v=e.opts.strictKeywords?\"object\"==typeof i&&0<Object.keys(i).length||!1===i:e.util.schemaHasRules(i,e.RULES.all),s=(a+=\"var \"+u+\" = errors;var \"+c+\";\",v?(c=e.compositeRule,e.compositeRule=h.compositeRule=!0,h.schema=i,h.schemaPath=n,h.errSchemaPath=r,a+=\" var \"+d+\" = false; for (var \"+s+\" = 0; \"+s+\" < \"+o+\".length; \"+s+\"++) { \",h.errorPath=e.util.getPathExpr(e.errorPath,s,e.opts.jsonPointers,!0),i=o+\"[\"+s+\"]\",h.dataPathArr[p]=s,p=e.validate(h),h.baseId=m,e.util.varOccurences(p,f)<2?a+=\" \"+e.util.varReplace(p,f,i)+\" \":a+=\" var \"+f+\" = \"+i+\"; \"+p+\" \",a+=\" if (\"+d+\") break; }  \",e.compositeRule=h.compositeRule=c,a+=\"  if (!\"+d+\") {\"):a+=\" if (\"+o+\".length == 0) {\",[]),m=(s.push(a),a=\"\",!1!==e.createErrors?(a+=\" { keyword: 'contains' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(r)+\" , params: {} \",!1!==e.opts.messages&&(a+=\" , message: 'should contain a valid item' \"),e.opts.verbose&&(a+=\" , schema: validate.schema\"+n+\" , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+o+\" \"),a+=\" } \"):a+=\" {} \",a);return a=(a=s.pop())+(!e.compositeRule&&l?e.async?\" throw new ValidationError([\"+m+\"]); \":\" validate.errors = [\"+m+\"]; return false; \":\" var err = \"+m+\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \")+\" } else { \",v&&(a+=\"  errors = \"+u+\"; if (vErrors !== null) { if (\"+u+\") vErrors.length = \"+u+\"; else vErrors = null; } \"),e.opts.allErrors&&(a+=\" } \"),a}},{}],22:[function(e,r,t){r.exports=function(e,r,t){var a,s,o,i=\" \",n=e.level,l=e.dataLevel,c=e.schema[r],u=e.schemaPath+e.util.getProperty(r),h=e.errSchemaPath+\"/\"+r,d=!e.opts.allErrors,p=\"data\"+(l||\"\"),f=\"valid\"+n,m=\"errs__\"+n,v=e.opts.$data&&c&&c.$data,y=v?(i+=\" var schema\"+n+\" = \"+e.util.getData(c.$data,l,e.dataPathArr)+\"; \",\"schema\"+n):c,g=this,P=\"definition\"+n,E=g.definition,w=\"\";if(v&&E.$data){var b=\"keywordValidate\"+n,S=E.validateSchema;i+=\" var \"+P+\" = RULES.custom['\"+r+\"'].definition; var \"+b+\" = \"+P+\".validate;\"}else{if(!(R=e.useCustomRule(g,c,e.schema,e)))return;y=\"validate.schema\"+u,b=R.code,a=E.compile,s=E.inline,o=E.macro}var _,F,x,R,$,r=b+\".errors\",c=\"i\"+n,j=\"ruleErr\"+n,D=E.async;if(D&&!e.async)throw new Error(\"async keyword in sync schema\");return s||o||(i+=r+\" = null;\"),i+=\"var \"+m+\" = errors;var \"+f+\";\",v&&E.$data&&(w+=\"}\",i+=\" if (\"+y+\" === undefined) { \"+f+\" = true; } else { \",S)&&(w+=\"}\",i+=\" \"+f+\" = \"+P+\".validateSchema(\"+y+\"); if (\"+f+\") { \"),s?i+=E.statements?\" \"+R.validate+\" \":\" \"+f+\" = \"+R.validate+\"; \":o?(w=\"\",(v=e.util.copy(e)).level++,_=\"valid\"+v.level,v.schema=R.validate,v.schemaPath=\"\",S=e.compositeRule,e.compositeRule=v.compositeRule=!0,P=e.validate(v).replace(/validate.schema/g,b),e.compositeRule=v.compositeRule=S,i+=\" \"+P):(($=$||[]).push(i),i=(i=(i=\"\")+\"  \"+b+\".call( \"+(e.opts.passContext?\"this\":\"self\"))+(a||!1===E.schema?\" , \"+p+\" \":\" , \"+y+\" , \"+p+\" , validate.schema\"+e.schemaPath+\" \")+\" , (dataPath || '')\",'\"\"'!=e.errorPath&&(i+=\" + \"+e.errorPath),R=i+=\" , \"+(F=l?\"data\"+(l-1||\"\"):\"parentData\")+\" , \"+(x=l?e.dataPathArr[l]:\"parentDataProperty\")+\" , rootData )  \",i=$.pop(),!1===E.errors?(i+=\" \"+f+\" = \",D&&(i+=\"await \"),i+=R+\"; \"):i+=D?\" var \"+(r=\"customErrors\"+n)+\" = null; try { \"+f+\" = await \"+R+\"; } catch (e) { \"+f+\" = false; if (e instanceof ValidationError) \"+r+\" = e.errors; else throw e; } \":\" \"+r+\" = null; \"+f+\" = \"+R+\"; \"),E.modifying&&(i+=\" if (\"+F+\") \"+p+\" = \"+F+\"[\"+x+\"];\"),i+=\"\"+w,E.valid?d&&(i+=\" if (true) { \"):(i+=\" if ( \",void 0===E.valid?i=i+\" !\"+(o?\"\"+_:f):i+=\" \"+!E.valid+\" \",v=g.keyword,($=$||[]).push(i+=\") { \"),($=$||[]).push(i=\"\"),i=\"\",!1!==e.createErrors?(i+=\" { keyword: '\"+(v||\"custom\")+\"' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(h)+\" , params: { keyword: '\"+g.keyword+\"' } \",!1!==e.opts.messages&&(i+=\" , message: 'should pass \"\"+g.keyword+\"\" keyword validation' \"),e.opts.verbose&&(i+=\" , schema: validate.schema\"+u+\" , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+p+\" \"),i+=\" } \"):i+=\" {} \",S=i,i=$.pop(),P=i+=!e.compositeRule&&d?e.async?\" throw new ValidationError([\"+S+\"]); \":\" validate.errors = [\"+S+\"]; return false; \":\" var err = \"+S+\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \",i=$.pop(),s?E.errors?\"full\"!=E.errors&&(i+=\"  for (var \"+c+\"=\"+m+\"; \"+c+\"<errors; \"+c+\"++) { var \"+j+\" = vErrors[\"+c+\"]; if (\"+j+\".dataPath === undefined) \"+j+\".dataPath = (dataPath || '') + \"+e.errorPath+\"; if (\"+j+\".schemaPath === undefined) { \"+j+'.schemaPath = \"'+h+'\"; } ',e.opts.verbose&&(i+=\" \"+j+\".schema = \"+y+\"; \"+j+\".data = \"+p+\"; \"),i+=\" } \"):!1===E.errors?i+=\" \"+P+\" \":(i+=\" if (\"+m+\" == errors) { \"+P+\" } else {  for (var \"+c+\"=\"+m+\"; \"+c+\"<errors; \"+c+\"++) { var \"+j+\" = vErrors[\"+c+\"]; if (\"+j+\".dataPath === undefined) \"+j+\".dataPath = (dataPath || '') + \"+e.errorPath+\"; if (\"+j+\".schemaPath === undefined) { \"+j+'.schemaPath = \"'+h+'\"; } ',e.opts.verbose&&(i+=\" \"+j+\".schema = \"+y+\"; \"+j+\".data = \"+p+\"; \"),i+=\" } } \"):o?(i+=\"   var err =   \",!1!==e.createErrors?(i+=\" { keyword: '\"+(v||\"custom\")+\"' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(h)+\" , params: { keyword: '\"+g.keyword+\"' } \",!1!==e.opts.messages&&(i+=\" , message: 'should pass \"\"+g.keyword+\"\" keyword validation' \"),e.opts.verbose&&(i+=\" , schema: validate.schema\"+u+\" , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+p+\" \"),i+=\" } \"):i+=\" {} \",i+=\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \",!e.compositeRule&&d&&(i+=e.async?\" throw new ValidationError(vErrors); \":\" validate.errors = vErrors; return false; \")):!1===E.errors?i+=\" \"+P+\" \":(i+=\" if (Array.isArray(\"+r+\")) { if (vErrors === null) vErrors = \"+r+\"; else vErrors = vErrors.concat(\"+r+\"); errors = vErrors.length;  for (var \"+c+\"=\"+m+\"; \"+c+\"<errors; \"+c+\"++) { var \"+j+\" = vErrors[\"+c+\"]; if (\"+j+\".dataPath === undefined) \"+j+\".dataPath = (dataPath || '') + \"+e.errorPath+\";  \"+j+'.schemaPath = \"'+h+'\";  ',e.opts.verbose&&(i+=\" \"+j+\".schema = \"+y+\"; \"+j+\".data = \"+p+\"; \"),i+=\" } } else { \"+P+\" } \"),i+=\" } \",d&&(i+=\" else { \")),i}},{}],23:[function(e,r,t){r.exports=function(e,r,t){var a,s=\" \",o=e.level,i=e.dataLevel,n=e.schema[r],l=e.schemaPath+e.util.getProperty(r),c=e.errSchemaPath+\"/\"+r,u=!e.opts.allErrors,h=\"data\"+(i||\"\"),r=\"errs__\"+o,d=e.util.copy(e),p=\"\",f=(d.level++,\"valid\"+d.level),m={},v={},y=e.opts.ownProperties;for(O in n)\"__proto__\"!=O&&(A=n[O],(a=Array.isArray(A)?v:m)[O]=A);var g=e.errorPath;for(O in s=s+(\"var \"+r+\" = errors;\")+(\"var missing\"+o+\";\"),v)if((a=v[O]).length){if(s+=\" if ( \"+h+e.util.getProperty(O)+\" !== undefined \",y&&(s+=\" && Object.prototype.hasOwnProperty.call(\"+h+\", '\"+e.util.escapeQuotes(O)+\"') \"),u){s+=\" && ( \";var P=a;if(P)for(var E=-1,w=P.length-1;E<w;)x=P[E+=1],E&&(s+=\" || \"),s+=\" ( ( \"+(D=h+(j=e.util.getProperty(x)))+\" === undefined \",y&&(s+=\" || ! Object.prototype.hasOwnProperty.call(\"+h+\", '\"+e.util.escapeQuotes(x)+\"') \"),s+=\") && (missing\"+o+\" = \"+e.util.toQuotedString(e.opts.jsonPointers?x:j)+\") ) \";s+=\")) {  \";var b=\"missing\"+o,S=\"' + \"+b+\" + '\",_=(e.opts._errorDataPathProperty&&(e.errorPath=e.opts.jsonPointers?e.util.getPathExpr(g,b,!0):g+\" + \"+b),_||[]),b=(_.push(s),s=\"\",!1!==e.createErrors?(s+=\" { keyword: 'dependencies' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(c)+\" , params: { property: '\"+e.util.escapeQuotes(O)+\"', missingProperty: '\"+S+\"', depsCount: \"+a.length+\", deps: '\"+e.util.escapeQuotes(1==a.length?a[0]:a.join(\", \"))+\"' } \",!1!==e.opts.messages&&(s=(s=(s+=\" , message: 'should have \")+(1==a.length?\"property \"+e.util.escapeQuotes(a[0]):\"properties \"+e.util.escapeQuotes(a.join(\", \"))))+\" when property \"+e.util.escapeQuotes(O)+\" is present' \"),e.opts.verbose&&(s+=\" , schema: validate.schema\"+l+\" , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+h+\" \"),s+=\" } \"):s+=\" {} \",s),s=_.pop();s+=!e.compositeRule&&u?e.async?\" throw new ValidationError([\"+b+\"]); \":\" validate.errors = [\"+b+\"]; return false; \":\" var err = \"+b+\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \"}else{s+=\" ) { \";var F=a;if(F)for(var x,R=-1,$=F.length-1;R<$;){x=F[R+=1];var j=e.util.getProperty(x),S=e.util.escapeQuotes(x),D=h+j;e.opts._errorDataPathProperty&&(e.errorPath=e.util.getPath(g,x,e.opts.jsonPointers)),s+=\" if ( \"+D+\" === undefined \",y&&(s+=\" || ! Object.prototype.hasOwnProperty.call(\"+h+\", '\"+e.util.escapeQuotes(x)+\"') \"),s+=\") {  var err =   \",!1!==e.createErrors?(s+=\" { keyword: 'dependencies' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(c)+\" , params: { property: '\"+e.util.escapeQuotes(O)+\"', missingProperty: '\"+S+\"', depsCount: \"+a.length+\", deps: '\"+e.util.escapeQuotes(1==a.length?a[0]:a.join(\", \"))+\"' } \",!1!==e.opts.messages&&(s=(s=(s+=\" , message: 'should have \")+(1==a.length?\"property \"+e.util.escapeQuotes(a[0]):\"properties \"+e.util.escapeQuotes(a.join(\", \"))))+\" when property \"+e.util.escapeQuotes(O)+\" is present' \"),e.opts.verbose&&(s+=\" , schema: validate.schema\"+l+\" , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+h+\" \"),s+=\" } \"):s+=\" {} \",s+=\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; } \"}}s+=\" }   \",u&&(p+=\"}\",s+=\" else { \")}e.errorPath=g;var O,I=d.baseId;for(O in m){var A=m[O];(e.opts.strictKeywords?\"object\"==typeof A&&0<Object.keys(A).length||!1===A:e.util.schemaHasRules(A,e.RULES.all))&&(s+=\" \"+f+\" = true; if ( \"+h+e.util.getProperty(O)+\" !== undefined \",y&&(s+=\" && Object.prototype.hasOwnProperty.call(\"+h+\", '\"+e.util.escapeQuotes(O)+\"') \"),s+=\") { \",d.schema=A,d.schemaPath=l+e.util.getProperty(O),d.errSchemaPath=c+\"/\"+e.util.escapeFragment(O),s+=\"  \"+e.validate(d)+\" \",d.baseId=I,s+=\" }  \",u)&&(s+=\" if (\"+f+\") { \",p+=\"}\")}return u&&(s+=\"   \"+p+\" if (\"+r+\" == errors) {\"),s}},{}],24:[function(e,r,t){r.exports=function(e,r,t){var a=\" \",s=e.level,o=e.dataLevel,i=e.schema[r],n=e.schemaPath+e.util.getProperty(r),r=e.errSchemaPath+\"/\"+r,l=!e.opts.allErrors,c=\"data\"+(o||\"\"),u=\"valid\"+s,h=e.opts.$data&&i&&i.$data,i=(h&&(a+=\" var schema\"+s+\" = \"+e.util.getData(i.$data,o,e.dataPathArr)+\"; \"),\"i\"+s),o=\"schema\"+s,o=(h||(a+=\" var \"+o+\" = validate.schema\"+n+\";\"),a+=\"var \"+u+\";\",h&&(a+=\" if (schema\"+s+\" === undefined) \"+u+\" = true; else if (!Array.isArray(schema\"+s+\")) \"+u+\" = false; else {\"),a+=u+\" = false;for (var \"+i+\"=0; \"+i+\"<\"+o+\".length; \"+i+\"++) if (equal(\"+c+\", \"+o+\"[\"+i+\"])) { \"+u+\" = true; break; }\",h&&(a+=\"  }  \"),[]),i=(o.push(a+=\" if (!\"+u+\") {   \"),a=\"\",!1!==e.createErrors?(a+=\" { keyword: 'enum' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(r)+\" , params: { allowedValues: schema\"+s+\" } \",!1!==e.opts.messages&&(a+=\" , message: 'should be equal to one of the allowed values' \"),e.opts.verbose&&(a+=\" , schema: validate.schema\"+n+\" , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+c+\" \"),a+=\" } \"):a+=\" {} \",a);return a=(a=o.pop())+(!e.compositeRule&&l?e.async?\" throw new ValidationError([\"+i+\"]); \":\" validate.errors = [\"+i+\"]; return false; \":\" var err = \"+i+\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \")+\" }\",l&&(a+=\" else { \"),a}},{}],25:[function(e,r,t){r.exports=function(e,r,t){var a=\" \",s=e.level,o=e.dataLevel,i=e.schema[r],n=e.schemaPath+e.util.getProperty(r),r=e.errSchemaPath+\"/\"+r,l=!e.opts.allErrors,c=\"data\"+(o||\"\");if(!1===e.opts.format)l&&(a+=\" if (true) { \");else{var u,h=e.opts.$data&&i&&i.$data,o=h?(a+=\" var schema\"+s+\" = \"+e.util.getData(i.$data,o,e.dataPathArr)+\"; \",\"schema\"+s):i,d=e.opts.unknownFormats,p=Array.isArray(d);if(h)a+=\" var \"+(u=\"format\"+s)+\" = formats[\"+o+\"]; var \"+(f=\"isObject\"+s)+\" = typeof \"+u+\" == 'object' && !(\"+u+\" instanceof RegExp) && \"+u+\".validate; var \"+(v=\"formatType\"+s)+\" = \"+f+\" && \"+u+\".type || 'string'; if (\"+f+\") { \",e.async&&(a+=\" var async\"+s+\" = \"+u+\".async; \"),a+=\" \"+u+\" = \"+u+\".validate; } if (  \",h&&(a+=\" (\"+o+\" !== undefined && typeof \"+o+\" != 'string') || \"),a+=\" (\",\"ignore\"!=d&&(a+=\" (\"+o+\" && !\"+u+\" \",p&&(a+=\" && self._opts.unknownFormats.indexOf(\"+o+\") == -1 \"),a+=\") || \"),a=(a+=\" (\"+u+\" && \"+v+\" == '\"+t+\"' && !(typeof \"+u+\" == 'function' ? \")+(e.async?\" (async\"+s+\" ? await \"+u+\"(\"+c+\") : \"+u+\"(\"+c+\")) \":\" \"+u+\"(\"+c+\") \")+(\" : \"+u+\".test(\"+c+\"))))) {\");else{if(!(u=e.formats[i])){if(\"ignore\"==d)return e.logger.warn('unknown format \"'+i+'\" ignored in schema at path \"'+e.errSchemaPath+'\"'),l&&(a+=\" if (true) { \"),a;if(p&&0<=d.indexOf(i))return l&&(a+=\" if (true) { \"),a;throw new Error('unknown format \"'+i+'\" is used in schema at path \"'+e.errSchemaPath+'\"')}var f,m,v=(f=\"object\"==typeof u&&!(u instanceof RegExp)&&u.validate)&&u.type||\"string\";if(f&&(m=!0===u.async,u=u.validate),v!=t)return l&&(a+=\" if (true) { \"),a;if(m){if(!e.async)throw new Error(\"async format in sync schema\");a+=\" if (!(await \"+(y=\"formats\"+e.util.getProperty(i)+\".validate\")+\"(\"+c+\"))) { \"}else{a+=\" if (! \";var y=\"formats\"+e.util.getProperty(i);f&&(y+=\".validate\"),a=a+(\"function\"==typeof u?\" \"+y+\"(\"+c+\") \":\" \"+y+\".test(\"+c+\") \")+\") { \"}}s=[],p=(s.push(a),a=\"\",!1!==e.createErrors?(a=(a+=\" { keyword: 'format' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(r)+\" , params: { format:  \")+(h?\"\"+o:\"\"+e.util.toQuotedString(i))+\"  } \",!1!==e.opts.messages&&(a=(a+=\" , message: 'should match format \"\")+(h?\"' + \"+o+\" + '\":\"\"+e.util.escapeQuotes(i))+\"\"' \"),e.opts.verbose&&(a=(a=(a+=\" , schema:  \")+(h?\"validate.schema\"+n:\"\"+e.util.toQuotedString(i)))+\"         , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+c+\" \"),a+=\" } \"):a+=\" {} \",a);a=(a=s.pop())+(!e.compositeRule&&l?e.async?\" throw new ValidationError([\"+p+\"]); \":\" validate.errors = [\"+p+\"]; return false; \":\" var err = \"+p+\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \")+\" } \",l&&(a+=\" else { \")}return a}},{}],26:[function(e,r,t){r.exports=function(e,r,t){var a,s=\" \",o=e.level,i=e.dataLevel,n=e.schema[r],l=e.schemaPath+e.util.getProperty(r),r=e.errSchemaPath+\"/\"+r,c=!e.opts.allErrors,i=\"data\"+(i||\"\"),u=\"valid\"+o,h=\"errs__\"+o,d=e.util.copy(e),p=(d.level++,\"valid\"+d.level),f=e.schema.then,m=e.schema.else,f=void 0!==f&&(e.opts.strictKeywords?\"object\"==typeof f&&0<Object.keys(f).length||!1===f:e.util.schemaHasRules(f,e.RULES.all)),m=void 0!==m&&(e.opts.strictKeywords?\"object\"==typeof m&&0<Object.keys(m).length||!1===m:e.util.schemaHasRules(m,e.RULES.all)),v=d.baseId;return f||m?(d.createErrors=!1,d.schema=n,d.schemaPath=l,d.errSchemaPath=r,s+=\" var \"+h+\" = errors; var \"+u+\" = true;  \",n=e.compositeRule,e.compositeRule=d.compositeRule=!0,s+=\"  \"+e.validate(d)+\" \",d.baseId=v,d.createErrors=!0,s+=\"  errors = \"+h+\"; if (vErrors !== null) { if (\"+h+\") vErrors.length = \"+h+\"; else vErrors = null; }  \",e.compositeRule=d.compositeRule=n,f?(s+=\" if (\"+p+\") {  \",d.schema=e.schema.then,d.schemaPath=e.schemaPath+\".then\",d.errSchemaPath=e.errSchemaPath+\"/then\",s+=\"  \"+e.validate(d)+\" \",d.baseId=v,s+=\" \"+u+\" = \"+p+\"; \",f&&m?s+=\" var \"+(a=\"ifClause\"+o)+\" = 'then'; \":a=\"'then'\",s+=\" } \",m&&(s+=\" else { \")):s+=\" if (!\"+p+\") { \",m&&(d.schema=e.schema.else,d.schemaPath=e.schemaPath+\".else\",d.errSchemaPath=e.errSchemaPath+\"/else\",s+=\"  \"+e.validate(d)+\" \",d.baseId=v,s+=\" \"+u+\" = \"+p+\"; \",f&&m?s+=\" var \"+(a=\"ifClause\"+o)+\" = 'else'; \":a=\"'else'\",s+=\" } \"),s+=\" if (!\"+u+\") {   var err =   \",!1!==e.createErrors?(s+=\" { keyword: 'if' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(r)+\" , params: { failingKeyword: \"+a+\" } \",!1!==e.opts.messages&&(s+=\" , message: 'should match \"' + \"+a+\" + '\" schema' \"),e.opts.verbose&&(s+=\" , schema: validate.schema\"+l+\" , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+i+\" \"),s+=\" } \"):s+=\" {} \",s+=\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \",!e.compositeRule&&c&&(s+=e.async?\" throw new ValidationError(vErrors); \":\" validate.errors = vErrors; return false; \"),s+=\" }   \",c&&(s+=\" else { \")):c&&(s+=\" if (true) { \"),s}},{}],27:[function(e,r,t){r.exports={$ref:e(\"./ref\"),allOf:e(\"./allOf\"),anyOf:e(\"./anyOf\"),$comment:e(\"./comment\"),const:e(\"./const\"),contains:e(\"./contains\"),dependencies:e(\"./dependencies\"),enum:e(\"./enum\"),format:e(\"./format\"),if:e(\"./if\"),items:e(\"./items\"),maximum:e(\"./_limit\"),minimum:e(\"./_limit\"),maxItems:e(\"./_limitItems\"),minItems:e(\"./_limitItems\"),maxLength:e(\"./_limitLength\"),minLength:e(\"./_limitLength\"),maxProperties:e(\"./_limitProperties\"),minProperties:e(\"./_limitProperties\"),multipleOf:e(\"./multipleOf\"),not:e(\"./not\"),oneOf:e(\"./oneOf\"),pattern:e(\"./pattern\"),properties:e(\"./properties\"),propertyNames:e(\"./propertyNames\"),required:e(\"./required\"),uniqueItems:e(\"./uniqueItems\"),validate:e(\"./validate\")}},{\"./_limit\":13,\"./_limitItems\":14,\"./_limitLength\":15,\"./_limitProperties\":16,\"./allOf\":17,\"./anyOf\":18,\"./comment\":19,\"./const\":20,\"./contains\":21,\"./dependencies\":23,\"./enum\":24,\"./format\":25,\"./if\":26,\"./items\":28,\"./multipleOf\":29,\"./not\":30,\"./oneOf\":31,\"./pattern\":32,\"./properties\":33,\"./propertyNames\":34,\"./ref\":35,\"./required\":36,\"./uniqueItems\":37,\"./validate\":38}],28:[function(e,r,t){r.exports=function(e,r,t){var a=\" \",s=e.level,o=e.dataLevel,i=e.schema[r],n=e.schemaPath+e.util.getProperty(r),l=e.errSchemaPath+\"/\"+r,c=!e.opts.allErrors,u=\"data\"+(o||\"\"),r=\"valid\"+s,o=\"errs__\"+s,h=e.util.copy(e),d=\"\",p=(h.level++,\"valid\"+h.level),s=\"i\"+s,f=h.dataLevel=e.dataLevel+1,m=\"data\"+f,v=e.baseId;if(a+=\"var \"+o+\" = errors;var \"+r+\";\",Array.isArray(i)){var y,g,P=e.schema.additionalItems,E=(!1===P&&(y=l,l=e.errSchemaPath+\"/additionalItems\",(g=g||[]).push(a=a+(\" \"+r+\" = \"+u+\".length <= \"+i.length+\"; \")+(\"  if (!\"+r+\") {   \")),a=\"\",!1!==e.createErrors?(a+=\" { keyword: 'additionalItems' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(l)+\" , params: { limit: \"+i.length+\" } \",!1!==e.opts.messages&&(a+=\" , message: 'should NOT have more than \"+i.length+\" items' \"),e.opts.verbose&&(a+=\" , schema: false , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+u+\" \"),a+=\" } \"):a+=\" {} \",r=a,a=(a=g.pop())+(!e.compositeRule&&c?e.async?\" throw new ValidationError([\"+r+\"]); \":\" validate.errors = [\"+r+\"]; return false; \":\" var err = \"+r+\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \")+\" } \",l=y,c)&&(d+=\"}\",a+=\" else { \"),i);if(E)for(var w=-1,b=E.length-1;w<b;){var S,_,F=E[w+=1];(e.opts.strictKeywords?\"object\"==typeof F&&0<Object.keys(F).length||!1===F:e.util.schemaHasRules(F,e.RULES.all))&&(a+=\" \"+p+\" = true; if (\"+u+\".length > \"+w+\") { \",S=u+\"[\"+w+\"]\",h.schema=F,h.schemaPath=n+\"[\"+w+\"]\",h.errSchemaPath=l+\"/\"+w,h.errorPath=e.util.getPathExpr(e.errorPath,w,e.opts.jsonPointers,!0),h.dataPathArr[f]=w,_=e.validate(h),h.baseId=v,e.util.varOccurences(_,m)<2?a+=\" \"+e.util.varReplace(_,m,S)+\" \":a+=\" var \"+m+\" = \"+S+\"; \"+_+\" \",a+=\" }  \",c)&&(a+=\" if (\"+p+\") { \",d+=\"}\")}\"object\"==typeof P&&(e.opts.strictKeywords?\"object\"==typeof P&&0<Object.keys(P).length||!1===P:e.util.schemaHasRules(P,e.RULES.all))&&(h.schema=P,h.schemaPath=e.schemaPath+\".additionalItems\",h.errSchemaPath=e.errSchemaPath+\"/additionalItems\",a+=\" \"+p+\" = true; if (\"+u+\".length > \"+i.length+\") {  for (var \"+s+\" = \"+i.length+\"; \"+s+\" < \"+u+\".length; \"+s+\"++) { \",h.errorPath=e.util.getPathExpr(e.errorPath,s,e.opts.jsonPointers,!0),S=u+\"[\"+s+\"]\",h.dataPathArr[f]=s,_=e.validate(h),h.baseId=v,e.util.varOccurences(_,m)<2?a+=\" \"+e.util.varReplace(_,m,S)+\" \":a+=\" var \"+m+\" = \"+S+\"; \"+_+\" \",c&&(a+=\" if (!\"+p+\") break; \"),a+=\" } }  \",c)&&(a+=\" if (\"+p+\") { \",d+=\"}\")}else(e.opts.strictKeywords?\"object\"==typeof i&&0<Object.keys(i).length||!1===i:e.util.schemaHasRules(i,e.RULES.all))&&(h.schema=i,h.schemaPath=n,h.errSchemaPath=l,a+=\"  for (var \"+s+\" = 0; \"+s+\" < \"+u+\".length; \"+s+\"++) { \",h.errorPath=e.util.getPathExpr(e.errorPath,s,e.opts.jsonPointers,!0),S=u+\"[\"+s+\"]\",h.dataPathArr[f]=s,_=e.validate(h),h.baseId=v,e.util.varOccurences(_,m)<2?a+=\" \"+e.util.varReplace(_,m,S)+\" \":a+=\" var \"+m+\" = \"+S+\"; \"+_+\" \",c&&(a+=\" if (!\"+p+\") break; \"),a+=\" }\");return c&&(a+=\" \"+d+\" if (\"+o+\" == errors) {\"),a}},{}],29:[function(e,r,t){r.exports=function(e,r,t){var a=\" \",s=e.level,o=e.dataLevel,i=e.schema[r],n=e.schemaPath+e.util.getProperty(r),l=e.errSchemaPath+\"/\"+r,c=!e.opts.allErrors,u=\"data\"+(o||\"\"),h=e.opts.$data&&i&&i.$data,o=h?(a+=\" var schema\"+s+\" = \"+e.util.getData(i.$data,o,e.dataPathArr)+\"; \",\"schema\"+s):i;if(!h&&\"number\"!=typeof i)throw new Error(r+\" must be number\");a+=\"var division\"+s+\";if (\",h&&(a+=\" \"+o+\" !== undefined && ( typeof \"+o+\" != 'number' || \"),a=(a+=\" (division\"+s+\" = \"+u+\" / \"+o+\", \")+(e.opts.multipleOfPrecision?\" Math.abs(Math.round(division\"+s+\") - division\"+s+\") > 1e-\"+e.opts.multipleOfPrecision+\" \":\" division\"+s+\" !== parseInt(division\"+s+\") \")+\" ) \",h&&(a+=\"  )  \");r=[],r.push(a+=\" ) {   \"),a=\"\",!1!==e.createErrors?(a+=\" { keyword: 'multipleOf' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(l)+\" , params: { multipleOf: \"+o+\" } \",!1!==e.opts.messages&&(a=a+\" , message: 'should be multiple of \"+(h?\"' + \"+o:o+\"'\")),e.opts.verbose&&(a=(a+=\" , schema:  \")+(h?\"validate.schema\"+n:\"\"+i)+\"         , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+u+\" \"),a+=\" } \"):a+=\" {} \",s=a;return a=(a=r.pop())+(!e.compositeRule&&c?e.async?\" throw new ValidationError([\"+s+\"]); \":\" validate.errors = [\"+s+\"]; return false; \":\" var err = \"+s+\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \")+\"} \",c&&(a+=\" else { \"),a}},{}],30:[function(e,r,t){r.exports=function(e,r,t){var a,s,o=\" \",i=e.level,n=e.dataLevel,l=e.schema[r],c=e.schemaPath+e.util.getProperty(r),r=e.errSchemaPath+\"/\"+r,u=!e.opts.allErrors,n=\"data\"+(n||\"\"),i=\"errs__\"+i,h=e.util.copy(e),d=(h.level++,\"valid\"+h.level);return(e.opts.strictKeywords?\"object\"==typeof l&&0<Object.keys(l).length||!1===l:e.util.schemaHasRules(l,e.RULES.all))?(h.schema=l,h.schemaPath=c,h.errSchemaPath=r,o+=\" var \"+i+\" = errors;  \",l=e.compositeRule,e.compositeRule=h.compositeRule=!0,h.createErrors=!1,h.opts.allErrors&&(s=h.opts.allErrors,h.opts.allErrors=!1),o+=\" \"+e.validate(h)+\" \",h.createErrors=!0,s&&(h.opts.allErrors=s),e.compositeRule=h.compositeRule=l,(a=a||[]).push(o+=\" if (\"+d+\") {   \"),o=\"\",!1!==e.createErrors?(o+=\" { keyword: 'not' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(r)+\" , params: {} \",!1!==e.opts.messages&&(o+=\" , message: 'should NOT be valid' \"),e.opts.verbose&&(o+=\" , schema: validate.schema\"+c+\" , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+n+\" \"),o+=\" } \"):o+=\" {} \",s=o,o=(o=a.pop())+(!e.compositeRule&&u?e.async?\" throw new ValidationError([\"+s+\"]); \":\" validate.errors = [\"+s+\"]; return false; \":\" var err = \"+s+\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \")+\" } else {  errors = \"+i+\"; if (vErrors !== null) { if (\"+i+\") vErrors.length = \"+i+\"; else vErrors = null; } \",e.opts.allErrors&&(o+=\" } \")):(o+=\"  var err =   \",!1!==e.createErrors?(o+=\" { keyword: 'not' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(r)+\" , params: {} \",!1!==e.opts.messages&&(o+=\" , message: 'should NOT be valid' \"),e.opts.verbose&&(o+=\" , schema: validate.schema\"+c+\" , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+n+\" \"),o+=\" } \"):o+=\" {} \",o+=\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \",u&&(o+=\" if (false) { \")),o}},{}],31:[function(e,r,t){r.exports=function(e,r,t){var a=\" \",s=e.level,o=e.dataLevel,i=e.schema[r],n=e.schemaPath+e.util.getProperty(r),l=e.errSchemaPath+\"/\"+r,r=!e.opts.allErrors,o=\"data\"+(o||\"\"),c=\"valid\"+s,u=\"errs__\"+s,h=e.util.copy(e),d=\"\",p=(h.level++,\"valid\"+h.level),f=h.baseId,m=\"prevValid\"+s,v=\"passingSchemas\"+s,s=(a+=\"var \"+u+\" = errors , \"+m+\" = false , \"+c+\" = false , \"+v+\" = null; \",e.compositeRule),y=(e.compositeRule=h.compositeRule=!0,i);if(y)for(var g,P=-1,E=y.length-1;P<E;)g=y[P+=1],(e.opts.strictKeywords?\"object\"==typeof g&&0<Object.keys(g).length||!1===g:e.util.schemaHasRules(g,e.RULES.all))?(h.schema=g,h.schemaPath=n+\"[\"+P+\"]\",h.errSchemaPath=l+\"/\"+P,a+=\"  \"+e.validate(h)+\" \",h.baseId=f):a+=\" var \"+p+\" = true; \",P&&(a+=\" if (\"+p+\" && \"+m+\") { \"+c+\" = false; \"+v+\" = [\"+v+\", \"+P+\"]; } else { \",d+=\"}\"),a+=\" if (\"+p+\") { \"+c+\" = \"+m+\" = true; \"+v+\" = \"+P+\"; }\";return e.compositeRule=h.compositeRule=s,a+=d+\"if (!\"+c+\") {   var err =   \",!1!==e.createErrors?(a+=\" { keyword: 'oneOf' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(l)+\" , params: { passingSchemas: \"+v+\" } \",!1!==e.opts.messages&&(a+=\" , message: 'should match exactly one schema in oneOf' \"),e.opts.verbose&&(a+=\" , schema: validate.schema\"+n+\" , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+o+\" \"),a+=\" } \"):a+=\" {} \",a+=\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \",!e.compositeRule&&r&&(a+=e.async?\" throw new ValidationError(vErrors); \":\" validate.errors = vErrors; return false; \"),a+=\"} else {  errors = \"+u+\"; if (vErrors !== null) { if (\"+u+\") vErrors.length = \"+u+\"; else vErrors = null; }\",e.opts.allErrors&&(a+=\" } \"),a}},{}],32:[function(e,r,t){r.exports=function(e,r,t){var a=\" \",s=e.level,o=e.dataLevel,i=e.schema[r],n=e.schemaPath+e.util.getProperty(r),r=e.errSchemaPath+\"/\"+r,l=!e.opts.allErrors,c=\"data\"+(o||\"\"),u=\"valid\"+s,h=e.opts.$data&&i&&i.$data,o=h?(a+=\" var schema\"+s+\" = \"+e.util.getData(i.$data,o,e.dataPathArr)+\"; \",\"schema\"+s):i,s=(h?(a+=\" var \"+u+\" = true; try { \"+u+\" = \"+(e.opts.regExp?\"regExp\":\"new RegExp\")+\"(\"+o+\").test(\"+c+\"); } catch(e) { \"+u+\" = false; } if ( \",h&&(a+=\" (\"+o+\" !== undefined && typeof \"+o+\" != 'string') || \"),a+=\" !\"+u+\") {\"):(a+=\" if ( \",h&&(a+=\" (\"+o+\" !== undefined && typeof \"+o+\" != 'string') || \"),a+=\" !\"+e.usePattern(i)+\".test(\"+c+\") ) {\"),[]),u=(s.push(a),a=\"\",!1!==e.createErrors?(a=(a+=\" { keyword: 'pattern' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(r)+\" , params: { pattern:  \")+(h?\"\"+o:\"\"+e.util.toQuotedString(i))+\"  } \",!1!==e.opts.messages&&(a=(a+=\" , message: 'should match pattern \"\")+(h?\"' + \"+o+\" + '\":\"\"+e.util.escapeQuotes(i))+\"\"' \"),e.opts.verbose&&(a=(a=(a+=\" , schema:  \")+(h?\"validate.schema\"+n:\"\"+e.util.toQuotedString(i)))+\"         , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+c+\" \"),a+=\" } \"):a+=\" {} \",a);return a=(a=s.pop())+(!e.compositeRule&&l?e.async?\" throw new ValidationError([\"+u+\"]); \":\" validate.errors = [\"+u+\"]; return false; \":\" var err = \"+u+\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \")+\"} \",l&&(a+=\" else { \"),a}},{}],33:[function(e,r,t){r.exports=function(e,r,L){var t,a=\" \",s=e.level,o=e.dataLevel,N=e.schema[r],i=e.schemaPath+e.util.getProperty(r),n=e.errSchemaPath+\"/\"+r,l=!e.opts.allErrors,c=\"data\"+(o||\"\"),r=\"errs__\"+s,u=e.util.copy(e),h=\"\",d=(u.level++,\"valid\"+u.level),p=\"key\"+s,f=\"idx\"+s,m=u.dataLevel=e.dataLevel+1,v=\"data\"+m,y=\"dataProperties\"+s,o=Object.keys(N||{}).filter(V),z=e.schema.patternProperties||{},g=Object.keys(z).filter(V),P=e.schema.additionalProperties,q=o.length||g.length,T=!1===P,Q=\"object\"==typeof P&&Object.keys(P).length,E=e.opts.removeAdditional,w=T||Q||E,b=e.opts.ownProperties,S=e.baseId,_=e.schema.required;function V(e){return\"__proto__\"!==e}if(_&&(!e.opts.$data||!_.$data)&&_.length<e.opts.loopRequired&&(t=e.util.toHash(_)),a+=\"var \"+r+\" = errors;var \"+d+\" = true;\",b&&(a+=\" var \"+y+\" = undefined;\"),w){if(a+=b?\" \"+y+\" = \"+y+\" || Object.keys(\"+c+\"); for (var \"+f+\"=0; \"+f+\"<\"+y+\".length; \"+f+\"++) { var \"+p+\" = \"+y+\"[\"+f+\"]; \":\" for (var \"+p+\" in \"+c+\") { \",q){if(a+=\" var isAdditional\"+s+\" = !(false \",o.length)if(8<o.length)a+=\" || validate.schema\"+i+\".hasOwnProperty(\"+p+\") \";else{var U=o;if(U)for(var H=-1,M=U.length-1;H<M;)F=U[H+=1],a+=\" || \"+p+\" == \"+e.util.toQuotedString(F)+\" \"}if(g.length){var K=g;if(K)for(var B=-1,J=K.length-1;B<J;)A=K[B+=1],a+=\" || \"+e.usePattern(A)+\".test(\"+p+\") \"}a+=\" ); if (isAdditional\"+s+\") { \"}\"all\"==E?a+=\" delete \"+c+\"[\"+p+\"]; \":(R=e.errorPath,_=\"' + \"+p+\" + '\",e.opts._errorDataPathProperty&&(e.errorPath=e.util.getPathExpr(e.errorPath,p,e.opts.jsonPointers)),T?E?a+=\" delete \"+c+\"[\"+p+\"]; \":($=n,n=e.errSchemaPath+\"/additionalProperties\",(D=D||[]).push(a+=\" \"+d+\" = false; \"),a=\"\",!1!==e.createErrors?(a+=\" { keyword: 'additionalProperties' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(n)+\" , params: { additionalProperty: '\"+_+\"' } \",!1!==e.opts.messages&&(a=(a+=\" , message: '\")+(e.opts._errorDataPathProperty?\"is an invalid additional property\":\"should NOT have additional properties\")+\"' \"),e.opts.verbose&&(a+=\" , schema: false , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+c+\" \"),a+=\" } \"):a+=\" {} \",O=a,a=D.pop(),a+=!e.compositeRule&&l?e.async?\" throw new ValidationError([\"+O+\"]); \":\" validate.errors = [\"+O+\"]; return false; \":\" var err = \"+O+\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \",n=$,l&&(a+=\" break; \")):Q&&(\"failing\"==E?(a+=\" var \"+r+\" = errors;  \",w=e.compositeRule,e.compositeRule=u.compositeRule=!0,u.schema=P,u.schemaPath=e.schemaPath+\".additionalProperties\",u.errSchemaPath=e.errSchemaPath+\"/additionalProperties\",u.errorPath=e.opts._errorDataPathProperty?e.errorPath:e.util.getPathExpr(e.errorPath,p,e.opts.jsonPointers),k=c+\"[\"+p+\"]\",u.dataPathArr[m]=p,C=e.validate(u),u.baseId=S,e.util.varOccurences(C,v)<2?a+=\" \"+e.util.varReplace(C,v,k)+\" \":a+=\" var \"+v+\" = \"+k+\"; \"+C+\" \",a+=\" if (!\"+d+\") { errors = \"+r+\"; if (validate.errors !== null) { if (errors) validate.errors.length = errors; else validate.errors = null; } delete \"+c+\"[\"+p+\"]; }  \",e.compositeRule=u.compositeRule=w):(u.schema=P,u.schemaPath=e.schemaPath+\".additionalProperties\",u.errSchemaPath=e.errSchemaPath+\"/additionalProperties\",u.errorPath=e.opts._errorDataPathProperty?e.errorPath:e.util.getPathExpr(e.errorPath,p,e.opts.jsonPointers),k=c+\"[\"+p+\"]\",u.dataPathArr[m]=p,C=e.validate(u),u.baseId=S,e.util.varOccurences(C,v)<2?a+=\" \"+e.util.varReplace(C,v,k)+\" \":a+=\" var \"+v+\" = \"+k+\"; \"+C+\" \",l&&(a+=\" if (!\"+d+\") break; \"))),e.errorPath=R),q&&(a+=\" } \"),a+=\" }  \",l&&(a+=\" if (\"+d+\") { \",h+=\"}\")}var Z=e.opts.useDefaults&&!e.compositeRule;if(o.length){var G=o;if(G)for(var F,Y=-1,W=G.length-1;Y<W;){var X,x,R,$,j,D,O,I=N[F=G[Y+=1]];(e.opts.strictKeywords?\"object\"==typeof I&&0<Object.keys(I).length||!1===I:e.util.schemaHasRules(I,e.RULES.all))&&(k=c+(j=e.util.getProperty(F)),X=Z&&void 0!==I.default,u.schema=I,u.schemaPath=i+j,u.errSchemaPath=n+\"/\"+e.util.escapeFragment(F),u.errorPath=e.util.getPath(e.errorPath,F,e.opts.jsonPointers),u.dataPathArr[m]=e.util.toQuotedString(F),C=e.validate(u),u.baseId=S,e.util.varOccurences(C,v)<2?(C=e.util.varReplace(C,v,k),x=k):a+=\" var \"+(x=v)+\" = \"+k+\"; \",X?a+=\" \"+C+\" \":(t&&t[F]?(a+=\" if ( \"+x+\" === undefined \",b&&(a+=\" || ! Object.prototype.hasOwnProperty.call(\"+c+\", '\"+e.util.escapeQuotes(F)+\"') \"),a+=\") { \"+d+\" = false; \",R=e.errorPath,$=n,j=e.util.escapeQuotes(F),e.opts._errorDataPathProperty&&(e.errorPath=e.util.getPath(R,F,e.opts.jsonPointers)),n=e.errSchemaPath+\"/required\",(D=D||[]).push(a),a=\"\",!1!==e.createErrors?(a+=\" { keyword: 'required' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(n)+\" , params: { missingProperty: '\"+j+\"' } \",!1!==e.opts.messages&&(a=(a+=\" , message: '\")+(e.opts._errorDataPathProperty?\"is a required property\":\"should have required property \\'\"+j+\"\\'\")+\"' \"),e.opts.verbose&&(a+=\" , schema: validate.schema\"+i+\" , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+c+\" \"),a+=\" } \"):a+=\" {} \",O=a,a=D.pop(),a+=!e.compositeRule&&l?e.async?\" throw new ValidationError([\"+O+\"]); \":\" validate.errors = [\"+O+\"]; return false; \":\" var err = \"+O+\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \",n=$,e.errorPath=R,a+=\" } else { \"):l?(a+=\" if ( \"+x+\" === undefined \",b&&(a+=\" || ! Object.prototype.hasOwnProperty.call(\"+c+\", '\"+e.util.escapeQuotes(F)+\"') \"),a+=\") { \"+d+\" = true; } else { \"):(a+=\" if (\"+x+\" !== undefined \",b&&(a+=\" &&   Object.prototype.hasOwnProperty.call(\"+c+\", '\"+e.util.escapeQuotes(F)+\"') \"),a+=\" ) { \"),a+=\" \"+C+\" } \")),l&&(a+=\" if (\"+d+\") { \",h+=\"}\")}}if(g.length){var ee=g;if(ee)for(var A,re=-1,te=ee.length-1;re<te;){var k,C,I=z[A=ee[re+=1]];(e.opts.strictKeywords?\"object\"==typeof I&&0<Object.keys(I).length||!1===I:e.util.schemaHasRules(I,e.RULES.all))&&(u.schema=I,u.schemaPath=e.schemaPath+\".patternProperties\"+e.util.getProperty(A),u.errSchemaPath=e.errSchemaPath+\"/patternProperties/\"+e.util.escapeFragment(A),a=(a+=b?\" \"+y+\" = \"+y+\" || Object.keys(\"+c+\"); for (var \"+f+\"=0; \"+f+\"<\"+y+\".length; \"+f+\"++) { var \"+p+\" = \"+y+\"[\"+f+\"]; \":\" for (var \"+p+\" in \"+c+\") { \")+\" if (\"+e.usePattern(A)+\".test(\"+p+\")) { \",u.errorPath=e.util.getPathExpr(e.errorPath,p,e.opts.jsonPointers),k=c+\"[\"+p+\"]\",u.dataPathArr[m]=p,C=e.validate(u),u.baseId=S,e.util.varOccurences(C,v)<2?a+=\" \"+e.util.varReplace(C,v,k)+\" \":a+=\" var \"+v+\" = \"+k+\"; \"+C+\" \",l&&(a+=\" if (!\"+d+\") break; \"),a+=\" } \",l&&(a+=\" else \"+d+\" = true; \"),a+=\" }  \",l)&&(a+=\" if (\"+d+\") { \",h+=\"}\")}}return l&&(a+=\" \"+h+\" if (\"+r+\" == errors) {\"),a}},{}],34:[function(e,r,t){r.exports=function(e,r,t){var a,s,o,i,n,l,c,u=\" \",h=e.level,d=e.dataLevel,p=e.schema[r],f=e.schemaPath+e.util.getProperty(r),r=e.errSchemaPath+\"/\"+r,m=!e.opts.allErrors,d=\"data\"+(d||\"\"),v=\"errs__\"+h,y=e.util.copy(e),g=(y.level++,\"valid\"+y.level);return u+=\"var \"+v+\" = errors;\",(e.opts.strictKeywords?\"object\"==typeof p&&0<Object.keys(p).length||!1===p:e.util.schemaHasRules(p,e.RULES.all))&&(y.schema=p,y.schemaPath=f,y.errSchemaPath=r,p=\"idx\"+h,s=\"i\"+h,o=\"' + \"+(a=\"key\"+h)+\" + '\",i=\"data\"+(y.dataLevel=e.dataLevel+1),c=\"dataProperties\"+h,n=e.baseId,(l=e.opts.ownProperties)&&(u+=\" var \"+c+\" = undefined; \"),u=u+(l?\" \"+c+\" = \"+c+\" || Object.keys(\"+d+\"); for (var \"+p+\"=0; \"+p+\"<\"+c+\".length; \"+p+\"++) { var \"+a+\" = \"+c+\"[\"+p+\"]; \":\" for (var \"+a+\" in \"+d+\") { \")+\" var startErrs\"+h+\" = errors; \",l=a,c=e.compositeRule,e.compositeRule=y.compositeRule=!0,p=e.validate(y),y.baseId=n,e.util.varOccurences(p,i)<2?u+=\" \"+e.util.varReplace(p,i,l)+\" \":u+=\" var \"+i+\" = \"+l+\"; \"+p+\" \",e.compositeRule=y.compositeRule=c,u+=\" if (!\"+g+\") { for (var \"+s+\"=startErrs\"+h+\"; \"+s+\"<errors; \"+s+\"++) { vErrors[\"+s+\"].propertyName = \"+a+\"; }   var err =   \",!1!==e.createErrors?(u+=\" { keyword: 'propertyNames' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(r)+\" , params: { propertyName: '\"+o+\"' } \",!1!==e.opts.messages&&(u+=\" , message: 'property name \\'\"+o+\"\\' is invalid' \"),e.opts.verbose&&(u+=\" , schema: validate.schema\"+f+\" , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+d+\" \"),u+=\" } \"):u+=\" {} \",u+=\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \",!e.compositeRule&&m&&(u+=e.async?\" throw new ValidationError(vErrors); \":\" validate.errors = vErrors; return false; \"),m&&(u+=\" break; \"),u+=\" } }\"),m&&(u+=\"  if (\"+v+\" == errors) {\"),u}},{}],35:[function(e,r,t){r.exports=function(e,r,t){var a,s,o=\" \",i=e.dataLevel,n=e.schema[r],r=e.errSchemaPath+\"/\"+r,l=!e.opts.allErrors,c=\"data\"+(i||\"\"),u=\"valid\"+e.level;if(\"#\"==n||\"#/\"==n)s=e.isRoot?(a=e.async,\"validate\"):(a=!0===e.root.schema.$async,\"root.refVal[0]\");else{var h=e.resolveRef(e.baseId,n,e.isRoot);if(void 0===h){var d=e.MissingRefError.message(e.baseId,n);if(\"fail\"==e.opts.missingRefs){e.logger.error(d);(p=p||[]).push(o),o=\"\",!1!==e.createErrors?(o+=\" { keyword: '$ref' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(r)+\" , params: { ref: '\"+e.util.escapeQuotes(n)+\"' } \",!1!==e.opts.messages&&(o+=\" , message: 'can\\'t resolve reference \"+e.util.escapeQuotes(n)+\"' \"),e.opts.verbose&&(o+=\" , schema: \"+e.util.toQuotedString(n)+\" , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+c+\" \"),o+=\" } \"):o+=\" {} \";r=o,o=p.pop();o+=!e.compositeRule&&l?e.async?\" throw new ValidationError([\"+r+\"]); \":\" validate.errors = [\"+r+\"]; return false; \":\" var err = \"+r+\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \",l&&(o+=\" if (false) { \")}else{if(\"ignore\"!=e.opts.missingRefs)throw new e.MissingRefError(e.baseId,n,d);e.logger.warn(d),l&&(o+=\" if (true) { \")}}else h.inline?((r=e.util.copy(e)).level++,d=\"valid\"+r.level,r.schema=h.schema,r.schemaPath=\"\",r.errSchemaPath=n,o+=\" \"+e.validate(r).replace(/validate.schema/g,h.code)+\" \",l&&(o+=\" if (\"+d+\") { \")):(a=!0===h.$async||e.async&&!1!==h.$async,s=h.code)}if(s){(p=p||[]).push(o),o=(o=\"\")+(e.opts.passContext?\" \"+s+\".call(this, \":\" \"+s+\"( \")+(\" \"+c+\", (dataPath || '')\"),'\"\"'!=e.errorPath&&(o+=\" + \"+e.errorPath);var p,n=i?\"data\"+(i-1||\"\"):\"parentData\",r=o+=\" , \"+n+\" , \"+(i?e.dataPathArr[i]:\"parentDataProperty\")+\", rootData)  \";if(o=p.pop(),a){if(!e.async)throw new Error(\"async schema referenced by sync schema\");l&&(o+=\" var \"+u+\"; \"),o+=\" try { await \"+r+\"; \",l&&(o+=\" \"+u+\" = true; \"),o+=\" } catch (e) { if (!(e instanceof ValidationError)) throw e; if (vErrors === null) vErrors = e.errors; else vErrors = vErrors.concat(e.errors); errors = vErrors.length; \",l&&(o+=\" \"+u+\" = false; \"),o+=\" } \",l&&(o+=\" if (\"+u+\") { \")}else o+=\" if (!\"+r+\") { if (vErrors === null) vErrors = \"+s+\".errors; else vErrors = vErrors.concat(\"+s+\".errors); errors = vErrors.length; } \",l&&(o+=\" else { \")}return o}},{}],36:[function(e,r,t){r.exports=function(e,r,t){var a=\" \",s=e.level,o=e.dataLevel,i=e.schema[r],n=e.schemaPath+e.util.getProperty(r),l=e.errSchemaPath+\"/\"+r,r=!e.opts.allErrors,c=\"data\"+(o||\"\"),u=\"valid\"+s,h=e.opts.$data&&i&&i.$data,o=(h&&(a+=\" var schema\"+s+\" = \"+e.util.getData(i.$data,o,e.dataPathArr)+\"; \"),\"schema\"+s);if(!h)if(i.length<e.opts.loopRequired&&e.schema.properties&&Object.keys(e.schema.properties).length){var d=[],p=i;if(p)for(var f=-1,m=p.length-1;f<m;){var v=p[f+=1],y=e.schema.properties[v];y&&(e.opts.strictKeywords?\"object\"==typeof y&&0<Object.keys(y).length||!1===y:e.util.schemaHasRules(y,e.RULES.all))||(d[d.length]=v)}}else d=i;if(h||d.length){var g=e.errorPath,i=h||e.opts.loopRequired<=d.length,P=e.opts.ownProperties;if(r){if(a+=\" var missing\"+s+\"; \",i){h||(a+=\" var \"+o+\" = validate.schema\"+n+\"; \");var E=\"' + \"+(x=\"schema\"+s+\"[\"+(S=\"i\"+s)+\"]\")+\" + '\";e.opts._errorDataPathProperty&&(e.errorPath=e.util.getPathExpr(g,x,e.opts.jsonPointers)),a+=\" var \"+u+\" = true; \",h&&(a+=\" if (schema\"+s+\" === undefined) \"+u+\" = true; else if (!Array.isArray(schema\"+s+\")) \"+u+\" = false; else {\"),a+=\" for (var \"+S+\" = 0; \"+S+\" < \"+o+\".length; \"+S+\"++) { \"+u+\" = \"+c+\"[\"+o+\"[\"+S+\"]] !== undefined \",P&&(a+=\" &&   Object.prototype.hasOwnProperty.call(\"+c+\", \"+o+\"[\"+S+\"]) \"),a+=\"; if (!\"+u+\") break; } \",h&&(a+=\"  }  \");(F=F||[]).push(a+=\"  if (!\"+u+\") {   \"),a=\"\",!1!==e.createErrors?(a+=\" { keyword: 'required' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(l)+\" , params: { missingProperty: '\"+E+\"' } \",!1!==e.opts.messages&&(a=(a+=\" , message: '\")+(e.opts._errorDataPathProperty?\"is a required property\":\"should have required property \\'\"+E+\"\\'\")+\"' \"),e.opts.verbose&&(a+=\" , schema: validate.schema\"+n+\" , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+c+\" \"),a+=\" } \"):a+=\" {} \";var w=a}else{a+=\" if ( \";var b=d;if(b)for(var S=-1,_=b.length-1;S<_;)$=b[S+=1],S&&(a+=\" || \"),a+=\" ( ( \"+(I=c+(O=e.util.getProperty($)))+\" === undefined \",P&&(a+=\" || ! Object.prototype.hasOwnProperty.call(\"+c+\", '\"+e.util.escapeQuotes($)+\"') \"),a+=\") && (missing\"+s+\" = \"+e.util.toQuotedString(e.opts.jsonPointers?$:O)+\") ) \";a+=\") {  \";E=\"' + \"+(x=\"missing\"+s)+\" + '\";e.opts._errorDataPathProperty&&(e.errorPath=e.opts.jsonPointers?e.util.getPathExpr(g,x,!0):g+\" + \"+x);(F=F||[]).push(a),a=\"\",!1!==e.createErrors?(a+=\" { keyword: 'required' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(l)+\" , params: { missingProperty: '\"+E+\"' } \",!1!==e.opts.messages&&(a=(a+=\" , message: '\")+(e.opts._errorDataPathProperty?\"is a required property\":\"should have required property \\'\"+E+\"\\'\")+\"' \"),e.opts.verbose&&(a+=\" , schema: validate.schema\"+n+\" , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+c+\" \"),a+=\" } \"):a+=\" {} \";var F,w=a}a=(a=F.pop())+(!e.compositeRule&&r?e.async?\" throw new ValidationError([\"+w+\"]); \":\" validate.errors = [\"+w+\"]; return false; \":\" var err = \"+w+\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \")+\" } else { \"}else if(i){h||(a+=\" var \"+o+\" = validate.schema\"+n+\"; \");var x,E=\"' + \"+(x=\"schema\"+s+\"[\"+(S=\"i\"+s)+\"]\")+\" + '\";e.opts._errorDataPathProperty&&(e.errorPath=e.util.getPathExpr(g,x,e.opts.jsonPointers)),h&&(a+=\" if (\"+o+\" && !Array.isArray(\"+o+\")) {  var err =   \",!1!==e.createErrors?(a+=\" { keyword: 'required' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(l)+\" , params: { missingProperty: '\"+E+\"' } \",!1!==e.opts.messages&&(a=(a+=\" , message: '\")+(e.opts._errorDataPathProperty?\"is a required property\":\"should have required property \\'\"+E+\"\\'\")+\"' \"),e.opts.verbose&&(a+=\" , schema: validate.schema\"+n+\" , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+c+\" \"),a+=\" } \"):a+=\" {} \",a+=\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; } else if (\"+o+\" !== undefined) { \"),a+=\" for (var \"+S+\" = 0; \"+S+\" < \"+o+\".length; \"+S+\"++) { if (\"+c+\"[\"+o+\"[\"+S+\"]] === undefined \",P&&(a+=\" || ! Object.prototype.hasOwnProperty.call(\"+c+\", \"+o+\"[\"+S+\"]) \"),a+=\") {  var err =   \",!1!==e.createErrors?(a+=\" { keyword: 'required' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(l)+\" , params: { missingProperty: '\"+E+\"' } \",!1!==e.opts.messages&&(a=(a+=\" , message: '\")+(e.opts._errorDataPathProperty?\"is a required property\":\"should have required property \\'\"+E+\"\\'\")+\"' \"),e.opts.verbose&&(a+=\" , schema: validate.schema\"+n+\" , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+c+\" \"),a+=\" } \"):a+=\" {} \",a+=\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; } } \",h&&(a+=\"  }  \")}else{var R=d;if(R)for(var $,j=-1,D=R.length-1;j<D;){$=R[j+=1];var O=e.util.getProperty($),E=e.util.escapeQuotes($),I=c+O;e.opts._errorDataPathProperty&&(e.errorPath=e.util.getPath(g,$,e.opts.jsonPointers)),a+=\" if ( \"+I+\" === undefined \",P&&(a+=\" || ! Object.prototype.hasOwnProperty.call(\"+c+\", '\"+e.util.escapeQuotes($)+\"') \"),a+=\") {  var err =   \",!1!==e.createErrors?(a+=\" { keyword: 'required' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(l)+\" , params: { missingProperty: '\"+E+\"' } \",!1!==e.opts.messages&&(a=(a+=\" , message: '\")+(e.opts._errorDataPathProperty?\"is a required property\":\"should have required property \\'\"+E+\"\\'\")+\"' \"),e.opts.verbose&&(a+=\" , schema: validate.schema\"+n+\" , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+c+\" \"),a+=\" } \"):a+=\" {} \",a+=\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; } \"}}e.errorPath=g}else r&&(a+=\" if (true) {\");return a}},{}],37:[function(e,r,t){r.exports=function(e,r,t){var a,s=\" \",o=e.level,i=e.dataLevel,n=e.schema[r],l=e.schemaPath+e.util.getProperty(r),r=e.errSchemaPath+\"/\"+r,c=!e.opts.allErrors,u=\"data\"+(i||\"\"),h=\"valid\"+o,d=e.opts.$data&&n&&n.$data,i=d?(s+=\" var schema\"+o+\" = \"+e.util.getData(n.$data,i,e.dataPathArr)+\"; \",\"schema\"+o):n;return(n||d)&&!1!==e.opts.uniqueItems?(d&&(s+=\" var \"+h+\"; if (\"+i+\" === false || \"+i+\" === undefined) \"+h+\" = true; else if (typeof \"+i+\" != 'boolean') \"+h+\" = false; else { \"),s+=\" var i = \"+u+\".length , \"+h+\" = true , j; if (i > 1) { \",o=e.schema.items&&e.schema.items.type,i=Array.isArray(o),!o||\"object\"==o||\"array\"==o||i&&(0<=o.indexOf(\"object\")||0<=o.indexOf(\"array\"))?s+=\" outer: for (;i--;) { for (j = i; j--;) { if (equal(\"+u+\"[i], \"+u+\"[j])) { \"+h+\" = false; break outer; } } } \":(s=(s+=\" var itemIndices = {}, item; for (;i--;) { var item = \"+u+\"[i]; \")+\" if (\"+e.util[\"checkDataType\"+(i?\"s\":\"\")](o,\"item\",e.opts.strictNumbers,!0)+\") continue; \",i&&(s+=\" if (typeof item == 'string') item = '\"' + item; \"),s+=\" if (typeof itemIndices[item] == 'number') { \"+h+\" = false; j = itemIndices[item]; break; } itemIndices[item] = i; } \"),s+=\" } \",d&&(s+=\"  }  \"),(a=a||[]).push(s+=\" if (!\"+h+\") {   \"),s=\"\",!1!==e.createErrors?(s+=\" { keyword: 'uniqueItems' , dataPath: (dataPath || '') + \"+e.errorPath+\" , schemaPath: \"+e.util.toQuotedString(r)+\" , params: { i: i, j: j } \",!1!==e.opts.messages&&(s+=\" , message: 'should NOT have duplicate items (items ## ' + j + ' and ' + i + ' are identical)' \"),e.opts.verbose&&(s=(s+=\" , schema:  \")+(d?\"validate.schema\"+l:\"\"+n)+\"         , parentSchema: validate.schema\"+e.schemaPath+\" , data: \"+u+\" \"),s+=\" } \"):s+=\" {} \",o=s,s=(s=a.pop())+(!e.compositeRule&&c?e.async?\" throw new ValidationError([\"+o+\"]); \":\" validate.errors = [\"+o+\"]; return false; \":\" var err = \"+o+\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \")+\" } \",c&&(s+=\" else { \")):c&&(s+=\" if (true) { \"),s}},{}],38:[function(e,r,t){r.exports=function(a,e,L){var r=\"\",t=!0===a.schema.$async,s=a.util.schemaHasRulesExcept(a.schema,a.RULES.all,\"$ref\"),o=a.self._getId(a.schema);if(a.opts.strictKeywords){var i=a.util.schemaUnknownRules(a.schema,a.RULES.keywords);if(i){i=\"unknown keyword: \"+i;if(\"log\"!==a.opts.strictKeywords)throw new Error(i);a.logger.warn(i)}}if(a.isTop&&(r+=\" var validate = \",t&&(a.async=!0,r+=\"async \"),r+=\"function(data, dataPath, parentData, parentDataProperty, rootData) { 'use strict'; \",o)&&(a.opts.sourceCode||a.opts.processCode)&&(r+=\" /*# sourceURL=\"+o+\" */ \"),\"boolean\"==typeof a.schema||!s&&!a.schema.$ref)l=a.level,c=a.dataLevel,j=a.schema[e=\"false schema\"],E=a.schemaPath+a.util.getProperty(e),w=a.errSchemaPath+\"/\"+e,p=!a.opts.allErrors,u=\"data\"+(c||\"\"),d=\"valid\"+l,!1===a.schema?(a.isTop?p=!0:r+=\" var \"+d+\" = false; \",(k=k||[]).push(r),r=\"\",!1!==a.createErrors?(r+=\" { keyword: 'false schema' , dataPath: (dataPath || '') + \"+a.errorPath+\" , schemaPath: \"+a.util.toQuotedString(w)+\" , params: {} \",!1!==a.opts.messages&&(r+=\" , message: 'boolean schema is false' \"),a.opts.verbose&&(r+=\" , schema: false , parentSchema: validate.schema\"+a.schemaPath+\" , data: \"+u+\" \"),r+=\" } \"):r+=\" {} \",R=r,r=k.pop(),r+=!a.compositeRule&&p?a.async?\" throw new ValidationError([\"+R+\"]); \":\" validate.errors = [\"+R+\"]; return false; \":\" var err = \"+R+\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \"):r+=a.isTop?t?\" return data; \":\" validate.errors = null; return true; \":\" var \"+d+\" = true; \",a.isTop&&(r+=\" }; return validate; \");else{if(a.isTop){var n=a.isTop,l=a.level=0,c=a.dataLevel=0,u=\"data\";if(a.rootId=a.resolve.fullPath(a.self._getId(a.root.schema)),a.baseId=a.baseId||a.rootId,delete a.isTop,a.dataPathArr=[\"\"],void 0!==a.schema.default&&a.opts.useDefaults&&a.opts.strictDefaults){var h=\"default is ignored in the schema root\";if(\"log\"!==a.opts.strictDefaults)throw new Error(h);a.logger.warn(h)}r=(r+=\" var vErrors = null; \")+\" var errors = 0;     \"+\" if (rootData === undefined) rootData = data; \"}else{l=a.level,u=\"data\"+((c=a.dataLevel)||\"\");if(o&&(a.baseId=a.resolve.url(a.baseId,o)),t&&!a.async)throw new Error(\"async schema in sync schema\");r+=\" var errs_\"+l+\" = errors;\"}var d=\"valid\"+l,p=!a.opts.allErrors,f=\"\",m=\"\",v=a.schema.type,y=Array.isArray(v);if(v&&a.opts.nullable&&!0===a.schema.nullable&&(y?-1==v.indexOf(\"null\")&&(v=v.concat(\"null\")):\"null\"!=v&&(v=[v,\"null\"],y=!0)),y&&1==v.length&&(v=v[0],y=!1),a.schema.$ref&&s){if(\"fail\"==a.opts.extendRefs)throw new Error('$ref: validation keywords used in schema at path \"'+a.errSchemaPath+'\" (see option extendRefs)');!0!==a.opts.extendRefs&&(s=!1,a.logger.warn('$ref: keywords ignored in schema at path \"'+a.errSchemaPath+'\"'))}if(a.schema.$comment&&a.opts.$comment&&(r+=\" \"+a.RULES.all.$comment.code(a,\"$comment\")),v){a.opts.coerceTypes&&(g=a.util.coerceToTypes(a.opts.coerceTypes,v));var g,P=a.RULES.types[v];if(g||y||!0===P||P&&!B(P)){var E=a.schemaPath+\".type\",w=a.errSchemaPath+\"/type\",E=a.schemaPath+\".type\",w=a.errSchemaPath+\"/type\";if(r+=\" if (\"+a.util[y?\"checkDataTypes\":\"checkDataType\"](v,u,a.opts.strictNumbers,!0)+\") { \",g){var b=\"dataType\"+l,S=\"coerced\"+l,_=(r+=\" var \"+b+\" = typeof \"+u+\"; var \"+S+\" = undefined; \",\"array\"==a.opts.coerceTypes&&(r+=\" if (\"+b+\" == 'object' && Array.isArray(\"+u+\") && \"+u+\".length == 1) { \"+u+\" = \"+u+\"[0]; \"+b+\" = typeof \"+u+\"; if (\"+a.util.checkDataType(a.schema.type,u,a.opts.strictNumbers)+\") \"+S+\" = \"+u+\"; } \"),r+=\" if (\"+S+\" !== undefined) ; \",g);if(_)for(var F,x=-1,N=_.length-1;x<N;)\"string\"==(F=_[x+=1])?r+=\" else if (\"+b+\" == 'number' || \"+b+\" == 'boolean') \"+S+\" = '' + \"+u+\"; else if (\"+u+\" === null) \"+S+\" = ''; \":\"number\"==F||\"integer\"==F?(r+=\" else if (\"+b+\" == 'boolean' || \"+u+\" === null || (\"+b+\" == 'string' && \"+u+\" && \"+u+\" == +\"+u+\" \",\"integer\"==F&&(r+=\" && !(\"+u+\" % 1)\"),r+=\")) \"+S+\" = +\"+u+\"; \"):\"boolean\"==F?r+=\" else if (\"+u+\" === 'false' || \"+u+\" === 0 || \"+u+\" === null) \"+S+\" = false; else if (\"+u+\" === 'true' || \"+u+\" === 1) \"+S+\" = true; \":\"null\"==F?r+=\" else if (\"+u+\" === '' || \"+u+\" === 0 || \"+u+\" === false) \"+S+\" = null; \":\"array\"==a.opts.coerceTypes&&\"array\"==F&&(r+=\" else if (\"+b+\" == 'string' || \"+b+\" == 'number' || \"+b+\" == 'boolean' || \"+u+\" == null) \"+S+\" = [\"+u+\"]; \");(k=k||[]).push(r+=\" else {   \"),r=\"\",!1!==a.createErrors?(r=(r+=\" { keyword: 'type' , dataPath: (dataPath || '') + \"+a.errorPath+\" , schemaPath: \"+a.util.toQuotedString(w)+\" , params: { type: '\")+(y?\"\"+v.join(\",\"):\"\"+v)+\"' } \",!1!==a.opts.messages&&(r=(r+=\" , message: 'should be \")+(y?\"\"+v.join(\",\"):\"\"+v)+\"' \"),a.opts.verbose&&(r+=\" , schema: validate.schema\"+E+\" , parentSchema: validate.schema\"+a.schemaPath+\" , data: \"+u+\" \"),r+=\" } \"):r+=\" {} \";var R=r,i=(r=k.pop(),c?\"data\"+(c-1||\"\"):\"parentData\");r=(r+=!a.compositeRule&&p?a.async?\" throw new ValidationError([\"+R+\"]); \":\" validate.errors = [\"+R+\"]; return false; \":\" var err = \"+R+\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \")+(\" } if (\"+S+\" !== undefined) {  \")+(\" \"+u+\" = \"+S+\"; \"),c||(r+=\"if (\"+i+\" !== undefined)\"),r+=\" \"+i+\"[\"+(c?a.dataPathArr[c]:\"parentDataProperty\")+\"] = \"+S+\"; } \"}else{R=((k=k||[]).push(r),r=\"\",!1!==a.createErrors?(r=(r+=\" { keyword: 'type' , dataPath: (dataPath || '') + \"+a.errorPath+\" , schemaPath: \"+a.util.toQuotedString(w)+\" , params: { type: '\")+(y?\"\"+v.join(\",\"):\"\"+v)+\"' } \",!1!==a.opts.messages&&(r=(r+=\" , message: 'should be \")+(y?\"\"+v.join(\",\"):\"\"+v)+\"' \"),a.opts.verbose&&(r+=\" , schema: validate.schema\"+E+\" , parentSchema: validate.schema\"+a.schemaPath+\" , data: \"+u+\" \"),r+=\" } \"):r+=\" {} \",r);r=k.pop(),r+=!a.compositeRule&&p?a.async?\" throw new ValidationError([\"+R+\"]); \":\" validate.errors = [\"+R+\"]; return false; \":\" var err = \"+R+\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \"}r+=\" } \"}}if(a.schema.$ref&&!s)r+=\" \"+a.RULES.all.$ref.code(a,\"$ref\")+\" \",p&&(r=(r+=\" } if (errors === \")+(n?\"0\":\"errs_\"+l)+\") { \",m+=\"}\");else{var $=a.RULES;if($)for(var z=-1,q=$.length-1;z<q;)if(B(P=$[z+=1])){if(P.type&&(r+=\" if (\"+a.util.checkDataType(P.type,u,a.opts.strictNumbers)+\") { \"),a.opts.useDefaults)if(\"object\"==P.type&&a.schema.properties){var j=a.schema.properties,D=Object.keys(j);if(D)for(var T,Q=-1,V=D.length-1;Q<V;)if(void 0!==(A=j[T=D[Q+=1]]).default){var O=u+a.util.getProperty(T);if(a.compositeRule){if(a.opts.strictDefaults){h=\"default is ignored for: \"+O;if(\"log\"!==a.opts.strictDefaults)throw new Error(h);a.logger.warn(h)}}else r+=\" if (\"+O+\" === undefined \",\"empty\"==a.opts.useDefaults&&(r+=\" || \"+O+\" === null || \"+O+\" === '' \"),r=(r+=\" ) \"+O+\" = \")+(\"shared\"==a.opts.useDefaults?\" \"+a.useDefault(A.default)+\" \":\" \"+JSON.stringify(A.default)+\" \")+\"; \"}}else if(\"array\"==P.type&&Array.isArray(a.schema.items)){var I=a.schema.items;if(I)for(var A,x=-1,U=I.length-1;x<U;)if(void 0!==(A=I[x+=1]).default){O=u+\"[\"+x+\"]\";if(a.compositeRule){if(a.opts.strictDefaults){h=\"default is ignored for: \"+O;if(\"log\"!==a.opts.strictDefaults)throw new Error(h);a.logger.warn(h)}}else r+=\" if (\"+O+\" === undefined \",\"empty\"==a.opts.useDefaults&&(r+=\" || \"+O+\" === null || \"+O+\" === '' \"),r=(r+=\" ) \"+O+\" = \")+(\"shared\"==a.opts.useDefaults?\" \"+a.useDefault(A.default)+\" \":\" \"+JSON.stringify(A.default)+\" \")+\"; \"}}var k,H=P.rules;if(H)for(var C,M=-1,K=H.length-1;M<K;)J(C=H[M+=1])&&(C=C.code(a,C.keyword,P.type))&&(r+=\" \"+C+\" \",p)&&(f+=\"}\");p&&(r+=\" \"+f+\" \",f=\"\"),P.type&&(r+=\" } \",v)&&v===P.type&&!g&&(E=a.schemaPath+\".type\",w=a.errSchemaPath+\"/type\",(k=k||[]).push(r+=\" else { \"),r=\"\",!1!==a.createErrors?(r=(r+=\" { keyword: 'type' , dataPath: (dataPath || '') + \"+a.errorPath+\" , schemaPath: \"+a.util.toQuotedString(w)+\" , params: { type: '\")+(y?\"\"+v.join(\",\"):\"\"+v)+\"' } \",!1!==a.opts.messages&&(r=(r+=\" , message: 'should be \")+(y?\"\"+v.join(\",\"):\"\"+v)+\"' \"),a.opts.verbose&&(r+=\" , schema: validate.schema\"+E+\" , parentSchema: validate.schema\"+a.schemaPath+\" , data: \"+u+\" \"),r+=\" } \"):r+=\" {} \",R=r,r=(r=k.pop())+(!a.compositeRule&&p?a.async?\" throw new ValidationError([\"+R+\"]); \":\" validate.errors = [\"+R+\"]; return false; \":\" var err = \"+R+\";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; \")+\" } \"),p&&(r=(r+=\" if (errors === \")+(n?\"0\":\"errs_\"+l)+\") { \",m+=\"}\")}}p&&(r+=\" \"+m+\" \"),n?r=r+(t?\" if (errors === 0) return data;            else throw new ValidationError(vErrors); \":\" validate.errors = vErrors;  return errors === 0;       \")+\" }; return validate;\":r+=\" var \"+d+\" = errors === errs_\"+l+\";\"}return r;function B(e){for(var r=e.rules,t=0;t<r.length;t++)if(J(r[t]))return 1}function J(e){return void 0!==a.schema[e.keyword]||e.implements&&(e=>{for(var r=e.implements,t=0;t<r.length;t++)if(void 0!==a.schema[r[t]])return 1})(e)}}},{}],39:[function(e,r,t){var n=/^[a-z_$][a-z0-9_$-]*$/i,l=e(\"./dotjs/custom\"),a=e(\"./definition_schema\");function s(e,r){s.errors=null;var t=this._validateKeyword=this._validateKeyword||this.compile(a,!0);if(t(e))return!0;if(s.errors=t.errors,r)throw new Error(\"custom keyword definition is invalid: \"+this.errorsText(t.errors));return!1}r.exports={add:function(e,r){var i=this.RULES;if(i.keywords[e])throw new Error(\"Keyword \"+e+\" is already defined\");if(!n.test(e))throw new Error(\"Keyword \"+e+\" is not a valid identifier\");if(r){this.validateKeyword(r,!0);var t=r.type;if(Array.isArray(t))for(var a=0;a<t.length;a++)o(e,t[a],r);else o(e,t,r);var s=r.metaSchema;s&&(r.validateSchema=this.compile(s=r.$data&&this._opts.$data?{anyOf:[s,{$ref:\"https://raw.githubusercontent.com/ajv-validator/ajv/master/lib/refs/data.json#\"}]}:s,!0))}function o(e,r,t){for(var a,s=0;s<i.length;s++){var o=i[s];if(o.type==r){a=o;break}}a||i.push(a={type:r,rules:[]});t={keyword:e,definition:t,custom:!0,code:l,implements:t.implements};a.rules.push(t),i.custom[e]=t}return i.keywords[e]=i.all[e]=!0,this},get:function(e){var r=this.RULES.custom[e];return r?r.definition:this.RULES.keywords[e]||!1},remove:function(e){var r=this.RULES;delete r.keywords[e],delete r.all[e],delete r.custom[e];for(var t=0;t<r.length;t++)for(var a=r[t].rules,s=0;s<a.length;s++)if(a[s].keyword==e){a.splice(s,1);break}return this},validate:s}},{\"./definition_schema\":12,\"./dotjs/custom\":22}],40:[function(e,r,t){r.exports={$schema:\"http://json-schema.org/draft-07/schema#\",$id:\"https://raw.githubusercontent.com/ajv-validator/ajv/master/lib/refs/data.json#\",description:\"Meta-schema for $data reference (JSON Schema extension proposal)\",type:\"object\",required:[\"$data\"],properties:{$data:{type:\"string\",anyOf:[{format:\"relative-json-pointer\"},{format:\"json-pointer\"}]}},additionalProperties:!1}},{}],41:[function(e,r,t){r.exports={$schema:\"http://json-schema.org/draft-07/schema#\",$id:\"http://json-schema.org/draft-07/schema#\",title:\"Core schema meta-schema\",definitions:{schemaArray:{type:\"array\",minItems:1,items:{$ref:\"#\"}},nonNegativeInteger:{type:\"integer\",minimum:0},nonNegativeIntegerDefault0:{allOf:[{$ref:\"#/definitions/nonNegativeInteger\"},{default:0}]},simpleTypes:{enum:[\"array\",\"boolean\",\"integer\",\"null\",\"number\",\"object\",\"string\"]},stringArray:{type:\"array\",items:{type:\"string\"},uniqueItems:!0,default:[]}},type:[\"object\",\"boolean\"],properties:{$id:{type:\"string\",format:\"uri-reference\"},$schema:{type:\"string\",format:\"uri\"},$ref:{type:\"string\",format:\"uri-reference\"},$comment:{type:\"string\"},title:{type:\"string\"},description:{type:\"string\"},default:!0,readOnly:{type:\"boolean\",default:!1},examples:{type:\"array\",items:!0},multipleOf:{type:\"number\",exclusiveMinimum:0},maximum:{type:\"number\"},exclusiveMaximum:{type:\"number\"},minimum:{type:\"number\"},exclusiveMinimum:{type:\"number\"},maxLength:{$ref:\"#/definitions/nonNegativeInteger\"},minLength:{$ref:\"#/definitions/nonNegativeIntegerDefault0\"},pattern:{type:\"string\",format:\"regex\"},additionalItems:{$ref:\"#\"},items:{anyOf:[{$ref:\"#\"},{$ref:\"#/definitions/schemaArray\"}],default:!0},maxItems:{$ref:\"#/definitions/nonNegativeInteger\"},minItems:{$ref:\"#/definitions/nonNegativeIntegerDefault0\"},uniqueItems:{type:\"boolean\",default:!1},contains:{$ref:\"#\"},maxProperties:{$ref:\"#/definitions/nonNegativeInteger\"},minProperties:{$ref:\"#/definitions/nonNegativeIntegerDefault0\"},required:{$ref:\"#/definitions/stringArray\"},additionalProperties:{$ref:\"#\"},definitions:{type:\"object\",additionalProperties:{$ref:\"#\"},default:{}},properties:{type:\"object\",additionalProperties:{$ref:\"#\"},default:{}},patternProperties:{type:\"object\",additionalProperties:{$ref:\"#\"},propertyNames:{format:\"regex\"},default:{}},dependencies:{type:\"object\",additionalProperties:{anyOf:[{$ref:\"#\"},{$ref:\"#/definitions/stringArray\"}]}},propertyNames:{$ref:\"#\"},const:!0,enum:{type:\"array\",items:!0,minItems:1,uniqueItems:!0},type:{anyOf:[{$ref:\"#/definitions/simpleTypes\"},{type:\"array\",items:{$ref:\"#/definitions/simpleTypes\"},minItems:1,uniqueItems:!0}]},format:{type:\"string\"},contentMediaType:{type:\"string\"},contentEncoding:{type:\"string\"},if:{$ref:\"#\"},then:{$ref:\"#\"},else:{$ref:\"#\"},allOf:{$ref:\"#/definitions/schemaArray\"},anyOf:{$ref:\"#/definitions/schemaArray\"},oneOf:{$ref:\"#/definitions/schemaArray\"},not:{$ref:\"#\"}},default:!0}},{}],42:[function(e,r,t){r.exports=function e(r,t){if(r===t)return!0;if(r&&t&&\"object\"==typeof r&&\"object\"==typeof t){if(r.constructor!==t.constructor)return!1;var a,s,o;if(Array.isArray(r)){if((a=r.length)!=t.length)return!1;for(s=a;0!=s--;)if(!e(r[s],t[s]))return!1}else{if(r.constructor===RegExp)return r.source===t.source&&r.flags===t.flags;if(r.valueOf!==Object.prototype.valueOf)return r.valueOf()===t.valueOf();if(r.toString!==Object.prototype.toString)return r.toString()===t.toString();if((a=(o=Object.keys(r)).length)!==Object.keys(t).length)return!1;for(s=a;0!=s--;)if(!Object.prototype.hasOwnProperty.call(t,o[s]))return!1;for(s=a;0!=s--;){var i=o[s];if(!e(r[i],t[i]))return!1}}return!0}return r!=r&&t!=t}},{}],43:[function(e,r,t){r.exports=function(e,r){var a,l=\"boolean\"==typeof(r=\"function\"==typeof(r=r||{})?{cmp:r}:r).cycles&&r.cycles,c=r.cmp&&(a=r.cmp,function(t){return function(e,r){return a({key:e,value:t[e]},{key:r,value:t[r]})}}),u=[];return function e(r){if(void 0!==(r=r&&r.toJSON&&\"function\"==typeof r.toJSON?r.toJSON():r)){if(\"number\"==typeof r)return isFinite(r)?\"\"+r:\"null\";if(\"object\"!=typeof r)return JSON.stringify(r);if(Array.isArray(r)){for(s=\"[\",o=0;o<r.length;o++)o&&(s+=\",\"),s+=e(r[o])||\"null\";return s+\"]\"}if(null===r)return\"null\";if(-1!==u.indexOf(r)){if(l)return JSON.stringify(\"__cycle__\");throw new TypeError(\"Converting circular structure to JSON\")}for(var t=u.push(r)-1,a=Object.keys(r).sort(c&&c(r)),s=\"\",o=0;o<a.length;o++){var i=a[o],n=e(r[i]);n&&(s&&(s+=\",\"),s+=JSON.stringify(i)+\":\"+n)}return u.splice(t,1),\"{\"+s+\"}\"}}(e)}},{}],44:[function(e,r,t){var m=r.exports=function(e,r,t){\"function\"==typeof r&&(t=r,r={}),function e(r,t,a,s,o,i,n,l,c,u){if(s&&\"object\"==typeof s&&!Array.isArray(s)){for(var h in t(s,o,i,n,l,c,u),s){var d=s[h];if(Array.isArray(d)){if(h in m.arrayKeywords)for(var p=0;p<d.length;p++)e(r,t,a,d[p],o+\"/\"+h+\"/\"+p,i,o,h,s,p)}else if(h in m.propsKeywords){if(d&&\"object\"==typeof d)for(var f in d)e(r,t,a,d[f],o+\"/\"+h+\"/\"+v(f),i,o,h,s,f)}else(h in m.keywords||r.allKeys&&!(h in m.skipKeywords))&&e(r,t,a,d,o+\"/\"+h,i,o,h,s)}a(s,o,i,n,l,c,u)}}(r,\"function\"==typeof(t=r.cb||t)?t:t.pre||function(){},t.post||function(){},e,\"\",e)};function v(e){return e.replace(/~/g,\"~0\").replace(///g,\"~1\")}m.keywords={additionalItems:!0,items:!0,contains:!0,additionalProperties:!0,propertyNames:!0,not:!0},m.arrayKeywords={items:!0,allOf:!0,anyOf:!0,oneOf:!0},m.propsKeywords={definitions:!0,properties:!0,patternProperties:!0,dependencies:!0},m.skipKeywords={default:!0,enum:!0,const:!0,required:!0,maximum:!0,minimum:!0,exclusiveMaximum:!0,exclusiveMinimum:!0,multipleOf:!0,maxLength:!0,minLength:!0,pattern:!0,format:!0,maxItems:!0,minItems:!0,uniqueItems:!0,maxProperties:!0,minProperties:!0}},{}],45:[function(e,r,t){var a;a=this,function(e){function g(){for(var e=arguments.length,r=Array(e),t=0;t<e;t++)r[t]=arguments[t];if(1<r.length){r[0]=r[0].slice(0,-1);for(var a=r.length-1,s=1;s<a;++s)r[s]=r[s].slice(1,-1);return r[a]=r[a].slice(1),r.join(\"\")}return r[0]}function P(e){return\"(?:\"+e+\")\"}function a(e){return void 0===e?\"undefined\":null===e?\"null\":Object.prototype.toString.call(e).split(\" \").pop().split(\"]\").shift().toLowerCase()}function p(e){return e.toUpperCase()}function r(e){var r=\"[A-Za-z]\",t=\"[0-9]\",a=g(t,\"[A-Fa-f]\"),s=P(P(\"%[EFef]\"+a+\"%\"+a+a+\"%\"+a+a)+\"|\"+P(\"%[89A-Fa-f]\"+a+\"%\"+a+a)+\"|\"+P(\"%\"+a+a)),o=\"[\\!\\$\\&\\'\\(\\)\\*\\+\\,\\;\\=]\",i=g(\"[\\:\\/\\?\\#\\[\\]\\@]\",o),n=e?\"[\\uE000-\\uF8FF]\":\"[]\",e=g(r,t,\"[\\-\\.\\_\\~]\",e?\"[\\xA0-\\u200D\\u2010-\\u2029\\u202F-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF]\":\"[]\"),l=(P(r+g(r,t,\"[\\+\\-\\.]\")+\"*\"),P(P(s+\"|\"+g(e,o,\"[\\:]\"))+\"*\"),P(\"(?:25[0-5])|(?:2[0-4][0-9])|(?:1[0-9][0-9])|(?:0?[1-9][0-9])|0?0?\"+t)),l=P(l+\"\\.\"+l+\"\\.\"+l+\"\\.\"+l),c=P(a+\"{1,4}\"),u=P(P(c+\"\\:\"+c)+\"|\"+l),h=P(P(c+\"\\:\")+\"{6}\"+u),d=P(\"\\:\\:\"+P(c+\"\\:\")+\"{5}\"+u),p=P(P(c)+\"?\\:\\:\"+P(c+\"\\:\")+\"{4}\"+u),f=P(P(P(c+\"\\:\")+\"{0,1}\"+c)+\"?\\:\\:\"+P(c+\"\\:\")+\"{3}\"+u),m=P(P(P(c+\"\\:\")+\"{0,2}\"+c)+\"?\\:\\:\"+P(c+\"\\:\")+\"{2}\"+u),v=P(P(P(c+\"\\:\")+\"{0,3}\"+c)+\"?\\:\\:\"+c+\"\\:\"+u),u=P(P(P(c+\"\\:\")+\"{0,4}\"+c)+\"?\\:\\:\"+u),y=P(P(P(c+\"\\:\")+\"{0,5}\"+c)+\"?\\:\\:\"+c),c=P(P(P(c+\"\\:\")+\"{0,6}\"+c)+\"?\\:\\:\"),h=P([h,d,p,f,m,v,u,y,c].join(\"|\")),d=P(P(e+\"|\"+s)+\"+\"),p=(P(\"[vV]\"+a+\"+\\.\"+g(e,o,\"[\\:]\")+\"+\"),P(P(s+\"|\"+g(e,o))+\"*\"),P(s+\"|\"+g(e,o,\"[\\:\\@]\")));P(P(s+\"|\"+g(e,o,\"[\\@]\"))+\"+\"),P(P(p+\"|\"+g(\"[\\/\\?]\",n))+\"*\");return{NOT_SCHEME:new RegExp(g(\"[^]\",r,t,\"[\\+\\-\\.]\"),\"g\"),NOT_USERINFO:new RegExp(g(\"[^\\%\\:]\",e,o),\"g\"),NOT_HOST:new RegExp(g(\"[^\\%\\[\\]\\:]\",e,o),\"g\"),NOT_PATH:new RegExp(g(\"[^\\%\\/\\:\\@]\",e,o),\"g\"),NOT_PATH_NOSCHEME:new RegExp(g(\"[^\\%\\/\\@]\",e,o),\"g\"),NOT_QUERY:new RegExp(g(\"[^\\%]\",e,o,\"[\\:\\@\\/\\?]\",n),\"g\"),NOT_FRAGMENT:new RegExp(g(\"[^\\%]\",e,o,\"[\\:\\@\\/\\?]\"),\"g\"),ESCAPE:new RegExp(g(\"[^]\",e,o),\"g\"),UNRESERVED:new RegExp(e,\"g\"),OTHER_CHARS:new RegExp(g(\"[^\\%]\",e,i),\"g\"),PCT_ENCODED:new RegExp(s,\"g\"),IPV4ADDRESS:new RegExp(\"^(\"+l+\")$\"),IPV6ADDRESS:new RegExp(\"^\\[?(\"+h+\")\"+P(P(\"\\%25|\\%(?!\"+a+\"{2})\")+\"(\"+d+\")\")+\"?\\]?$\")}}var n=r(!1),l=r(!0),h=function(e,r){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e)){var t=r,a=[],s=!0,r=!1,o=void 0;try{for(var i,n=e[Symbol.iterator]();!(s=(i=n.next()).done)&&(a.push(i.value),!t||a.length!==t);s=!0);}catch(e){r=!0,o=e}finally{try{!s&&n.return&&n.return()}finally{if(r)throw o}}return a}throw new TypeError(\"Invalid attempt to destructure non-iterable instance\")},O=2147483647,I=36,A=26,$=38,j=700,D=/^xn--/,q=/[^0-~]/,T=/[.。．｡]/g,Q={overflow:\"Overflow: input needs wider integers to process\",\"not-basic\":\"Illegal input >= 0x80 (not a basic code point)\",\"invalid-input\":\"Invalid input\"},s=I-1,k=Math.floor,C=String.fromCharCode;function L(e){throw new RangeError(Q[e])}function t(e,r){var t=e.split(\"@\"),a=\"\",t=(1<t.length&&(a=t[0]+\"@\",e=t[1]),(e=e.replace(T,\".\")).split(\".\"));return a+((e,r)=>{for(var t=[],a=e.length;a--;)t[a]=r(e[a]);return t})(t,r).join(\".\")}function V(e){for(var r=[],t=0,a=e.length;t<a;){var s,o=e.charCodeAt(t++);55296<=o&&o<=56319&&t<a?56320==(64512&(s=e.charCodeAt(t++)))?r.push(((1023&o)<<10)+(1023&s)+65536):(r.push(o),t--):r.push(o)}return r}function N(e,r){return e+22+75*(e<26)-((0!=r)<<5)}function z(e,r,t){var a=0;for(e=t?k(e/j):e>>1,e+=k(e/r);s*A>>1<e;a+=I)e=k(e/s);return k(a+(s+1)*e/(e+$))}function U(e){var r=[],t=e.length,a=0,s=128,o=72,i=e.lastIndexOf(\"-\");i<0&&(i=0);for(var n=0;n<i;++n)128<=e.charCodeAt(n)&&L(\"not-basic\"),r.push(e.charCodeAt(n));for(var l=0<i?i+1:0;l<t;){for(var c=a,u=1,h=I;;h+=I){t<=l&&L(\"invalid-input\");var d=(d=e.charCodeAt(l++))-48<10?d-22:d-65<26?d-65:d-97<26?d-97:I,p=((I<=d||d>k((O-a)/u))&&L(\"overflow\"),a+=d*u,h<=o?1:o+A<=h?A:h-o);if(d<p)break;d=I-p;u>k(O/d)&&L(\"overflow\"),u*=d}var f=r.length+1,o=z(a-c,f,0==c);k(a/f)>O-s&&L(\"overflow\"),s+=k(a/f),a%=f,r.splice(a++,0,s)}return String.fromCodePoint.apply(String,r)}function H(e){var r=[],t=(e=V(e)).length,a=128,s=0,o=72,i=!0,n=!1,l=void 0;try{for(var c,u=e[Symbol.iterator]();!(i=(c=u.next()).done);i=!0){var h=c.value;h<128&&r.push(C(h))}}catch(e){n=!0,l=e}finally{try{!i&&u.return&&u.return()}finally{if(n)throw l}}var d=r.length,p=d;for(d&&r.push(\"-\");p<t;){var f=O,m=!0,v=!1,y=void 0;try{for(var g,P=e[Symbol.iterator]();!(m=(g=P.next()).done);m=!0){var E=g.value;a<=E&&E<f&&(f=E)}}catch(e){v=!0,y=e}finally{try{!m&&P.return&&P.return()}finally{if(v)throw y}}var w=p+1,b=(f-a>k((O-s)/w)&&L(\"overflow\"),s+=(f-a)*w,a=f,!0),v=!1,y=void 0;try{for(var S,_=e[Symbol.iterator]();!(b=(S=_.next()).done);b=!0){var F=S.value;if(F<a&&++s>O&&L(\"overflow\"),F==a){for(var x=s,R=I;;R+=I){var $=R<=o?1:o+A<=R?A:R-o;if(x<$)break;var j=x-$,D=I-$;r.push(C(N($+j%D,0))),x=k(j/D)}r.push(C(N(x,0))),o=z(s,w,p==d),s=0,++p}}}catch(e){v=!0,y=e}finally{try{!b&&_.return&&_.return()}finally{if(v)throw y}}++s,++a}return r.join(\"\")}var v=function(e){return t(e,function(e){return q.test(e)?\"xn--\"+H(e):e})},M=function(e){return t(e,function(e){return D.test(e)?U(e.slice(4).toLowerCase()):e})},c={};function f(e){e=e.charCodeAt(0);return e<16?\"%0\"+e.toString(16).toUpperCase():e<128?\"%\"+e.toString(16).toUpperCase():e<2048?\"%\"+(e>>6|192).toString(16).toUpperCase()+\"%\"+(63&e|128).toString(16).toUpperCase():\"%\"+(e>>12|224).toString(16).toUpperCase()+\"%\"+(e>>6&63|128).toString(16).toUpperCase()+\"%\"+(63&e|128).toString(16).toUpperCase()}function u(e){for(var r=\"\",t=0,a=e.length;t<a;){var s,o,i=parseInt(e.substr(t+1,2),16);i<128?(r+=String.fromCharCode(i),t+=3):194<=i&&i<224?(6<=a-t?(s=parseInt(e.substr(t+4,2),16),r+=String.fromCharCode((31&i)<<6|63&s)):r+=e.substr(t,6),t+=6):224<=i?(9<=a-t?(s=parseInt(e.substr(t+4,2),16),o=parseInt(e.substr(t+7,2),16),r+=String.fromCharCode((15&i)<<12|(63&s)<<6|63&o)):r+=e.substr(t,9),t+=9):(r+=e.substr(t,3),t+=3)}return r}function d(e,t){function r(e){var r=u(e);return r.match(t.UNRESERVED)?r:e}e.scheme&&(e.scheme=String(e.scheme).replace(t.PCT_ENCODED,r).toLowerCase().replace(t.NOT_SCHEME,\"\")),void 0!==e.userinfo&&(e.userinfo=String(e.userinfo).replace(t.PCT_ENCODED,r).replace(t.NOT_USERINFO,f).replace(t.PCT_ENCODED,p)),void 0!==e.host&&(e.host=String(e.host).replace(t.PCT_ENCODED,r).toLowerCase().replace(t.NOT_HOST,f).replace(t.PCT_ENCODED,p)),void 0!==e.path&&(e.path=String(e.path).replace(t.PCT_ENCODED,r).replace(e.scheme?t.NOT_PATH:t.NOT_PATH_NOSCHEME,f).replace(t.PCT_ENCODED,p)),void 0!==e.query&&(e.query=String(e.query).replace(t.PCT_ENCODED,r).replace(t.NOT_QUERY,f).replace(t.PCT_ENCODED,p)),void 0!==e.fragment&&(e.fragment=String(e.fragment).replace(t.PCT_ENCODED,r).replace(t.NOT_FRAGMENT,f).replace(t.PCT_ENCODED,p))}function m(e){return e.replace(/^0*(.*)/,\"$1\")||\"0\"}function y(e,r){r=e.match(r.IPV4ADDRESS)||[],r=h(r,2)[1];return r?r.split(\".\").map(m).join(\".\"):e}function K(e,r){var t=e.match(r.IPV6ADDRESS)||[],t=h(t,3),a=t[1],t=t[2];if(a){for(var a=a.toLowerCase().split(\"::\").reverse(),a=h(a,2),s=a[0],a=a[1],o=a?a.split(\":\").map(m):[],i=s.split(\":\").map(m),a=r.IPV4ADDRESS.test(i[i.length-1]),n=a?7:8,l=i.length-n,c=Array(n),u=0;u<n;++u)c[u]=o[u]||i[l+u]||\"\";a&&(c[n-1]=y(c[n-1],r));var s=c.reduce(function(e,r,t){return r&&\"0\"!==r||((r=e[e.length-1])&&r.index+r.length===t?r.length++:e.push({index:t,length:1})),e},[]).sort(function(e,r){return r.length-e.length})[0],a=void 0;return a=s&&1<s.length?(r=c.slice(0,s.index),s=c.slice(s.index+s.length),r.join(\":\")+\"::\"+s.join(\":\")):c.join(\":\"),t&&(a+=\"%\"+t),a}return e}var B=/^(?:([^:/?#]+):)?(?://((?:([^/?#@]*)@)?([[^/?#]]+]|[^/?#:]*)(?::(d*))?))?([^?#]*)(?:?([^#]*))?(?:#((?:.|\n"
-"|\r"
-")*))?/i,J=void 0===\"\".match(/(){0}/)[1];function o(e){var r=1<arguments.length&&void 0!==arguments[1]?arguments[1]:{},t={},a=!1!==r.iri?l:n,s=(e=\"suffix\"===r.reference?(r.scheme?r.scheme+\":\":\"\")+\"//\"+e:e).match(B);if(s){J?(t.scheme=s[1],t.userinfo=s[3],t.host=s[4],t.port=parseInt(s[5],10),t.path=s[6]||\"\",t.query=s[7],t.fragment=s[8],isNaN(t.port)&&(t.port=s[5])):(t.scheme=s[1]||void 0,t.userinfo=-1!==e.indexOf(\"@\")?s[3]:void 0,t.host=-1!==e.indexOf(\"//\")?s[4]:void 0,t.port=parseInt(s[5],10),t.path=s[6]||\"\",t.query=-1!==e.indexOf(\"?\")?s[7]:void 0,t.fragment=-1!==e.indexOf(\"#\")?s[8]:void 0,isNaN(t.port)&&(t.port=e.match(///(?:.|\n"
-")*:(?:/|?|#|$)/)?s[4]:void 0)),t.host&&(t.host=K(y(t.host,a),a)),t.reference=void 0!==t.scheme||void 0!==t.userinfo||void 0!==t.host||void 0!==t.port||t.path||void 0!==t.query?void 0===t.scheme?\"relative\":void 0===t.fragment?\"absolute\":\"uri\":\"same-document\",r.reference&&\"suffix\"!==r.reference&&r.reference!==t.reference&&(t.error=t.error||\"URI is not a \"+r.reference+\" reference.\");e=c[(r.scheme||t.scheme||\"\").toLowerCase()];if(r.unicodeSupport||e&&e.unicodeSupport)d(t,a);else{if(t.host&&(r.domainHost||e&&e.domainHost))try{t.host=v(t.host.replace(a.PCT_ENCODED,u).toLowerCase())}catch(e){t.error=t.error||\"Host's domain name can not be converted to ASCII via punycode: \"+e}d(t,n)}e&&e.parse&&e.parse(t,r)}else t.error=t.error||\"URI can not be parsed.\";return t}var Z=/^..?//,G=/^/.(/|$)/,Y=/^/..(/|$)/,W=/^/?(?:.|\n"
-")*?(?=/|$)/;function E(e){for(var r=[];e.length;)if(e.match(Z))e=e.replace(Z,\"\");else if(e.match(G))e=e.replace(G,\"/\");else if(e.match(Y))e=e.replace(Y,\"/\"),r.pop();else if(\".\"===e||\"..\"===e)e=\"\";else{var t=e.match(W);if(!t)throw new Error(\"Unexpected dot segment condition\");t=t[0];e=e.slice(t.length),r.push(t)}return r.join(\"\")}function i(r){var t=1<arguments.length&&void 0!==arguments[1]?arguments[1]:{},e=t.iri?l:n,a=[],s=c[(t.scheme||r.scheme||\"\").toLowerCase()];if(s&&s.serialize&&s.serialize(r,t),r.host&&!e.IPV6ADDRESS.test(r.host)&&(t.domainHost||s&&s.domainHost))try{r.host=t.iri?M(r.host):v(r.host.replace(e.PCT_ENCODED,u).toLowerCase())}catch(e){r.error=r.error||\"Host's domain name can not be converted to \"+(t.iri?\"Unicode\":\"ASCII\")+\" via punycode: \"+e}d(r,e),\"suffix\"!==t.reference&&r.scheme&&(a.push(r.scheme),a.push(\":\"));e=!1!==(e=t).iri?l:n,o=[],void 0!==(i=r).userinfo&&(o.push(i.userinfo),o.push(\"@\")),void 0!==i.host&&o.push(K(y(String(i.host),e),e).replace(e.IPV6ADDRESS,function(e,r,t){return\"[\"+r+(t?\"%25\"+t:\"\")+\"]\"})),\"number\"!=typeof i.port&&\"string\"!=typeof i.port||(o.push(\":\"),o.push(String(i.port)));var o,i,e=o.length?o.join(\"\"):void 0;return void 0!==e&&(\"suffix\"!==t.reference&&a.push(\"//\"),a.push(e),r.path)&&\"/\"!==r.path.charAt(0)&&a.push(\"/\"),void 0!==r.path&&(i=r.path,t.absolutePath||s&&s.absolutePath||(i=E(i)),void 0===e&&(i=i.replace(/^///,\"/%2F\")),a.push(i)),void 0!==r.query&&(a.push(\"?\"),a.push(r.query)),void 0!==r.fragment&&(a.push(\"#\"),a.push(r.fragment)),a.join(\"\")}function X(e,r){var t=2<arguments.length&&void 0!==arguments[2]?arguments[2]:{},a={};return arguments[3]||(e=o(i(e,t),t),r=o(i(r,t),t)),!(t||{}).tolerant&&r.scheme?(a.scheme=r.scheme,a.userinfo=r.userinfo,a.host=r.host,a.port=r.port,a.path=E(r.path||\"\"),a.query=r.query):(void 0!==r.userinfo||void 0!==r.host||void 0!==r.port?(a.userinfo=r.userinfo,a.host=r.host,a.port=r.port,a.path=E(r.path||\"\"),a.query=r.query):(r.path?(\"/\"===r.path.charAt(0)?a.path=E(r.path):(a.path=void 0===e.userinfo&&void 0===e.host&&void 0===e.port||e.path?e.path?e.path.slice(0,e.path.lastIndexOf(\"/\")+1)+r.path:r.path:\"/\"+r.path,a.path=E(a.path)),a.query=r.query):(a.path=e.path,a.query=(void 0!==r.query?r:e).query),a.userinfo=e.userinfo,a.host=e.host,a.port=e.port),a.scheme=e.scheme),a.fragment=r.fragment,a}function w(e,r){return e&&e.toString().replace((r&&r.iri?l:n).PCT_ENCODED,u)}var b={scheme:\"http\",domainHost:!0,parse:function(e,r){return e.host||(e.error=e.error||\"HTTP URIs must have a host.\"),e},serialize:function(e,r){var t=\"https\"===String(e.scheme).toLowerCase();return e.port!==(t?443:80)&&\"\"!==e.port||(e.port=void 0),e.path||(e.path=\"/\"),e}},ee={scheme:\"https\",domainHost:b.domainHost,parse:b.parse,serialize:b.serialize};function re(e){return\"boolean\"==typeof e.secure?e.secure:\"wss\"===String(e.scheme).toLowerCase()}var S={scheme:\"ws\",domainHost:!0,parse:function(e,r){return e.secure=re(e),e.resourceName=(e.path||\"/\")+(e.query?\"?\"+e.query:\"\"),e.path=void 0,e.query=void 0,e},serialize:function(e,r){var t,a;return e.port!==(re(e)?443:80)&&\"\"!==e.port||(e.port=void 0),\"boolean\"==typeof e.secure&&(e.scheme=e.secure?\"wss\":\"ws\",e.secure=void 0),e.resourceName&&(t=e.resourceName.split(\"?\"),a=(t=h(t,2))[1],e.path=(t=t[0])&&\"/\"!==t?t:void 0,e.query=a,e.resourceName=void 0),e.fragment=void 0,e}},te={scheme:\"wss\",domainHost:S.domainHost,parse:S.parse,serialize:S.serialize},ae={},_=\"[A-Za-z0-9\\-\\.\\_\\~\\xA0-\\u200D\\u2010-\\u2029\\u202F-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF]\",F=g(\"[\\!\\$\\%\\'\\(\\)\\*\\+\\,\\-\\.0-9\\<\\>A-Z\\x5E-\\x7E]\",'[\\\"\\\\]'),se=new RegExp(_,\"g\"),x=new RegExp(\"(?:(?:%[EFef][0-9A-Fa-f]%[0-9A-Fa-f][0-9A-Fa-f]%[0-9A-Fa-f][0-9A-Fa-f])|(?:%[89A-Fa-f][0-9A-Fa-f]%[0-9A-Fa-f][0-9A-Fa-f])|(?:%[0-9A-Fa-f][0-9A-Fa-f]))\",\"g\"),oe=new RegExp(g(\"[^]\",\"[A-Za-z0-9\\!\\$\\%\\'\\*\\+\\-\\^\\_\\"
-msgstr ""
-
-#: node_modules/markdown-it/dist/index.cjs.js:105
-msgid ""
-"{|}~])/g;\n"
-"var UNESCAPE_ALL_RE = new RegExp(UNESCAPE_MD_RE.source + \"|\" + /&([a-z#][a-z0-9]{1,31});/gi.source, \"gi\");\n"
-"var DIGITAL_ENTITY_TEST_RE = /^#((?:x[a-f0-9]{1,8}|[0-9]{1,8}))$/i;\n"
-"function replaceEntityPattern(match, name) {\n"
-"\tif (name.charCodeAt(0) === 35 && DIGITAL_ENTITY_TEST_RE.test(name)) {\n"
-"\t\tconst code = name[1].toLowerCase() === \"x\" ? parseInt(name.slice(2), 16) : parseInt(name.slice(1), 10);\n"
-"\t\tif (isValidEntityCode(code)) return fromCodePoint(code);\n"
-"\t\treturn match;\n"
-"\t}\n"
-"\tconst decoded = (0, entities.decodeHTML)(match);\n"
-"\tif (decoded !== match) return decoded;\n"
-"\treturn match;\n"
-"}\n"
-"function unescapeMd(str) {\n"
-"\tif (str.indexOf(\"\\\") < 0) return str;\n"
-"\treturn str.replace(UNESCAPE_MD_RE, \"$1\");\n"
-"}\n"
-"function unescapeAll(str) {\n"
-"\tif (str.indexOf(\"\\\") < 0 && str.indexOf(\"&\") < 0) return str;\n"
-"\treturn str.replace(UNESCAPE_ALL_RE, function(match, escaped, entity) {\n"
-"\t\tif (escaped) return escaped;\n"
-"\t\treturn replaceEntityPattern(match, entity);\n"
-"\t});\n"
-"}\n"
-"var HTML_ESCAPE_TEST_RE = /[&<>\"]/;\n"
-"var HTML_ESCAPE_REPLACE_RE = /[&<>\"]/g;\n"
-"var HTML_REPLACEMENTS = {\n"
-"\t\"&\": \"&amp;\",\n"
-"\t\"<\": \"&lt;\",\n"
-"\t\">\": \"&gt;\",\n"
-"\t\"\"\": \"&quot;\"\n"
-"};\n"
-"function replaceUnsafeChar(ch) {\n"
-"\treturn HTML_REPLACEMENTS[ch];\n"
-"}\n"
-"function escapeHtml(str) {\n"
-"\tif (HTML_ESCAPE_TEST_RE.test(str)) return str.replace(HTML_ESCAPE_REPLACE_RE, replaceUnsafeChar);\n"
-"\treturn str;\n"
-"}\n"
-"var REGEXP_ESCAPE_RE = /[.?*+^$[]\\(){}|-]/g;\n"
-"function escapeRE(str) {\n"
-"\treturn str.replace(REGEXP_ESCAPE_RE, \"\\$&\");\n"
-"}\n"
-"function isSpace(code) {\n"
-"\tswitch (code) {\n"
-"\t\tcase 9:\n"
-"\t\tcase 32: return true;\n"
-"\t}\n"
-"\treturn false;\n"
-"}\n"
-"function isWhiteSpace(code) {\n"
-"\tif (code >= 8192 && code <= 8202) return true;\n"
-"\tswitch (code) {\n"
-"\t\tcase 9:\n"
-"\t\tcase 10:\n"
-"\t\tcase 11:\n"
-"\t\tcase 12:\n"
-"\t\tcase 13:\n"
-"\t\tcase 32:\n"
-"\t\tcase 160:\n"
-"\t\tcase 5760:\n"
-"\t\tcase 8239:\n"
-"\t\tcase 8287:\n"
-"\t\tcase 12288: return true;\n"
-"\t}\n"
-"\treturn false;\n"
-"}\n"
-"function isPunctChar(ch) {\n"
-"\treturn uc_micro.P.test(ch) || uc_micro.S.test(ch);\n"
-"}\n"
-"function isPunctCharCode(code) {\n"
-"\treturn isPunctChar(fromCodePoint(code));\n"
-"}\n"
-"function isMdAsciiPunct(ch) {\n"
-"\tswitch (ch) {\n"
-"\t\tcase 33:\n"
-"\t\tcase 34:\n"
-"\t\tcase 35:\n"
-"\t\tcase 36:\n"
-"\t\tcase 37:\n"
-"\t\tcase 38:\n"
-"\t\tcase 39:\n"
-"\t\tcase 40:\n"
-"\t\tcase 41:\n"
-"\t\tcase 42:\n"
-"\t\tcase 43:\n"
-"\t\tcase 44:\n"
-"\t\tcase 45:\n"
-"\t\tcase 46:\n"
-"\t\tcase 47:\n"
-"\t\tcase 58:\n"
-"\t\tcase 59:\n"
-"\t\tcase 60:\n"
-"\t\tcase 61:\n"
-"\t\tcase 62:\n"
-"\t\tcase 63:\n"
-"\t\tcase 64:\n"
-"\t\tcase 91:\n"
-"\t\tcase 92:\n"
-"\t\tcase 93:\n"
-"\t\tcase 94:\n"
-"\t\tcase 95:\n"
-"\t\tcase 96:\n"
-"\t\tcase 123:\n"
-"\t\tcase 124:\n"
-"\t\tcase 125:\n"
-"\t\tcase 126: return true;\n"
-"\t\tdefault: return false;\n"
-"\t}\n"
-"}\n"
-"function normalizeReference(str) {\n"
-"\tstr = str.trim().replace(/s+/g, \" \");\n"
-"\tif (\"ẞ\".toLowerCase() === \"Ṿ\")\n"
-" /* c8 ignore next 2 */\n"
-"\tstr = str.replace(/ẞ/g, \"ß\");\n"
-"\treturn str.toLowerCase().toUpperCase();\n"
-"}\n"
-"function isAsciiTrimmable(c) {\n"
-"\treturn c === 32 || c === 9 || c === 10 || c === 13;\n"
-"}\n"
-"function asciiTrim(str) {\n"
-"\tlet start = 0;\n"
-"\tfor (; start < str.length; start++) if (!isAsciiTrimmable(str.charCodeAt(start))) break;\n"
-"\tlet end = str.length - 1;\n"
-"\tfor (; end >= start; end--) if (!isAsciiTrimmable(str.charCodeAt(end))) break;\n"
-"\treturn str.slice(start, end + 1);\n"
-"}\n"
-"var lib = {\n"
-"\tmdurl,\n"
-"\tucmicro: uc_micro\n"
-"};\n"
-"//#endregion\n"
-"//#region lib/helpers/parse_link_label.mjs\n"
-"function parseLinkLabel(state, start, disableNested) {\n"
-"\tlet level, found, marker, prevPos;\n"
-"\tconst max = state.posMax;\n"
-"\tconst oldPos = state.pos;\n"
-"\tstate.pos = start + 1;\n"
-"\tlevel = 1;\n"
-"\twhile (state.pos < max) {\n"
-"\t\tmarker = state.src.charCodeAt(state.pos);\n"
-"\t\tif (marker === 93) {\n"
-"\t\t\tlevel--;\n"
-"\t\t\tif (level === 0) {\n"
-"\t\t\t\tfound = true;\n"
-"\t\t\t\tbreak;\n"
-"\t\t\t}\n"
-"\t\t}\n"
-"\t\tprevPos = state.pos;\n"
-"\t\tstate.md.inline.skipToken(state);\n"
-"\t\tif (marker === 91) {\n"
-"\t\t\tif (prevPos === state.pos - 1) level++;\n"
-"\t\t\telse if (disableNested) {\n"
-"\t\t\t\tstate.pos = oldPos;\n"
-"\t\t\t\treturn -1;\n"
-"\t\t\t}\n"
-"\t\t}\n"
-"\t}\n"
-"\tlet labelEnd = -1;\n"
-"\tif (found) labelEnd = state.pos;\n"
-"\tstate.pos = oldPos;\n"
-"\treturn labelEnd;\n"
-"}\n"
-"//#endregion\n"
-"//#region lib/helpers/parse_link_destination.mjs\n"
-"function parseLinkDestination(str, start, max) {\n"
-"\tlet code;\n"
-"\tlet pos = start;\n"
-"\tconst result = {\n"
-"\t\tok: false,\n"
-"\t\tpos: 0,\n"
-"\t\tstr: \"\"\n"
-"\t};\n"
-"\tif (str.charCodeAt(pos) === 60) {\n"
-"\t\tpos++;\n"
-"\t\twhile (pos < max) {\n"
-"\t\t\tcode = str.charCodeAt(pos);\n"
-"\t\t\tif (code === 10) return result;\n"
-"\t\t\tif (code === 60) return result;\n"
-"\t\t\tif (code === 62) {\n"
-"\t\t\t\tresult.pos = pos + 1;\n"
-"\t\t\t\tresult.str = unescapeAll(str.slice(start + 1, pos));\n"
-"\t\t\t\tresult.ok = true;\n"
-"\t\t\t\treturn result;\n"
-"\t\t\t}\n"
-"\t\t\tif (code === 92 && pos + 1 < max) {\n"
-"\t\t\t\tpos += 2;\n"
-"\t\t\t\tcontinue;\n"
-"\t\t\t}\n"
-"\t\t\tpos++;\n"
-"\t\t}\n"
-"\t\treturn result;\n"
-"\t}\n"
-"\tlet level = 0;\n"
-"\twhile (pos < max) {\n"
-"\t\tcode = str.charCodeAt(pos);\n"
-"\t\tif (code === 32) break;\n"
-"\t\tif (code < 32 || code === 127) break;\n"
-"\t\tif (code === 92 && pos + 1 < max) {\n"
-"\t\t\tif (str.charCodeAt(pos + 1) === 32) break;\n"
-"\t\t\tpos += 2;\n"
-"\t\t\tcontinue;\n"
-"\t\t}\n"
-"\t\tif (code === 40) {\n"
-"\t\t\tlevel++;\n"
-"\t\t\tif (level > 32) return result;\n"
-"\t\t}\n"
-"\t\tif (code === 41) {\n"
-"\t\t\tif (level === 0) break;\n"
-"\t\t\tlevel--;\n"
-"\t\t}\n"
-"\t\tpos++;\n"
-"\t}\n"
-"\tif (start === pos) return result;\n"
-"\tif (level !== 0) return result;\n"
-"\tresult.str = unescapeAll(str.slice(start, pos));\n"
-"\tresult.pos = pos;\n"
-"\tresult.ok = true;\n"
-"\treturn result;\n"
-"}\n"
-"//#endregion\n"
-"//#region lib/helpers/parse_link_title.mjs\n"
-"function parseLinkTitle(str, start, max, prev_state) {\n"
-"\tlet code;\n"
-"\tlet pos = start;\n"
-"\tconst state = {\n"
-"\t\tok: false,\n"
-"\t\tcan_continue: false,\n"
-"\t\tpos: 0,\n"
-"\t\tstr: \"\",\n"
-"\t\tmarker: 0\n"
-"\t};\n"
-"\tif (prev_state) {\n"
-"\t\tstate.str = prev_state.str;\n"
-"\t\tstate.marker = prev_state.marker;\n"
-"\t} else {\n"
-"\t\tif (pos >= max) return state;\n"
-"\t\tlet marker = str.charCodeAt(pos);\n"
-"\t\tif (marker !== 34 && marker !== 39 && marker !== 40) return state;\n"
-"\t\tstart++;\n"
-"\t\tpos++;\n"
-"\t\tif (marker === 40) marker = 41;\n"
-"\t\tstate.marker = marker;\n"
-"\t}\n"
-"\twhile (pos < max) {\n"
-"\t\tcode = str.charCodeAt(pos);\n"
-"\t\tif (code === state.marker) {\n"
-"\t\t\tstate.pos = pos + 1;\n"
-"\t\t\tstate.str += unescapeAll(str.slice(start, pos));\n"
-"\t\t\tstate.ok = true;\n"
-"\t\t\treturn state;\n"
-"\t\t} else if (code === 40 && state.marker === 41) return state;\n"
-"\t\telse if (code === 92 && pos + 1 < max) pos++;\n"
-"\t\tpos++;\n"
-"\t}\n"
-"\tstate.can_continue = true;\n"
-"\tstate.str += unescapeAll(str.slice(start, pos));\n"
-"\treturn state;\n"
-"}\n"
-"//#endregion\n"
-"//#region lib/helpers/index.mjs\n"
-"var helpers_exports = /* @__PURE__ */ __exportAll({\n"
-"\tparseLinkDestination: () => parseLinkDestination,\n"
-"\tparseLinkLabel: () => parseLinkLabel,\n"
-"\tparseLinkTitle: () => parseLinkTitle\n"
-"});\n"
-"//#endregion\n"
-"//#region lib/renderer.mjs\n"
-"/**\n"
-"* class Renderer\n"
-"*\n"
-"* Generates HTML from parsed token stream. Each instance has independent\n"
-"* copy of rules. Those can be rewritten with ease. Also, you can add new\n"
-"* rules if you create plugin and adds new token types.\n"
-"**/\n"
-"var default_rules = {};\n"
-"default_rules.code_inline = function(tokens, idx, options, env, slf) {\n"
-"\tconst token = tokens[idx];\n"
-"\treturn \"<code\" + slf.renderAttrs(token) + \">\" + escapeHtml(token.content) + \"</code>\";\n"
-"};\n"
-"default_rules.code_block = function(tokens, idx, options, env, slf) {\n"
-"\tconst token = tokens[idx];\n"
-"\treturn \"<pre\" + slf.renderAttrs(token) + \"><code>\" + escapeHtml(tokens[idx].content) + \"</code></pre>\n"
-"\";\n"
-"};\n"
-"default_rules.fence = function(tokens, idx, options, env, slf) {\n"
-"\tconst token = tokens[idx];\n"
-"\tconst info = token.info ? unescapeAll(token.info).trim() : \"\";\n"
-"\tlet langName = \"\";\n"
-"\tlet langAttrs = \"\";\n"
-"\tif (info) {\n"
-"\t\tconst arr = info.split(/(s+)/g);\n"
-"\t\tlangName = arr[0];\n"
-"\t\tlangAttrs = arr.slice(2).join(\"\");\n"
-"\t}\n"
-"\tlet highlighted;\n"
-"\tif (options.highlight) highlighted = options.highlight(token.content, langName, langAttrs) || escapeHtml(token.content);\n"
-"\telse highlighted = escapeHtml(token.content);\n"
-"\tif (highlighted.indexOf(\"<pre\") === 0) return highlighted + \"\n"
-"\";\n"
-"\tif (info) {\n"
-"\t\tconst i = token.attrIndex(\"class\");\n"
-"\t\tconst tmpAttrs = token.attrs ? token.attrs.slice() : [];\n"
-"\t\tif (i < 0) tmpAttrs.push([\"class\", options.langPrefix + langName]);\n"
-"\t\telse {\n"
-"\t\t\ttmpAttrs[i] = tmpAttrs[i].slice();\n"
-"\t\t\ttmpAttrs[i][1] += \" \" + options.langPrefix + langName;\n"
-"\t\t}\n"
-"\t\tconst tmpToken = { attrs: tmpAttrs };\n"
-"\t\treturn "
-msgstr ""
-
-#: node_modules/markdown-it/dist/markdown-it.js:680
-msgid ""
-"{|}~])/g;\n"
-"  var UNESCAPE_ALL_RE = new RegExp(UNESCAPE_MD_RE.source + \"|\" + /&([a-z#][a-z0-9]{1,31});/gi.source, \"gi\");\n"
-"  var DIGITAL_ENTITY_TEST_RE = /^#((?:x[a-f0-9]{1,8}|[0-9]{1,8}))$/i;\n"
-"  function replaceEntityPattern(match, name) {\n"
-"    if (name.charCodeAt(0) === 35 && DIGITAL_ENTITY_TEST_RE.test(name)) {\n"
-"      const code = name[1].toLowerCase() === \"x\" ? parseInt(name.slice(2), 16) : parseInt(name.slice(1), 10);\n"
-"      if (isValidEntityCode(code)) return fromCodePoint(code);\n"
-"      return match;\n"
-"    }\n"
-"    const decoded = decodeHTML(match);\n"
-"    if (decoded !== match) return decoded;\n"
-"    return match;\n"
-"  }\n"
-"  function unescapeMd(str) {\n"
-"    if (str.indexOf(\"\\\") < 0) return str;\n"
-"    return str.replace(UNESCAPE_MD_RE, \"$1\");\n"
-"  }\n"
-"  function unescapeAll(str) {\n"
-"    if (str.indexOf(\"\\\") < 0 && str.indexOf(\"&\") < 0) return str;\n"
-"    return str.replace(UNESCAPE_ALL_RE, function(match, escaped, entity) {\n"
-"      if (escaped) return escaped;\n"
-"      return replaceEntityPattern(match, entity);\n"
-"    });\n"
-"  }\n"
-"  var HTML_ESCAPE_TEST_RE = /[&<>\"]/;\n"
-"  var HTML_ESCAPE_REPLACE_RE = /[&<>\"]/g;\n"
-"  var HTML_REPLACEMENTS = {\n"
-"    \"&\": \"&amp;\",\n"
-"    \"<\": \"&lt;\",\n"
-"    \">\": \"&gt;\",\n"
-"    '\"': \"&quot;\"\n"
-"  };\n"
-"  function replaceUnsafeChar(ch) {\n"
-"    return HTML_REPLACEMENTS[ch];\n"
-"  }\n"
-"  function escapeHtml(str) {\n"
-"    if (HTML_ESCAPE_TEST_RE.test(str)) return str.replace(HTML_ESCAPE_REPLACE_RE, replaceUnsafeChar);\n"
-"    return str;\n"
-"  }\n"
-"  var REGEXP_ESCAPE_RE = /[.?*+^$[]\\(){}|-]/g;\n"
-"  function escapeRE$1(str) {\n"
-"    return str.replace(REGEXP_ESCAPE_RE, \"\\$&\");\n"
-"  }\n"
-"  function isSpace(code) {\n"
-"    switch (code) {\n"
-"     case 9:\n"
-"     case 32:\n"
-"      return true;\n"
-"    }\n"
-"    return false;\n"
-"  }\n"
-"  function isWhiteSpace(code) {\n"
-"    if (code >= 8192 && code <= 8202) return true;\n"
-"    switch (code) {\n"
-"     case 9:\n"
-"     case 10:\n"
-"     case 11:\n"
-"     case 12:\n"
-"     case 13:\n"
-"     case 32:\n"
-"     case 160:\n"
-"     case 5760:\n"
-"     case 8239:\n"
-"     case 8287:\n"
-"     case 12288:\n"
-"      return true;\n"
-"    }\n"
-"    return false;\n"
-"  }\n"
-"  function isPunctChar(ch) {\n"
-"    return regex_default$2.test(ch) || regex_default$1.test(ch);\n"
-"  }\n"
-"  function isPunctCharCode(code) {\n"
-"    return isPunctChar(fromCodePoint(code));\n"
-"  }\n"
-"  function isMdAsciiPunct(ch) {\n"
-"    switch (ch) {\n"
-"     case 33:\n"
-"     case 34:\n"
-"     case 35:\n"
-"     case 36:\n"
-"     case 37:\n"
-"     case 38:\n"
-"     case 39:\n"
-"     case 40:\n"
-"     case 41:\n"
-"     case 42:\n"
-"     case 43:\n"
-"     case 44:\n"
-"     case 45:\n"
-"     case 46:\n"
-"     case 47:\n"
-"     case 58:\n"
-"     case 59:\n"
-"     case 60:\n"
-"     case 61:\n"
-"     case 62:\n"
-"     case 63:\n"
-"     case 64:\n"
-"     case 91:\n"
-"     case 92:\n"
-"     case 93:\n"
-"     case 94:\n"
-"     case 95:\n"
-"     case 96:\n"
-"     case 123:\n"
-"     case 124:\n"
-"     case 125:\n"
-"     case 126:\n"
-"      return true;\n"
-"\n"
-"     default:\n"
-"      return false;\n"
-"    }\n"
-"  }\n"
-"  function normalizeReference(str) {\n"
-"    str = str.trim().replace(/s+/g, \" \");\n"
-"    if (\"ẞ\".toLowerCase() === \"Ṿ\") \n"
-"    /* c8 ignore next 2 */\n"
-"    str = str.replace(/ẞ/g, \"ß\");\n"
-"    return str.toLowerCase().toUpperCase();\n"
-"  }\n"
-"  function isAsciiTrimmable(c) {\n"
-"    return c === 32 || c === 9 || c === 10 || c === 13;\n"
-"  }\n"
-"  function asciiTrim(str) {\n"
-"    let start = 0;\n"
-"    for (;start < str.length; start++) if (!isAsciiTrimmable(str.charCodeAt(start))) break;\n"
-"    let end = str.length - 1;\n"
-"    for (;end >= start; end--) if (!isAsciiTrimmable(str.charCodeAt(end))) break;\n"
-"    return str.slice(start, end + 1);\n"
-"  }\n"
-"  var lib = {\n"
-"    mdurl: mdurl_exports,\n"
-"    ucmicro: uc_micro_exports\n"
-"  };\n"
-"  //#endregion\n"
-"  //#region lib/helpers/parse_link_label.mjs\n"
-"    function parseLinkLabel(state, start, disableNested) {\n"
-"    let level, found, marker, prevPos;\n"
-"    const max = state.posMax;\n"
-"    const oldPos = state.pos;\n"
-"    state.pos = start + 1;\n"
-"    level = 1;\n"
-"    while (state.pos < max) {\n"
-"      marker = state.src.charCodeAt(state.pos);\n"
-"      if (marker === 93) {\n"
-"        level--;\n"
-"        if (level === 0) {\n"
-"          found = true;\n"
-"          break;\n"
-"        }\n"
-"      }\n"
-"      prevPos = state.pos;\n"
-"      state.md.inline.skipToken(state);\n"
-"      if (marker === 91) {\n"
-"        if (prevPos === state.pos - 1) level++; else if (disableNested) {\n"
-"          state.pos = oldPos;\n"
-"          return -1;\n"
-"        }\n"
-"      }\n"
-"    }\n"
-"    let labelEnd = -1;\n"
-"    if (found) labelEnd = state.pos;\n"
-"    state.pos = oldPos;\n"
-"    return labelEnd;\n"
-"  }\n"
-"  //#endregion\n"
-"  //#region lib/helpers/parse_link_destination.mjs\n"
-"    function parseLinkDestination(str, start, max) {\n"
-"    let code;\n"
-"    let pos = start;\n"
-"    const result = {\n"
-"      ok: false,\n"
-"      pos: 0,\n"
-"      str: \"\"\n"
-"    };\n"
-"    if (str.charCodeAt(pos) === 60) {\n"
-"      pos++;\n"
-"      while (pos < max) {\n"
-"        code = str.charCodeAt(pos);\n"
-"        if (code === 10) return result;\n"
-"        if (code === 60) return result;\n"
-"        if (code === 62) {\n"
-"          result.pos = pos + 1;\n"
-"          result.str = unescapeAll(str.slice(start + 1, pos));\n"
-"          result.ok = true;\n"
-"          return result;\n"
-"        }\n"
-"        if (code === 92 && pos + 1 < max) {\n"
-"          pos += 2;\n"
-"          continue;\n"
-"        }\n"
-"        pos++;\n"
-"      }\n"
-"      return result;\n"
-"    }\n"
-"    let level = 0;\n"
-"    while (pos < max) {\n"
-"      code = str.charCodeAt(pos);\n"
-"      if (code === 32) break;\n"
-"      if (code < 32 || code === 127) break;\n"
-"      if (code === 92 && pos + 1 < max) {\n"
-"        if (str.charCodeAt(pos + 1) === 32) break;\n"
-"        pos += 2;\n"
-"        continue;\n"
-"      }\n"
-"      if (code === 40) {\n"
-"        level++;\n"
-"        if (level > 32) return result;\n"
-"      }\n"
-"      if (code === 41) {\n"
-"        if (level === 0) break;\n"
-"        level--;\n"
-"      }\n"
-"      pos++;\n"
-"    }\n"
-"    if (start === pos) return result;\n"
-"    if (level !== 0) return result;\n"
-"    result.str = unescapeAll(str.slice(start, pos));\n"
-"    result.pos = pos;\n"
-"    result.ok = true;\n"
-"    return result;\n"
-"  }\n"
-"  //#endregion\n"
-"  //#region lib/helpers/parse_link_title.mjs\n"
-"    function parseLinkTitle(str, start, max, prev_state) {\n"
-"    let code;\n"
-"    let pos = start;\n"
-"    const state = {\n"
-"      ok: false,\n"
-"      can_continue: false,\n"
-"      pos: 0,\n"
-"      str: \"\",\n"
-"      marker: 0\n"
-"    };\n"
-"    if (prev_state) {\n"
-"      state.str = prev_state.str;\n"
-"      state.marker = prev_state.marker;\n"
-"    } else {\n"
-"      if (pos >= max) return state;\n"
-"      let marker = str.charCodeAt(pos);\n"
-"      if (marker !== 34 && marker !== 39 && marker !== 40) return state;\n"
-"      start++;\n"
-"      pos++;\n"
-"      if (marker === 40) marker = 41;\n"
-"      state.marker = marker;\n"
-"    }\n"
-"    while (pos < max) {\n"
-"      code = str.charCodeAt(pos);\n"
-"      if (code === state.marker) {\n"
-"        state.pos = pos + 1;\n"
-"        state.str += unescapeAll(str.slice(start, pos));\n"
-"        state.ok = true;\n"
-"        return state;\n"
-"      } else if (code === 40 && state.marker === 41) return state; else if (code === 92 && pos + 1 < max) pos++;\n"
-"      pos++;\n"
-"    }\n"
-"    state.can_continue = true;\n"
-"    state.str += unescapeAll(str.slice(start, pos));\n"
-"    return state;\n"
-"  }\n"
-"  //#endregion\n"
-"  //#region lib/helpers/index.mjs\n"
-"    var helpers_exports =  __exportAll({\n"
-"    parseLinkDestination: () => parseLinkDestination,\n"
-"    parseLinkLabel: () => parseLinkLabel,\n"
-"    parseLinkTitle: () => parseLinkTitle\n"
-"  });\n"
-"  //#endregion\n"
-"  //#region lib/renderer.mjs\n"
-"    var default_rules = {};\n"
-"  default_rules.code_inline = function(tokens, idx, options, env, slf) {\n"
-"    const token = tokens[idx];\n"
-"    return \"<code\" + slf.renderAttrs(token) + \">\" + escapeHtml(token.content) + \"</code>\";\n"
-"  };\n"
-"  default_rules.code_block = function(tokens, idx, options, env, slf) {\n"
-"    const token = tokens[idx];\n"
-"    return \"<pre\" + slf.renderAttrs(token) + \"><code>\" + escapeHtml(tokens[idx].content) + \"</code></pre>\n"
-"\";\n"
-"  };\n"
-"  default_rules.fence = function(tokens, idx, options, env, slf) {\n"
-"    const token = tokens[idx];\n"
-"    const info = token.info ? unescapeAll(token.info).trim() : \"\";\n"
-"    let langName = \"\";\n"
-"    let langAttrs = \"\";\n"
-"    if (info) {\n"
-"      const arr = info.split(/(s+)/g);\n"
-"      langName = arr[0];\n"
-"      langAttrs = arr.slice(2).join(\"\");\n"
-"    }\n"
-"    let highlighted;\n"
-"    if (options.highlight) highlighted = options.highlight(token.content, langName, langAttrs) || escapeHtml(token.content); else highlighted = escapeHtml(token.content);\n"
-"    if (highlighted.indexOf(\"<pre\") === 0) return highlighted + \"\n"
-"\";\n"
-"    if (info) {\n"
-"      const i = token.attrIndex(\"class\");\n"
-"      const tmpAttrs = token.attrs ? token.attrs.slice() : [];\n"
-"      if (i < 0) tmpAttrs.push([ \"class\", options.langPrefix + langName ]); else {\n"
-"        tmpAttrs[i] = tmpAttrs[i].slice();\n"
-"        tmpAttrs[i][1] += \" \" + options.langPrefix + langName;\n"
-"      }\n"
-"      const tmpToken = {\n"
-"        attrs: tmpAttrs\n"
-"      };\n"
-"      return "
-msgstr ""
-
-#: node_modules/markdown-it/dist/markdown-it.min.js:2
-msgid ""
-"{|}~])/g,K=new RegExp(Y.source+\"|\"+/&([a-z#][a-z0-9]{1,31});/gi.source,\"gi\"),tt=/^#((?:x[a-f0-9]{1,8}|[0-9]{1,8}))$/i;function et(t,e){if(35===e.charCodeAt(0)&&tt.test(e)){const r=\"x\"===e[1].toLowerCase()?parseInt(e.slice(2),16):parseInt(e.slice(1),10);return Q(r)?X(r):t}const r=function(t,e=T.Legacy){return j(t,e)}(t);return r!==t?r:t}function rt(t){return t.indexOf(\"\\\")<0?t:t.replace(Y,\"$1\")}function nt(t){return t.indexOf(\"\\\")<0&&t.indexOf(\"&\")<0?t:t.replace(K,function(t,e,r){return e||et(t,r)})}var st=/[&<>\"]/,it=/[&<>\"]/g,ot={\"&\":\"&amp;\",\"<\":\"&lt;\",\">\":\"&gt;\",'\"':\"&quot;\"};function ut(t){return ot[t]}function ct(t){return st.test(t)?t.replace(it,ut):t}var at=/[.?*+^$[]\\(){}|-]/g;function lt(t){return t.replace(at,\"\\$&\")}function ht(t){switch(t){case 9:case 32:return!0}return!1}function pt(t){if(t>=8192&&t<=8202)return!0;switch(t){case 9:case 10:case 11:case 12:case 13:case 32:case 160:case 5760:case 8239:case 8287:case 12288:return!0}return!1}function ft(t){return x.test(t)||v.test(t)}function dt(t){return ft(X(t))}function mt(t){switch(t){case 33:case 34:case 35:case 36:case 37:case 38:case 39:case 40:case 41:case 42:case 43:case 44:case 45:case 46:case 47:case 58:case 59:case 60:case 61:case 62:case 63:case 64:case 91:case 92:case 93:case 94:case 95:case 96:case 123:case 124:case 125:case 126:return!0;default:return!1}}function _t(t){return t=t.trim().replace(/s+/g,\" \"),\"Ṿ\"===\"ẞ\".toLowerCase()&&(t=t.replace(/ẞ/g,\"ß\")),t.toLowerCase().toUpperCase()}function gt(t){return 32===t||9===t||10===t||13===t}function kt(t){let e=0;for(;e<t.length&&gt(t.charCodeAt(e));e++);let r=t.length-1;for(;r>=e&&gt(t.charCodeAt(r));r--);return t.slice(e,r+1)}var Dt={mdurl:E,ucmicro:z};function Ct(t,e,r){let n,s,i,o;const u=t.posMax,c=t.pos;for(t.pos=e+1,n=1;t.pos<u;){if(i=t.src.charCodeAt(t.pos),93===i&&(n--,0===n)){s=!0;break}if(o=t.pos,t.md.inline.skipToken(t),91===i)if(o===t.pos-1)n++;else if(r)return t.pos=c,-1}let a=-1;return s&&(a=t.pos),t.pos=c,a}function yt(t,e,r){let n,s=e;const i={ok:!1,pos:0,str:\"\"};if(60===t.charCodeAt(s)){for(s++;s<r;){if(n=t.charCodeAt(s),10===n)return i;if(60===n)return i;if(62===n)return i.pos=s+1,i.str=nt(t.slice(e+1,s)),i.ok=!0,i;92===n&&s+1<r?s+=2:s++}return i}let o=0;for(;s<r&&(n=t.charCodeAt(s),32!==n)&&!(n<32||127===n);)if(92===n&&s+1<r){if(32===t.charCodeAt(s+1))break;s+=2}else{if(40===n&&(o++,o>32))return i;if(41===n){if(0===o)break;o--}s++}return e===s||0!==o||(i.str=nt(t.slice(e,s)),i.pos=s,i.ok=!0),i}function Et(t,e,r,n){let s,i=e;const o={ok:!1,can_continue:!1,pos:0,str:\"\",marker:0};if(n)o.str=n.str,o.marker=n.marker;else{if(i>=r)return o;let n=t.charCodeAt(i);if(34!==n&&39!==n&&40!==n)return o;e++,i++,40===n&&(n=41),o.marker=n}for(;i<r;){if(s=t.charCodeAt(i),s===o.marker)return o.pos=i+1,o.str+=nt(t.slice(e,i)),o.ok=!0,o;if(40===s&&41===o.marker)return o;92===s&&i+1<r&&i++,i++}return o.can_continue=!0,o.str+=nt(t.slice(e,i)),o}var At=e({parseLinkDestination:()=>yt,parseLinkLabel:()=>Ct,parseLinkTitle:()=>Et}),bt={};function Ft(){this.rules=W({},bt)}function xt(){this.__rules__=[],this.__cache__=null}function vt(t,e,r){this.type=t,this.tag=e,this.attrs=null,this.map=null,this.nesting=r,this.level=0,this.children=null,this.content=\"\",this.markup=\"\",this.info=\"\",this.meta=null,this.block=!1,this.hidden=!1}function wt(t,e,r){this.src=t,this.env=r,this.tokens=[],this.inlineMode=!1,this.md=e}bt.code_inline=function(t,e,r,n,s){const i=t[e];return\"<code\"+s.renderAttrs(i)+\">\"+ct(i.content)+\"</code>\"},bt.code_block=function(t,e,r,n,s){const i=t[e];return\"<pre\"+s.renderAttrs(i)+\"><code>\"+ct(t[e].content)+\"</code></pre>\n"
-"\"},bt.fence=function(t,e,r,n,s){const i=t[e],o=i.info?nt(i.info).trim():\"\";let u,c=\"\",a=\"\";if(o){const t=o.split(/(s+)/g);c=t[0],a=t.slice(2).join(\"\")}if(u=r.highlight&&r.highlight(i.content,c,a)||ct(i.content),0===u.indexOf(\"<pre\"))return u+\"\n"
-"\";if(o){const t=i.attrIndex(\"class\"),e=i.attrs?i.attrs.slice():[];t<0?e.push([\"class\",r.langPrefix+c]):(e[t]=e[t].slice(),e[t][1]+=\" \"+r.langPrefix+c);const n={attrs:e};return"
-msgstr ""
-
-#: node_modules/marked/marked.min.js:6
-#, python-brace-format
-msgid ""
-"{|}~])/,autolink:/^<(scheme:[^s -<>]*|email)>/,url:k,tag:\"^comment|^</[a-zA-Z][\\w:-]*\\s*>|^<[a-zA-Z][\\w-]*(?:attribute)*?\\s*/?>|^<\\?[\\s\\S]*?\\?>|^<![a-zA-Z]+\\s[\\s\\S]*?>|^<!\\[CDATA\\[[\\s\\S]*?\\]\\]>\",link:/^!?[(label)](s*(href)(?:s+(title))?s*)/,reflink:/^!?[(label)][(ref)]/,nolink:/^!?[(ref)](?:[])?/,reflinkSearch:\"reflink|nolink(?!\\()\",emStrong:{lDelim:/^(?:*+(?:([punct_])|[^s*]))|^_+(?:([punct*])|([^s_]))/,rDelimAst:/^(?:[^_*\\]|\\.)*?__(?:[^_*\\]|\\.)*?*(?:[^_*\\]|\\.)*?(?=__)|(?:[^*\\]|\\.)+(?=[^*])|[punct_](*+)(?=[s]|$)|(?:[^punct*_s\\]|\\.)(*+)(?=[punct_s]|$)|[punct_s](*+)(?=[^punct*_s])|[s](*+)(?=[punct_])|[punct_](*+)(?=[punct_])|(?:[^punct*_s\\]|\\.)(*+)(?=[^punct*_s])/,rDelimUnd:/^(?:[^_*\\]|\\.)*?**(?:[^_*\\]|\\.)*?_(?:[^_*\\]|\\.)*?(?=**)|(?:[^_\\]|\\.)+(?=[^_])|[punct*](_+)(?=[s]|$)|(?:[^punct*_s\\]|\\.)(_+)(?=[punct*s]|$)|[punct*s](_+)(?=[^punct*_s])|[s](_+)(?=[punct*])|[punct*](_+)(?=[punct*])/},code:/^("
-msgstr ""
-
-#: node_modules/marked/marked.min.js:6
-#, python-brace-format
-msgid ""
-"{|}~])/g,w._scheme=/[a-zA-Z][a-zA-Z0-9+.-]{1,31}/,w._email=/[a-zA-Z0-9.!#$%&'*+/=?^_"
-msgstr ""
-
-#: node_modules/marked/lib/marked.esm.js:1241
-#: node_modules/marked/src/rules.js:157
-#, python-brace-format
-msgid ""
-"{|}~])/,\n"
-"  autolink: /^<(scheme:[^s -<>]*|email)>/,\n"
-"  url: noopTest,\n"
-"  tag: '^comment'\n"
-"    + '|^</[a-zA-Z][\\w:-]*\\s*>' // self-closing tag\n"
-"    + '|^<[a-zA-Z][\\w-]*(?:attribute)*?\\s*/?>' // open tag\n"
-"    + '|^<\\?[\\s\\S]*?\\?>' // processing instruction, e.g. <?php ?>\n"
-"    + '|^<![a-zA-Z]+\\s[\\s\\S]*?>' // declaration, e.g. <!DOCTYPE html>\n"
-"    + '|^<!\\[CDATA\\[[\\s\\S]*?\\]\\]>', // CDATA section\n"
-"  link: /^!?[(label)](s*(href)(?:s+(title))?s*)/,\n"
-"  reflink: /^!?[(label)][(ref)]/,\n"
-"  nolink: /^!?[(ref)](?:[])?/,\n"
-"  reflinkSearch: 'reflink|nolink(?!\\()',\n"
-"  emStrong: {\n"
-"    lDelim: /^(?:*+(?:([punct_])|[^s*]))|^_+(?:([punct*])|([^s_]))/,\n"
-"    //        (1) and (2) can only be a Right Delimiter. (3) and (4) can only be Left.  (5) and (6) can be either Left or Right.\n"
-"    //          () Skip orphan inside strong                                      () Consume to delim     (1) #***                (2) a***#, a***                             (3) #***a, ***a                 (4) ***#              (5) #***#                 (6) a***a\n"
-"    rDelimAst: /^(?:[^_*\\]|\\.)*?__(?:[^_*\\]|\\.)*?*(?:[^_*\\]|\\.)*?(?=__)|(?:[^*\\]|\\.)+(?=[^*])|[punct_](*+)(?=[s]|$)|(?:[^punct*_s\\]|\\.)(*+)(?=[punct_s]|$)|[punct_s](*+)(?=[^punct*_s])|[s](*+)(?=[punct_])|[punct_](*+)(?=[punct_])|(?:[^punct*_s\\]|\\.)(*+)(?=[^punct*_s])/,\n"
-"    rDelimUnd: /^(?:[^_*\\]|\\.)*?**(?:[^_*\\]|\\.)*?_(?:[^_*\\]|\\.)*?(?=**)|(?:[^_\\]|\\.)+(?=[^_])|[punct*](_+)(?=[s]|$)|(?:[^punct*_s\\]|\\.)(_+)(?=[punct*s]|$)|[punct*s](_+)(?=[^punct*_s])|[s](_+)(?=[punct*])|[punct*](_+)(?=[punct*])/ // ^- Not allowed for _\n"
-"  },\n"
-"  code: /^("
-msgstr ""
-
-#: node_modules/marked/lib/marked.esm.js:1293
-#: node_modules/marked/src/rules.js:209
-#, python-brace-format
-msgid ""
-"{|}~])/g;\n"
-"\n"
-"inline._scheme = /[a-zA-Z][a-zA-Z0-9+.-]{1,31}/;\n"
-"inline._email = /[a-zA-Z0-9.!#$%&'*+/=?^_"
-msgstr ""
-
-#: node_modules/marked/lib/marked.umd.js:1190
-#, python-brace-format
-msgid ""
-"{|}~])/,\n"
-"    autolink: /^<(scheme:[^s -<>]*|email)>/,\n"
-"    url: noopTest,\n"
-"    tag: '^comment' + '|^</[a-zA-Z][\\w:-]*\\s*>' // self-closing tag\n"
-"    + '|^<[a-zA-Z][\\w-]*(?:attribute)*?\\s*/?>' // open tag\n"
-"    + '|^<\\?[\\s\\S]*?\\?>' // processing instruction, e.g. <?php ?>\n"
-"    + '|^<![a-zA-Z]+\\s[\\s\\S]*?>' // declaration, e.g. <!DOCTYPE html>\n"
-"    + '|^<!\\[CDATA\\[[\\s\\S]*?\\]\\]>',\n"
-"    // CDATA section\n"
-"    link: /^!?[(label)](s*(href)(?:s+(title))?s*)/,\n"
-"    reflink: /^!?[(label)][(ref)]/,\n"
-"    nolink: /^!?[(ref)](?:[])?/,\n"
-"    reflinkSearch: 'reflink|nolink(?!\\()',\n"
-"    emStrong: {\n"
-"      lDelim: /^(?:*+(?:([punct_])|[^s*]))|^_+(?:([punct*])|([^s_]))/,\n"
-"      //        (1) and (2) can only be a Right Delimiter. (3) and (4) can only be Left.  (5) and (6) can be either Left or Right.\n"
-"      //          () Skip orphan inside strong                                      () Consume to delim     (1) #***                (2) a***#, a***                             (3) #***a, ***a                 (4) ***#              (5) #***#                 (6) a***a\n"
-"      rDelimAst: /^(?:[^_*\\]|\\.)*?__(?:[^_*\\]|\\.)*?*(?:[^_*\\]|\\.)*?(?=__)|(?:[^*\\]|\\.)+(?=[^*])|[punct_](*+)(?=[s]|$)|(?:[^punct*_s\\]|\\.)(*+)(?=[punct_s]|$)|[punct_s](*+)(?=[^punct*_s])|[s](*+)(?=[punct_])|[punct_](*+)(?=[punct_])|(?:[^punct*_s\\]|\\.)(*+)(?=[^punct*_s])/,\n"
-"      rDelimUnd: /^(?:[^_*\\]|\\.)*?**(?:[^_*\\]|\\.)*?_(?:[^_*\\]|\\.)*?(?=**)|(?:[^_\\]|\\.)+(?=[^_])|[punct*](_+)(?=[s]|$)|(?:[^punct*_s\\]|\\.)(_+)(?=[punct*s]|$)|[punct*s](_+)(?=[^punct*_s])|[s](_+)(?=[punct*])|[punct*](_+)(?=[punct*])/ // ^- Not allowed for _\n"
-"    },\n"
-"\n"
-"    code: /^("
-msgstr ""
-
-#: node_modules/marked/lib/marked.umd.js:1232
-#, python-brace-format
-msgid ""
-"{|}~])/g;\n"
-"  inline._scheme = /[a-zA-Z][a-zA-Z0-9+.-]{1,31}/;\n"
-"  inline._email = /[a-zA-Z0-9.!#$%&'*+/=?^_"
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid "num"
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid "regexp"
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid "string"
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid "name"
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid "privateId"
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid "eof"
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid "["
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid "]"
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid "{"
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid "}"
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid "("
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid ")"
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid ","
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid ";"
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid ":"
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid "."
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid "?"
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid "?."
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid "=>"
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid "template"
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid "invalidTemplate"
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid "..."
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid "`"
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid "${"
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid "="
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid "_="
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid "++/--"
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid "!/~"
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid "+/-"
-msgstr ""
-
-#: node_modules/prettier/plugins/acorn.js:3
-msgid "**"
-msgstr ""
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:41
+#: octoprint_pandabranchplus/templates/pandabranchplus_settings.jinja2:105
+msgid "seconds"
+msgstr "Sekunden"
