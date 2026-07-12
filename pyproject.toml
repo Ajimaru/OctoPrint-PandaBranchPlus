@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "OctoPrint-PandaBranchPlus"
-version = "0.0.2dev12+unknown"
+version = "0.1.0"
 description = "Assign functions to the 10 power channels of the BIQU Panda Branch Plus and automate them based on the printer state."
 authors = [
     {name = "Ajimaru", email = "ajimaru_gdr@pm.me"}
