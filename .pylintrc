@@ -1,0 +1,42 @@
+# Pylint is IDE-only here — the enforced gates are the pre-commit hooks
+# (black/isort/ruff/flake8, 88 cols). This config silences pylint checks that
+# conflict with OctoPrint plugin conventions so the IDE problem list only
+# shows real findings.
+
+[MESSAGES CONTROL]
+disable=
+    # Docstrings are written where they add value, not everywhere; the small
+    # standard mixin overrides (get_settings_defaults, get_assets, ...) are
+    # self-describing.
+    missing-module-docstring,
+    missing-class-docstring,
+    missing-function-docstring,
+    # `global __plugin_implementation__` inside __plugin_load__ is the
+    # official OctoPrint plugin loading pattern.
+    global-variable-undefined,
+    # Intentional never-die catches: the WS client thread and printer-state
+    # reads must survive any error and fall back to a safe default.
+    broad-exception-caught,
+    # Design metrics that clash with the architecture: OctoPrint plugins
+    # inherit 6+ mixins (too-many-ancestors), the SimpleApi dispatcher is one
+    # method with a branch per command, and the WS client carries its whole
+    # configuration as constructor arguments / instance attributes.
+    too-many-ancestors,
+    too-many-instance-attributes,
+    too-many-arguments,
+    too-many-positional-arguments,
+    too-many-locals,
+    too-many-return-statements,
+    too-many-branches,
+    # Test fixtures intentionally mirror the channel default dict
+    # (duplicate-code) and pytest classes need no second public method.
+    duplicate-code,
+    too-few-public-methods
+
+[VARIABLES]
+# OctoPrint mixin callbacks have fixed signatures; `payload` (on_event) and
+# `request` (on_api_get) are part of the contract even when unused.
+ignored-argument-names=_.*|payload|request
+
+[FORMAT]
+max-line-length=88

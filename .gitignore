@@ -1,0 +1,27 @@
+# Plugin / Python
+.venv*/
+*.pyc
+OctoPrint_PandaBranchPlus.egg-info
+*.swp
+*.iml
+build/
+dist/
+*.egg*
+.DS_Store
+*.zip
+.ruff_cache/
+.coverage
+.pytest_cache/
+
+# Node deps (package-lock.json IS committed so `npm ci` is reproducible in CI)
+node_modules/
+
+# MkDocs build output (deployed to GitHub Pages by docs.yml, never committed)
+site/
+
+# Local-only tooling configs (not consumed by CI / pre-commit).
+# Editors and local tools read these directly; the GitHub workflows do not.
+.markdownlint.json
+.markdownlintignore
+.snyk
+pyrightconfig.json
