@@ -40,3 +40,9 @@ Homepage = "https://github.com/Ajimaru/OctoPrint-PandaBranchPlus"
 develop = [
     "go-task-bin"
 ]
+
+[tool.coverage.run]
+omit = [
+    "octoprint_pandabranchplus/__init__.py",
+    "octoprint_pandabranchplus/panda_ws.py",
+]
