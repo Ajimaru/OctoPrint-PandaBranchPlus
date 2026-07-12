@@ -41,7 +41,12 @@ tasks:
   babel-extract:
     desc: Update pot file from source
     cmds:
-      - pybabel extract --mapping-file=babel.cfg --output-file=translations/messages.pot --msgid-bugs-address=i18n@octoprint.org --copyright-holder="The OctoPrint Project" .
+      # Explicit source dirs, not ".": a repo-root walk also picks up
+      # whatever else happens to be lying around (python -m build's build/,
+      # a local mkdocs build's site/ -- whose bundled JS assets match the
+      # "*/**.js" mapping and get scanned as if they were plugin sources),
+      # baking transient, machine-specific paths into the committed POT.
+      - pybabel extract --sort-output --mapping-file=babel.cfg --output-file=translations/messages.pot --msgid-bugs-address=i18n@octoprint.org --copyright-holder="The OctoPrint Project" octoprint_pandabranchplus tests
 
   babel-update:
     desc: Update translation files from pot file
