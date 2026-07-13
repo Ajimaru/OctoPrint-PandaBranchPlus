@@ -15,6 +15,7 @@ callback). Full protocol in ``.ideas/panda-branch-plus-recon.md``.
 import json
 import socket
 import threading
+from contextlib import suppress
 
 import websocket
 
@@ -93,10 +94,8 @@ def test_connection(host, port=80, path="/ws", timeout=5):
             )
         return {"channels": channels, "raw_keys": sorted(data.keys())}
     finally:
-        try:
+        with suppress(Exception):
             ws.close()
-        except Exception:
-            pass
 
 
 class PandaWsClient:
@@ -182,10 +181,8 @@ class PandaWsClient:
         self._stop_event.set()
         ws = self._ws
         if ws is not None:
-            try:
+            with suppress(Exception):
                 ws.close()
-            except Exception:
-                pass
         thread = self._thread
         if thread is not None and thread.is_alive():
             thread.join(timeout=5)
