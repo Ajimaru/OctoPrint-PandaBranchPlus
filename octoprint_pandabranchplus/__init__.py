@@ -295,7 +295,8 @@ class PandaBranchPlusPlugin(
             try:
                 result = panda_ws.test_connection(host, port=port, path=path)
             except panda_ws.PandaWsError as exc:
-                return flask.jsonify(ok=False, reason=exc.reason, detail=str(exc))
+                self._logger.warning("Panda connection test failed: %s", exc)
+                return flask.jsonify(ok=False, reason=exc.reason)
             channel_count = sum(len(v) for v in result["channels"].values())
             return flask.jsonify(ok=True, channels=channel_count)
 
@@ -311,7 +312,10 @@ class PandaBranchPlusPlugin(
             try:
                 self._ws.set_channel(kind, channel_id, on)
             except panda_ws.PandaWsError as exc:
-                return flask.jsonify(ok=False, reason=exc.reason, detail=str(exc))
+                self._logger.warning(
+                    "Panda set_channel failed for %s/%s: %s", kind, channel_id, exc
+                )
+                return flask.jsonify(ok=False, reason=exc.reason)
             # A toggle on a manual channel is remembered so the state survives
             # restarts (startup_behaviour "restore") and reconnect syncs.
             channel = self._find_channel(kind, channel_id)
