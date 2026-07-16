@@ -105,6 +105,8 @@ class PandaBranchPlusPlugin(
             # Safety
             "confirm_high_power": True,
             "startup_behaviour": "leave",  # "leave" | "all_off" | "restore"
+            # Interface
+            "sidebar_enabled": True,
             # Diagnostics
             "debug_logging": False,
             "frame_log": False,
@@ -118,6 +120,7 @@ class PandaBranchPlusPlugin(
         return [
             {"type": "tab", "name": "Panda Branch Plus"},
             {"type": "settings", "name": "Panda Branch Plus"},
+            {"type": "sidebar", "name": "Panda Branch Plus", "icon": "fas fa-plug"},
         ]
 
     def is_template_autoescaped(self):
