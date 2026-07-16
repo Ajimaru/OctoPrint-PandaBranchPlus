@@ -83,6 +83,23 @@ $(function () {
                 },
             };
 
+            // Sidebar chip: yellow (unknown) until the Panda has reported a
+            // state, then red for on / green for off. Loses "known" whenever
+            // the connection drops (the channel may be switched externally).
+            channel.known = ko.observable(false);
+            channel.sidebarCss = ko.pureComputed(function () {
+                if (!self.connected() || !channel.known()) {
+                    return "pbp-sidebar-unknown";
+                }
+                return channel.on() ? "pbp-sidebar-on" : "pbp-sidebar-off";
+            });
+            channel.sidebarTitle = ko.pureComputed(function () {
+                if (!self.connected() || !channel.known()) {
+                    return gettext("State unknown");
+                }
+                return channel.on() ? gettext("On") : gettext("Off");
+            });
+
             // Persist renames right away (fires on blur).
             channel.label.subscribe(function (value) {
                 OctoPrint.simpleApiCommand("pandabranchplus", "set_label", {
@@ -168,8 +185,25 @@ $(function () {
                 var states = channels[channel.kind];
                 if (states && states[channel.id] !== undefined) {
                     channel.on(!!states[channel.id]);
+                    channel.known(true);
                 }
             });
+        };
+
+        // Show/hide the whole sidebar panel per the settings checkbox.
+        self._updateSidebarVisibility = function () {
+            var enabled = !!ko.utils.unwrapObservable(
+                self._pluginSettings().sidebar_enabled,
+            );
+            $("#sidebar_plugin_pandabranchplus_wrapper").toggle(enabled);
+        };
+
+        self.onAfterBinding = function () {
+            var enabled = self._pluginSettings().sidebar_enabled;
+            if (ko.isObservable(enabled)) {
+                enabled.subscribe(self._updateSidebarVisibility);
+            }
+            self._updateSidebarVisibility();
         };
 
         // Auto <-> manual. Manual immediately enforces the remembered
@@ -292,6 +326,7 @@ $(function () {
         elements: [
             "#tab_plugin_pandabranchplus",
             "#settings_plugin_pandabranchplus",
+            "#sidebar_plugin_pandabranchplus",
         ],
     });
 });

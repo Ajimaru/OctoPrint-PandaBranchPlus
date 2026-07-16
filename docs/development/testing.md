@@ -10,17 +10,20 @@ pytest tests/
   temperature rules (threshold, hysteresis, missing sensor, `above: off`),
   combine logic (override/AND/OR), OctoPrint state mapping.
 - `tests/test_hardware.py` — the fixed channel layout.
+- `tests/test_plugin.py` — the plugin's pure surface: settings defaults
+  (including `sidebar_enabled`), template registration (tab / settings /
+  sidebar), template vars.
 
-Both test modules import only the pure modules, so they run without an
-OctoPrint installation. CI runs them on Python 3.9–3.13 plus an OctoPrint
+The test modules run without an OctoPrint installation (`conftest.py`
+provides minimal stubs). CI runs them on Python 3.9–3.13 plus an OctoPrint
 smoke import (1.10.x and devel).
 
 ## What is deliberately not unit-tested
 
-The plugin class itself (mixin glue) and the WebSocket client's network
-behavior — those are covered by the end-to-end checklist below against real
-hardware. Mocking a firmware that was reverse engineered is a good way to
-test the mock.
+The plugin class's runtime glue (WS lifecycle, event handlers) and the
+WebSocket client's network behavior — those are covered by the end-to-end
+checklist below against real hardware. Mocking a firmware that was reverse
+engineered is a good way to test the mock.
 
 ## End-to-end checklist (real Panda + printer)
 
@@ -34,6 +37,9 @@ test the mock.
 5. Disconnect the Panda: banner appears, no crash-loop in the log;
    reconnect: initial sync restores rule targets.
 6. Restart OctoPrint: labels, modes and rules survive.
+7. Sidebar panel shows one chip per channel (red = on, green = off, yellow
+   while disconnected); unticking **Show channel status in the sidebar**
+   hides it without a restart.
 
 !!! tip
     Use a channel with nothing attached (or an LED) for rule testing, and

@@ -30,6 +30,12 @@ reference and provisioning.
 | `confirm_high_power` | `true`  | Confirmation dialog before manually switching ON an MX3.0 24V channel. |
 | `startup_behaviour`  | `leave` | First connect after start: `leave` \| `all_off` \| `restore`.          |
 
+## Interface
+
+| Key               | Default | Meaning                                                                                         |
+| ----------------- | ------- | ----------------------------------------------------------------------------------------------- |
+| `sidebar_enabled` | `true`  | Show the minimal channel-status panel in the sidebar (red = on, green = off, yellow = unknown). |
+
 ## Diagnostics
 
 | Key             | Default | Meaning                                                             |
