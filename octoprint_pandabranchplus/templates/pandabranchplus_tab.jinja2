@@ -1,129 +1,129 @@
 {# Panda Branch Plus — channel automation tab.
    One card per channel: header (id, type badge, name, live state, mode,
    manual switch) + automation body (state matrix, temp rule, failsafe).
+   No own wrapper id: OctoPrint already renders the surrounding
+   <div id="tab_plugin_pandabranchplus"> (the tab pane) itself.
    Bindings live in static/js/pandabranchplus.js. #}
-<div id="tab_plugin_pandabranchplus">
-    <div class="row-fluid">
-        <h3>{{ _("Panda Branch Plus") }}</h3>
-        <p class="muted">
-            {{ _("Assign a function to each of the 10 power channels and automate them based on the printer state.") }}
-        </p>
-        <!-- Disconnect banner (shown when the Panda WebSocket is down) -->
-        <div class="alert alert-warning"
-             data-bind="visible: !connected()"
-             style="display: none">{{ _("Panda disconnected — channels are holding their last state.") }}</div>
-        <!-- Channel cards -->
-        <div data-bind="foreach: channels">
-            <div class="pbp-channel">
-                <div class="pbp-head">
-                    <span class="pbp-id" data-bind="text: idLabel"></span>
-                    <span class="pbp-badge" data-bind="text: type"></span>
-                    <input type="text"
-                           class="pbp-label"
-                           title="{{ _('Name this channel after what is plugged into it. Saved automatically.') }}"
-                           data-bind="value: label" />
-                    <span class="pbp-state" data-bind="css: { on: on(), off: !on() }">
-                        <span data-bind="text: on() ? '{{ _("ON") }}' : '{{ _("OFF") }}'"></span>
-                    </span>
-                    <span class="btn-group">
-                        <button type="button"
-                                class="btn btn-mini"
-                                title="{{ _('Automation: the channel follows the state matrix below.') }}"
-                                data-bind="click: function () { $parent.setMode($data, 'auto'); }, css: { active: mode() === 'auto' }">
-                            {{ _("Auto") }}
-                        </button>
-                        <button type="button"
-                                class="btn btn-mini"
-                                title="{{ _('Manual: you switch the channel yourself, automation keeps its hands off.') }}"
-                                data-bind="click: function () { $parent.setMode($data, 'manual'); }, css: { active: mode() === 'manual' }">
-                            {{ _("Manual") }}
-                        </button>
-                    </span>
+<div class="row-fluid">
+    <h3>{{ _("Panda Branch Plus") }}</h3>
+    <p class="muted">
+        {{ _("Assign a function to each of the 10 power channels and automate them based on the printer state.") }}
+    </p>
+    <!-- Disconnect banner (shown when the Panda WebSocket is down) -->
+    <div class="alert alert-warning"
+         data-bind="visible: !connected()"
+         style="display: none">{{ _("Panda disconnected — channels are holding their last state.") }}</div>
+    <!-- Channel cards -->
+    <div data-bind="foreach: channels">
+        <div class="pbp-channel">
+            <div class="pbp-head">
+                <span class="pbp-id" data-bind="text: idLabel"></span>
+                <span class="pbp-badge" data-bind="text: type"></span>
+                <input type="text"
+                       class="pbp-label"
+                       title="{{ _('Name this channel after what is plugged into it. Saved automatically.') }}"
+                       data-bind="value: label" />
+                <span class="pbp-state" data-bind="css: { on: on(), off: !on() }">
+                    <span data-bind="text: on() ? '{{ _("ON") }}' : '{{ _("OFF") }}'"></span>
+                </span>
+                <span class="btn-group">
                     <button type="button"
                             class="btn btn-mini"
-                            title="{{ _('Switch the channel now. In auto mode the rules may switch it back.') }}"
-                            data-bind="click: $parent.toggleChannel, enable: $parent.connected, text: on() ? '{{ _("Switch off") }}' : '{{ _("Switch on") }}'">
+                            title="{{ _('Automation: the channel follows the state matrix below.') }}"
+                            data-bind="click: function () { $parent.setMode($data, 'auto'); }, css: { active: mode() === 'auto' }">
+                        {{ _("Auto") }}
                     </button>
-                </div>
-                <!-- Automation body (auto mode only) -->
-                <div class="pbp-body" data-bind="visible: mode() === 'auto'">
-                    <div class="pbp-matrix"
-                         title="{{ _('For each printer state: switch the channel on, off, or leave it as it is (ignore).') }}">
-                        <div class="pbp-matrix-cell">
-                            <label>{{ _("Idle") }}</label>
-                            <select class="input-small" data-bind="value: rules.idle">
-                                <option value="on">{{ _("On") }}</option>
-                                <option value="off">{{ _("Off") }}</option>
-                                <option value="ignore">{{ _("Ignore") }}</option>
-                            </select>
-                        </div>
-                        <div class="pbp-matrix-cell">
-                            <label>{{ _("Preparing") }}</label>
-                            <select class="input-small" data-bind="value: rules.prepare">
-                                <option value="on">{{ _("On") }}</option>
-                                <option value="off">{{ _("Off") }}</option>
-                                <option value="ignore">{{ _("Ignore") }}</option>
-                            </select>
-                        </div>
-                        <div class="pbp-matrix-cell">
-                            <label>{{ _("Printing") }}</label>
-                            <select class="input-small" data-bind="value: rules.printing">
-                                <option value="on">{{ _("On") }}</option>
-                                <option value="off">{{ _("Off") }}</option>
-                                <option value="ignore">{{ _("Ignore") }}</option>
-                            </select>
-                        </div>
-                        <div class="pbp-matrix-cell">
-                            <label>{{ _("Paused") }}</label>
-                            <select class="input-small" data-bind="value: rules.paused">
-                                <option value="on">{{ _("On") }}</option>
-                                <option value="off">{{ _("Off") }}</option>
-                                <option value="ignore">{{ _("Ignore") }}</option>
-                            </select>
-                        </div>
-                        <div class="pbp-matrix-cell">
-                            <label>{{ _("Error") }}</label>
-                            <select class="input-small" data-bind="value: rules.error">
-                                <option value="on">{{ _("On") }}</option>
-                                <option value="off">{{ _("Off") }}</option>
-                                <option value="ignore">{{ _("Ignore") }}</option>
-                            </select>
-                        </div>
-                        <div class="pbp-matrix-cell">
-                            <label title="{{ _('What the channel falls back to when OctoPrint shuts down. Hold keeps the current state.') }}">
-                                {{ _("Failsafe") }} <span class="pbp-help">(?)</span>
-                            </label>
-                            <select class="input-small" data-bind="value: failsafe">
-                                <option value="off">{{ _("Off") }}</option>
-                                <option value="on">{{ _("On") }}</option>
-                                <option value="hold">{{ _("Hold") }}</option>
-                            </select>
-                        </div>
+                    <button type="button"
+                            class="btn btn-mini"
+                            title="{{ _('Manual: you switch the channel yourself, automation keeps its hands off.') }}"
+                            data-bind="click: function () { $parent.setMode($data, 'manual'); }, css: { active: mode() === 'manual' }">
+                        {{ _("Manual") }}
+                    </button>
+                </span>
+                <button type="button"
+                        class="btn btn-mini"
+                        title="{{ _('Switch the channel now. In auto mode the rules may switch it back.') }}"
+                        data-bind="click: $parent.toggleChannel, enable: $parent.connected, text: on() ? '{{ _("Switch off") }}' : '{{ _("Switch on") }}'">
+                </button>
+            </div>
+            <!-- Automation body (auto mode only) -->
+            <div class="pbp-body" data-bind="visible: mode() === 'auto'">
+                <div class="pbp-matrix"
+                     title="{{ _('For each printer state: switch the channel on, off, or leave it as it is (ignore).') }}">
+                    <div class="pbp-matrix-cell">
+                        <label>{{ _("Idle") }}</label>
+                        <select class="input-small" data-bind="value: rules.idle">
+                            <option value="on">{{ _("On") }}</option>
+                            <option value="off">{{ _("Off") }}</option>
+                            <option value="ignore">{{ _("Ignore") }}</option>
+                        </select>
                     </div>
-                    <div class="pbp-temp"
-                         title="{{ _('Optional temperature rule: switches the channel when the sensor crosses the threshold (with hysteresis). How it combines with the state matrix is a global setting.') }}">
-                        <label class="checkbox inline">
-                            <input type="checkbox" data-bind="checked: tempRule.enabled" />
-                            {{ _("Temperature rule") }} <span class="pbp-help">(?)</span>
+                    <div class="pbp-matrix-cell">
+                        <label>{{ _("Preparing") }}</label>
+                        <select class="input-small" data-bind="value: rules.prepare">
+                            <option value="on">{{ _("On") }}</option>
+                            <option value="off">{{ _("Off") }}</option>
+                            <option value="ignore">{{ _("Ignore") }}</option>
+                        </select>
+                    </div>
+                    <div class="pbp-matrix-cell">
+                        <label>{{ _("Printing") }}</label>
+                        <select class="input-small" data-bind="value: rules.printing">
+                            <option value="on">{{ _("On") }}</option>
+                            <option value="off">{{ _("Off") }}</option>
+                            <option value="ignore">{{ _("Ignore") }}</option>
+                        </select>
+                    </div>
+                    <div class="pbp-matrix-cell">
+                        <label>{{ _("Paused") }}</label>
+                        <select class="input-small" data-bind="value: rules.paused">
+                            <option value="on">{{ _("On") }}</option>
+                            <option value="off">{{ _("Off") }}</option>
+                            <option value="ignore">{{ _("Ignore") }}</option>
+                        </select>
+                    </div>
+                    <div class="pbp-matrix-cell">
+                        <label>{{ _("Error") }}</label>
+                        <select class="input-small" data-bind="value: rules.error">
+                            <option value="on">{{ _("On") }}</option>
+                            <option value="off">{{ _("Off") }}</option>
+                            <option value="ignore">{{ _("Ignore") }}</option>
+                        </select>
+                    </div>
+                    <div class="pbp-matrix-cell">
+                        <label title="{{ _('What the channel falls back to when OctoPrint shuts down. Hold keeps the current state.') }}">
+                            {{ _("Failsafe") }} <span class="pbp-help">(?)</span>
                         </label>
-                        <span data-bind="visible: tempRule.enabled">
-                            <select class="input-small" data-bind="value: tempRule.sensor">
-                                <option value="bed">{{ _("Bed") }}</option>
-                                <option value="tool">{{ _("Tool") }}</option>
-                                <option value="chamber">{{ _("Chamber") }}</option>
-                            </select>
-                            {{ _("above") }}
-                            <input type="number"
-                                   class="input-mini"
-                                   step="1"
-                                   data-bind="value: tempRule.threshold" />
-                            &deg;C &rarr;
-                            <select class="input-small" data-bind="value: tempRule.above">
-                                <option value="on">{{ _("On") }}</option>
-                                <option value="off">{{ _("Off") }}</option>
-                            </select>
-                        </span>
+                        <select class="input-small" data-bind="value: failsafe">
+                            <option value="off">{{ _("Off") }}</option>
+                            <option value="on">{{ _("On") }}</option>
+                            <option value="hold">{{ _("Hold") }}</option>
+                        </select>
                     </div>
+                </div>
+                <div class="pbp-temp"
+                     title="{{ _('Optional temperature rule: switches the channel when the sensor crosses the threshold (with hysteresis). How it combines with the state matrix is a global setting.') }}">
+                    <label class="checkbox inline">
+                        <input type="checkbox" data-bind="checked: tempRule.enabled" />
+                        {{ _("Temperature rule") }} <span class="pbp-help">(?)</span>
+                    </label>
+                    <span data-bind="visible: tempRule.enabled">
+                        <select class="input-small" data-bind="value: tempRule.sensor">
+                            <option value="bed">{{ _("Bed") }}</option>
+                            <option value="tool">{{ _("Tool") }}</option>
+                            <option value="chamber">{{ _("Chamber") }}</option>
+                        </select>
+                        {{ _("above") }}
+                        <input type="number"
+                               class="input-mini"
+                               step="1"
+                               data-bind="value: tempRule.threshold" />
+                        &deg;C &rarr;
+                        <select class="input-small" data-bind="value: tempRule.above">
+                            <option value="on">{{ _("On") }}</option>
+                            <option value="off">{{ _("Off") }}</option>
+                        </select>
+                    </span>
                 </div>
             </div>
         </div>

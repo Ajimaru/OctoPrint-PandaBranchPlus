@@ -56,6 +56,9 @@
   connection the reconnect re-applies the rules
 - ⚡ **Live state** — Channel on/off state is pushed to the browser as it
   changes, no page reload
+- 📋 **Sidebar status** — Minimal sidebar panel with one chip per channel:
+  red border = on, green = off, yellow = state unknown; can be disabled in
+  the settings
 - 🧪 **Connection test** — Verify the Panda's host/IP before saving settings
 - 🔒 **Permission‑gated** — Switching power is restricted through OctoPrint's
   access control

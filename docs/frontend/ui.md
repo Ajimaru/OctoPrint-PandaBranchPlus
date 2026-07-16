@@ -1,7 +1,7 @@
-# Tab and settings UI
+# Tab, sidebar and settings UI
 
-One Knockout view model (`PandaBranchPlusViewModel`) binds both the tab and
-the settings dialog. Dependencies: `loginStateViewModel`,
+One Knockout view model (`PandaBranchPlusViewModel`) binds the tab, the
+sidebar panel and the settings dialog. Dependencies: `loginStateViewModel`,
 `settingsViewModel`.
 
 ## Tab
@@ -23,12 +23,25 @@ enabled (that is where heaters and pumps live).
 A warning banner appears while the Panda WebSocket is down; the live state
 then reflects the last known snapshot.
 
+## Sidebar
+
+A minimal status panel: one chip per channel, showing the channel label with
+a colored border — **red = on**, **green = off**, **yellow = state unknown**
+(Panda disconnected, or no state received yet). The chip tooltip spells the
+state out.
+
+The panel can be turned off with the `sidebar_enabled` checkbox in the
+settings dialog (default: on). The view model hides the whole sidebar
+wrapper (`#sidebar_plugin_pandabranchplus_wrapper`) and reacts live to the
+setting — no restart needed.
+
 ## Settings dialog
 
 Global configuration only: connection (host, port/path, reconnect window,
 test button), automation (master enable, combine logic, hysteresis, switch
-interval), safety (24V confirmation, startup behavior), diagnostics (debug
-log, frame log). Every field carries a `(?)` tooltip.
+interval), safety (24V confirmation, startup behavior), interface (sidebar
+panel), diagnostics (debug log, frame log). Every field carries a `(?)`
+tooltip.
 
 The **Test connection** button tests the values currently in the dialog —
 including unsaved ones — via the `test_connection` API command and shows the

@@ -1,0 +1,12 @@
+{# Panda Branch Plus — minimal sidebar status.
+   One chip per channel: label with a colored border — red = on,
+   green = off, yellow = state unknown (not connected / no state yet).
+   No own wrapper id here: OctoPrint already renders the surrounding
+   <div id="sidebar_plugin_pandabranchplus"> (the accordion body) itself;
+   duplicating that id breaks collapse handling (e.g. the Stateful Sidebar
+   plugin matches both divs and leaves the inner one collapsed).
+   Bindings live in static/js/pandabranchplus.js. #}
+<div class="pbp-sidebar" data-bind="foreach: channels">
+    <span class="pbp-sidebar-chip"
+          data-bind="text: label, css: sidebarCss, attr: { title: sidebarTitle }"></span>
+</div>
