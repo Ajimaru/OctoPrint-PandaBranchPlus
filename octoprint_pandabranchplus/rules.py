@@ -104,14 +104,20 @@ def resolve_target(
 def map_octoprint_state(state_id):
     """Map an OctoPrint state id to the plugin's five canonical states.
 
-    ``STARTING`` is what BambuConnector reports for Bambu's PREPARE phase.
+    The ids are ``ConnectedPrinterState`` member names. ``STARTING`` is
+    what BambuConnector reports for Bambu's PREPARE phase, and
+    ``TRANSFERRING_FILE`` covers sending the job to the printer, which is
+    still preparation. ``CANCELLING`` stays ``printing``: the printer is
+    busy parking and cooling down, so power must not be cut yet.
     Anything unknown (offline, detecting, ...) counts as ``idle`` — no
     printer means no print is running (see the plan's state resolution).
     """
     mapping = {
+        "TRANSFERRING_FILE": "prepare",
         "STARTING": "prepare",
         "PRINTING": "printing",
         "RESUMING": "printing",
+        "CANCELLING": "printing",
         "FINISHING": "printing",
         "PAUSED": "paused",
         "PAUSING": "paused",

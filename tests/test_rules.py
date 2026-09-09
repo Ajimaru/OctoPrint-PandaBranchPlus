@@ -166,3 +166,35 @@ class TestStateMapping:
         assert map_octoprint_state("OPERATIONAL") == "idle"
         assert map_octoprint_state("OFFLINE") == "idle"
         assert map_octoprint_state(None) == "idle"
+
+    def test_busy_states_are_not_idle(self):
+        # The printer is still parking and cooling down while cancelling,
+        # and still receiving the job while transferring -- neither may
+        # fall through to "idle" and cut the power.
+        assert map_octoprint_state("CANCELLING") == "printing"
+        assert map_octoprint_state("FINISHING") == "printing"
+        assert map_octoprint_state("PAUSING") == "paused"
+        assert map_octoprint_state("TRANSFERRING_FILE") == "prepare"
+
+    def test_every_connected_printer_state_is_covered(self):
+        # Every member of OctoPrint's ConnectedPrinterState enum, mirrored
+        # here because importing it standalone trips a circular import.
+        # Guards against states silently mapping to "idle"; only genuinely
+        # non-busy ones may do so.
+        idle_states = {"DETECTING", "CONNECTING", "OPERATIONAL", "CLOSED"}
+        busy_states = {
+            "STARTING",
+            "PRINTING",
+            "PAUSING",
+            "PAUSED",
+            "RESUMING",
+            "CANCELLING",
+            "FINISHING",
+            "ERROR",
+            "CLOSED_WITH_ERROR",
+            "TRANSFERRING_FILE",
+        }
+        for name in idle_states:
+            assert map_octoprint_state(name) == "idle", name
+        for name in busy_states:
+            assert map_octoprint_state(name) != "idle", name
