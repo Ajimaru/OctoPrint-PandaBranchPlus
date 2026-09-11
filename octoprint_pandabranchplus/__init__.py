@@ -568,6 +568,7 @@ class PandaBranchPlusPlugin(
 
 __plugin_name__ = "Panda Branch Plus"
 __plugin_version__ = _PLUGIN_VERSION
+__plugin_author__ = "Ajimaru"
 __plugin_pythoncompat__ = ">=3,<4"
 
 
