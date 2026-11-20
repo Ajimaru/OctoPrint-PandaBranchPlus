@@ -30,6 +30,13 @@ if TYPE_CHECKING:
 # The five printer states the automation matrix maps to on/off/ignore.
 PRINTER_STATES = ["idle", "prepare", "printing", "paused", "error"]
 
+# How long (seconds) a switch command we sent outranks the Panda's last
+# reported channel state. The Panda confirms a switch by broadcasting its new
+# state, which can arrive after the next rule run: on a Bambu double start the
+# printer goes idle -> prepare 0.7 s apart, and the rule run for "prepare" still
+# saw the "on" from before the "off" it had just sent, so it switched nothing.
+COMMAND_CONFIRM_WINDOW = 5.0
+
 
 def _default_channel(kind, channel_id):
     """Build the default per-channel config for a hardware channel.
@@ -84,6 +91,8 @@ class PandaBranchPlusPlugin(
         self._temps = {}  # last known temps: {"bed": .., "tool": .., "chamber": ..}
         self._temp_active = {}  # per-channel hysteresis latch: {(kind, id): bool}
         self._last_switch = {}  # per-channel rate limit: {(kind, id): timestamp}
+        # last command sent per channel: {(kind, id): (0|1, timestamp)}
+        self._commanded = {}
         self._startup_synced = False  # startup_behaviour applied on first connect
         self._reapply_timer = None  # pending re-run after a rate-limited switch
 
@@ -422,7 +431,8 @@ class PandaBranchPlusPlugin(
 
         Manual channels follow manual_on; auto channels follow the state
         matrix combined with their temp rule (see rules.py). Only channels
-        whose target differs from the live state get a WS command, rate
+        whose target differs from the live state - or from the last command,
+        until the Panda has had time to confirm it - get a WS command, rate
         limited per channel by min_switch_interval.
         """
         if not self._settings.get_boolean(["automation_enabled"]):
@@ -453,10 +463,15 @@ class PandaBranchPlusPlugin(
             if target is None:
                 continue
             current = live.get(channel["kind"], {}).get(int(channel["id"]))
+            now = time.monotonic()
+            commanded = self._commanded.get(key)
+            if commanded is not None and now - commanded[1] < COMMAND_CONFIRM_WINDOW:
+                # Not confirmed yet: the live snapshot may still show the
+                # state from before our last command (see the constant).
+                current = commanded[0]
             want = 1 if target == "on" else 0
             if current == want:
                 continue
-            now = time.monotonic()
             remaining = min_interval - (now - self._last_switch.get(key, 0))
             if remaining > 0:
                 # Rate limited: don't drop the switch, retry once the
@@ -469,6 +484,7 @@ class PandaBranchPlusPlugin(
             try:
                 self._ws.set_channel(channel["kind"], channel["id"], want)
                 self._last_switch[key] = now
+                self._commanded[key] = (want, now)
                 self._logger.info(
                     "Rule engine: %s %s -> %s (state=%s)",
                     channel["kind"],
